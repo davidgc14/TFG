@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  6 APR 2022 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  6 APR 2022 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,6 +794,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 18.
 Package tocbasic Info: Using my definition of `\numberline' on input line 19.
 Package tocbasic Info: Using my definition of `\numberline' on input line 20.
 Package tocbasic Info: Using my definition of `\numberline' on input line 21.
+Package tocbasic Info: Using my definition of `\numberline' on input line 22.
 )
 \tf@toc=\write4
 \openout4 = `libro.toc'.
@@ -958,21 +959,21 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `libro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `libro.brf' has not changed.
-(rerunfilecheck)             Checksum: 635C033C1593AA302AADC10902865973;179.
+(rerunfilecheck)             Checksum: 2BA8EA559179159A4F594F1E555B81CD;179.
  ) 
 Here is how much of TeX's memory you used:
- 16126 strings out of 481239
- 278204 string characters out of 5920377
+ 16128 strings out of 481239
+ 278221 string characters out of 5920377
  712004 words of memory out of 5000000
- 30702 multiletter control sequences out of 15000+600000
+ 30703 multiletter control sequences out of 15000+600000
  744724 words of font info for 294 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,72p,10139b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc}</usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (33 pages, 221797 bytes).
+Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (33 pages, 221464 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 79038 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 79046 words of extra memory for PDF output out of 89155 (max. 10000000)
 
