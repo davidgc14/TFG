@@ -9,8 +9,8 @@ Haiïm Brezis and Felix Browder.
 \bibitem[FdCTF20]{Fer_Castro_2020}
 Max Fernández~de Castro and Yolanda Torres~Falcón.
 \newblock La constitución del programa de hilbert.
-\newblock {\em Metatheoria – Revista de Filosofía e Historia de la Ciencia},
-  10(2):31–50, abr. 2020.
+\newblock {\em Metatheoria - Revista de Filosofía e Historia de la Ciencia},
+  10(2):31--50, abr. 2020.
 
 \bibitem[GR{\etalchar{+}}00]{gray2000hilbert}
 Jeremy Gray, David Rowe, et~al.
@@ -22,6 +22,16 @@ Jeremy~J Gray.
 \newblock {\em El reto de Hilbert: Los 23 problemas que desafiaron a la
   matem{\'a}tica}.
 \newblock Cr{\'\i}tica, 2003.
+
+\bibitem[KM00]{kline2000matematicas}
+M.~Kline and A.R. Merino.
+\newblock {\em Matem{\'a}ticas: La p{\'e}rdida de la Certidumbre}.
+\newblock Ciencia y t{\'e}cnica. Siglo XXI Ediciones, 2000.
+
+\bibitem[Kre76]{kreisel1976have}
+Georg Kreisel.
+\newblock What have we learnt from hilbert's second problem.
+\newblock {\em Browder [8: 1, pp. 93-130]}, 67:8--12, 1976.
 
 \bibitem[Sie13]{alma991014322964704990}
 Wilfried Sieg.
@@ -36,7 +46,7 @@ Ian Stewart.
 
 \bibitem[Zac07]{Zach_2007}
 Richard Zach.
-\newblock Hilbert{\textquotesingle}s program then and now.
+\newblock Hilbert's program then and now.
 \newblock In {\em Philosophy of Logic}, pages 411--447. Elsevier, 2007.
 
 \end{thebibliography}
