@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  25 APR 2022 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  25 APR 2022 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -888,18 +888,21 @@ LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
  [6]
 chapter 2.
-) [7
+[7
 
 
-] [8
-
-
-]
+])
+LaTeX Info: Redefining \. on input line 233.
+LaTeX Info: Redefining \% on input line 233.
+ [8]
 part II.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
 (scrkbase)              on input line 233.
-[9] [10] (/home/curbelo/Documentos/TFG/Latex-TFG/capitulos/capitulo02.tex
+[9
+
+
+] [10] (/home/curbelo/Documentos/TFG/Latex-TFG/capitulos/capitulo02.tex
 chapter 3.
 [11
 
@@ -960,21 +963,21 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `libro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `libro.brf' has not changed.
-(rerunfilecheck)             Checksum: A0888D0EAD83C79EF95C0F0B84C1ADAE;282.
+(rerunfilecheck)             Checksum: 5340AD3ACF3A85EB4AB33EA4D12B1BC6;282.
  ) 
 Here is how much of TeX's memory you used:
- 16150 strings out of 481239
- 278656 string characters out of 5920377
+ 16161 strings out of 481239
+ 278752 string characters out of 5920377
  712004 words of memory out of 5000000
  30719 multiletter control sequences out of 15000+600000
- 744411 words of font info for 293 fonts, out of 8000000 for 9000
+ 744978 words of font info for 301 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,72p,10139b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc}</usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (33 pages, 227236 bytes).
+Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (33 pages, 228712 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
  78542 words of extra memory for PDF output out of 89155 (max. 10000000)
 
