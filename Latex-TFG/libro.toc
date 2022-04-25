@@ -12,7 +12,8 @@
 \contentsline {chapter}{\numberline {2}Una mancha en la cortina}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Los defectos del programa}{7}{section.2.1}%
 \contentsline {section}{\numberline {2.2}La axiomatización}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Bibliografía e índice}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.3}La bienvenida de Gödel a escena}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Bibliografía e índice}{7}{section.2.4}%
 \contentsline {part}{\numberline {II}Los teoremas de incompletitud de Gödel}{9}{part.2}%
 \contentsline {chapter}{\numberline {3}La completitud del cálculo lógico de primer orden}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Primera sección}{11}{section.3.1}%
