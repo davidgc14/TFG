@@ -404,6 +404,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/glosario.tex

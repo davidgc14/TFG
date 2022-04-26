@@ -8,13 +8,13 @@
 
 El teorema de completitud semántica de la lógica de primer orden aparece en el artículo de Gödel de 1930 como Teorema I:
 
-\begin{teorema}\label{thmI:teorema}
+\begin{teorema}\label{thm:teoremaI}
     Cada fórmula válida de la lógica de primer orden es deducible.
 \end{teorema}
 
 El presente teorema, objeto principal de estudio de esta sección, sería trivialmente demostrable si pudiesemos probar
 el siguiente:
-\begin{teorema}\label{thmII:teorema}
+\begin{teorema}\label{thm:teoremaII}
     Cada fórmula de la lógica de primer orden es o refutable
     \footnote{<<$\varphi$ es refutable>> significa <<$\lnot \varphi$ es deducible>>.} o satisfacible (sobre un universo infinito numerable).
 \end{teorema}
@@ -22,13 +22,13 @@ el siguiente:
 Y por ello surge el siguiente resultado: 
 
 \begin{proposicion}
-    \autoref{thmII:teorema} $\Rightarrow$ \autoref{thmI:teorema}
+    \autoref{thm:teoremaII} $\Rightarrow$ \autoref{thm:teoremaI}
 \end{proposicion}
 \begin{proof}
-    Sea $\alpha$ una fórmula válida. Siendo esto así, $\lnot \alpha$ no es satisfacible, y aplicando \autoref{thmII:teorema} 
+    Sea $\alpha$ una fórmula válida. Siendo esto así, $\lnot \alpha$ no es satisfacible, y aplicando \autoref{thm:teoremaII} 
     tenemos que $\alpha$ es refutable. Por tanto, con ello se tiene que $\lnot \lnot \alpha$ (y como consecuencia, también $\alpha$) es una fórmula
     deducible.\footnote{El recíproco del anterior resultado también es cierto y con una demostración igual de simple, aunque no la demostraremos por no ser relevante
-    en la demostración del \autoref{thmI:teorema}.}
+    en la demostración del \autoref{thm:teoremaI}.}
 \end{proof}
 
 \begin{definicion}
@@ -42,7 +42,7 @@ Y por ello surge el siguiente resultado:
 
 Entonces con la presente definición podemos deducir el siguiente resultado:
 
-\begin{teorema} \label{thmIII:teorema}
+\begin{teorema} \label{thm:teoremaIII}
     Si cada $K$-fórmula es refutable o satisfacible, también lo es cualquier fórmula.
 \end{teorema}
 
@@ -65,12 +65,34 @@ Entonces con la presente definición podemos deducir el siguiente resultado:
     \begin{equation}\label{eq:III-2}
         \pi \varphi \leftrightarrow \beta
     \end{equation}
-    es deducible (por la deducibilidad de $\forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})$
-    \footnote{Además de por el lema 4 de los resultados aportados por Hilbert en \cite{hilbert1962elementos}.}).
+    es deducible (por el \autoref{lem:lema-4} la deducibilidad de $\forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})$).
     $\beta$ pertenece a $K$ y, por tanto, es o satisfacible o refutable. Pero por \eqref{eq:III-1} y \eqref{eq:III-2}
     la satisfacibilidad de $\beta$ implica la de $\exists \mathfrak{x} \alpha$ y consiguientemente también la de $\alpha$,
     y lo mismo se puede aplicar para la refutabilidad. Por tanto, concluimos que también $\alpha$ es o satisfacible o refutable.
 \end{proof}
+
+Teniendo en cuenta el \autoref{thm:teoremaIII} anterior, basta para demostrar el \autoref{thm:teoremaII} con probar la siguiente:
+
+\begin{proposicion} \label{prop:satisf-refut}
+    Cada $K$-fórmula es satisfacible o refutable.
+\end{proposicion}
+
+Para ello definimos previamente el concepto de grado de una $K$-fórmula, y probaremos algunos resultados para poder probar la anterior
+proposición.
+
+\begin{definicion}
+    Llamaremos grado de una $K$-fórmula
+    \footnote{También, en el mismo sentido se le puede llamar "grado de un prefijo".}
+    al número de series de cuantificaciones universales de su prefijo, separadas unas de otras
+    por cuantificadores existenciales.
+\end{definicion}
+
+Probamos primeramente el siguiente resultado.
+
+\begin{teorema}\label{thm:teoremaIV}
+    Si cada $K$-fórmula de grado $n$ es o refutable o satisfacible, también lo es cada $K$-fórmula de grado $n+1$.
+\end{teorema}
+
 
 
 
