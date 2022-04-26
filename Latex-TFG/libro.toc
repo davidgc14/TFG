@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {2.4}Bibliografía}{8}{section.2.4}%
 \contentsline {part}{\numberline {II}Los teoremas de incompletitud de Gödel}{9}{part.2}%
 \contentsline {chapter}{\numberline {3}La completitud del cálculo lógico de primer orden}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Primera sección}{11}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Segundo Teorema de Incompletitud}{13}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Exposición y demostraciones}{11}{section.3.1}%
+\contentsline {chapter}{\numberline {4}El teorema de Incompletitud}{13}{chapter.4}%
 \contentsline {chapter}{\numberline {A}Primer apéndice}{15}{appendix.Alph1}%
 \contentsline {chapter}{Glosario}{17}{chapter*.9}%
 \contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{19}{chapter*.10}%
