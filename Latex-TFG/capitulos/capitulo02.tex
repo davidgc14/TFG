@@ -3,6 +3,36 @@
 
 \chapter{La completitud del cálculo lógico de primer orden}
 
+Definamos previamente el sistema axiomático sobre el que vamos a trabajar:
+\footnote{Coincide, exceptuando el principio de asociatividad (que es redundante), con lo expuesto en los apartados 1 y 10 de 
+\textit{Principia Mathematica} (Véase \cite{an1910principia})}
+\begin{itemize}
+    \item Signos básicos primitivos:\footnote{A partir de ellos pueden definirse $\wedge$, $\rightarrow$, $\leftrightarrow$ y 
+            $\exists$ del modo habitual.}
+            \begin{itemize}
+                \item $\lnot$
+                \item $\vee$
+                \item $\forall$
+            \end{itemize}
+    \item Axiomas formales:
+            \begin{enumerate}
+                \item $ \text{X} \vee \text{X} \rightarrow \text{X} $
+                \item $ \text{X} \rightarrow \text{X} \vee \text{Y} $
+                \item $ \text{Y} \vee \text{X} \rightarrow \text{X} \vee \text{Y} $
+                \item $ (\text{X} \rightarrow \text{Y}) \rightarrow (\text{Z} \vee \text{X} \rightarrow \text{Z} \vee \text{Y}) $
+                \item $ \forall \text{x Px} \rightarrow \text{Py} $
+                \item $ \forall \text{x } (\text{X} \vee \text{Px}) \rightarrow \text{X} \vee \forall \text{x Px} $
+            \end{enumerate}
+    \item Reglas de inferencia: \footnote{No todas ellas están explícitamente formuladas en los resultados de Russel y Whitehead,
+            pero todas ellas son usadas continuamente en sus deducciones.}
+            \begin{enumerate}
+                \item El esquema de inferencia: De $\alpha$ y $\alpha \rightarrow \beta$ se puede inferir $\beta$.
+                \item La regla de sustitución para variables sentenciales y predicativas.
+                \item De $\alpha(\text{x})$ puede inferirse $\forall \text{x } \alpha(\text{x})$.
+                \item Unas variables individuales (libres o ligadas) pueden ser reemplazadas por cualesquiera otras, con tal de que 
+                        ello no produzca ningún solapamiento de los alcances de las variables designadas mediante el mismo signo.
+            \end{enumerate}
+\end{itemize}
 
 \section{Exposición y demostraciones}
 

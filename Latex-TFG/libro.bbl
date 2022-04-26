@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{FdCTF20}
 
+\bibitem[AR10]{an1910principia}
+Whitehead AN and B~Russell.
+\newblock Principia mathematica.
+\newblock {\em Cambridge University}, 1, 1910.
+
 \bibitem[BB98]{BREZIS199876}
 Haiïm Brezis and Felix Browder.
 \newblock Partial differential equations in the 20th century.
