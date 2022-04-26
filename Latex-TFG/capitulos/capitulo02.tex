@@ -52,15 +52,24 @@ Entonces con la presente definición podemos deducir el siguiente resultado:
     $\exists \mathfrak{x} \alpha$, e igualmente a la inversa. 
 
     Sea ahora $\pi \varphi$ la forma normal prenexa de $\exists \mathfrak{x} \alpha$, de tal modo que
-    \begin{equation}\label{eq:prenexa}
-        \exists \mathfrak{x} \alpha \leftrightarrow \mathfrak{x}
+    \begin{equation}\label{eq:III-1}
+        \exists \mathfrak{x} \alpha \leftrightarrow \pi \varphi
     \end{equation}
+    es deducible. Además estipulemos que
     \begin{equation}
-        \exists \mathfrak{x} \alpha \leftrightarrow \mathfrak{x}
+        \beta = \forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})
+        \footnote{Las variables x e y no deben aparecer en $\pi$.}
     \end{equation}
-
-    \autoref{eq:prenexa}
-
+    
+    Entonces
+    \begin{equation}\label{eq:III-2}
+        \pi \varphi \leftrightarrow \beta
+    \end{equation}
+    es deducible (por la deducibilidad de $\forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})$
+    \footnote{Además de por el lema 4 de los resultados aportados por Hilbert en \cite{hilbert1962elementos}.}).
+    $\beta$ pertenece a $K$ y, por tanto, es o satisfacible o refutable. Pero por \eqref{eq:III-1} y \eqref{eq:III-2}
+    la satisfacibilidad de $\beta$ implica la de $\exists \mathfrak{x} \alpha$ y consiguientemente también la de $\alpha$,
+    y lo mismo se puede aplicar para la refutabilidad. Por tanto, concluimos que también $\alpha$ es o satisfacible o refutable.
 \end{proof}
 
 
