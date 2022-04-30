@@ -208,7 +208,39 @@ Probamos primeramente el siguiente resultado.
     \end{equation}
 
     Aplicando ahora dos veces el \autoref{lem:lema-4} junto con el \autoref{lem:lema-6}, obtenemos la deducibilidad de 
+    \begin{equation} \label{eq:IV-1}
+        \beta \leftrightarrow \gamma
+    \end{equation}
+
+    Además, es claro que la fórmula 
+    \begin{equation} \label{eq:IV-2}
+        \beta \rightarrow \pi_1 \alpha
+    \end{equation}
+    es válida. Ahora bien, $\gamma$ tiene grado $n$, y por tanto es por hipótesis o satisfacible o refutable. Si $\gamma$ es satisfacible, entonces
+    también lo es $\pi_1 \alpha$ (por \eqref{eq:IV-1} y \eqref{eq:IV-2}). Si en caso contrario $\gamma$ es refutable, entonces también lo es 
+    $\beta$ (por \eqref{eq:IV-1}), es decir, entonces $\lnot \beta$ es deducible. Sustituyendo ahora F por $\pi_2 \alpha$ en $\lnot \beta$, obtenemos
+    que en este caso la siguiente sentencia es deducible:
+    \begin{equation}
+        \lnot (\forall \mathfrak{x}' \exists \mathfrak{y}' \pi_2 \alpha \wedge 
+        \forall \mathfrak{x} \forall \mathfrak{y} (\pi_2 \alpha \rightarrow \pi_2 \alpha))
+    \end{equation}
+
+    Se puede observar que, naturalmente, 
+    \begin{equation}
+        \forall \mathfrak{x} \forall \mathfrak{y} (\pi_2 \alpha \rightarrow \pi_2 \alpha)
+    \end{equation}
+    es deducible, y por ello también lo es $\lnot \forall \mathfrak{x}' \exists \mathfrak{y}' \pi_2 \alpha$, es decir, en este caso $\pi_2 \alpha$ es refutable.
+    Por tanto, de hecho $\pi_2 \alpha$ es o refutable o satisfacible.
 \end{proof}
+
+Ahora, para acabar de probar la \autoref{prop:satisf-refut}, sólo necesitamos probar el siguiente resultado:
+
+\begin{teorema}
+    Cada $K$-fórmula de primer grado es o satisfacible o refutable.
+\end{teorema}
+
+La demostración de este teorema requiere algunas definiciones previas, así como algunos resultados derivados de las definiciones que vamos a establecer, por lo que
+se deja la presente demostración para más adelante.
 
 
 
