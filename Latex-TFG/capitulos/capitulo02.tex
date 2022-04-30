@@ -163,7 +163,7 @@ Entonces con la presente definición podemos deducir el siguiente resultado:
     \begin{equation}\label{eq:III-2}
         \pi \varphi \leftrightarrow \beta
     \end{equation}
-    es deducible (por el \autoref{lem:lema-4} la deducibilidad de $\forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})$).
+    es deducible (por el \autoref{lem:lema-4} y por la deducibilidad de $\forall x \pi \exists y (\varphi \wedge \text{Fx} \vee \lnot \text{Fy})$).
     $\beta$ pertenece a $K$ y, por tanto, es o satisfacible o refutable. Pero por \eqref{eq:III-1} y \eqref{eq:III-2}
     la satisfacibilidad de $\beta$ implica la de $\exists \mathfrak{x} \alpha$ y consiguientemente también la de $\alpha$,
     y lo mismo se puede aplicar para la refutabilidad. Por tanto, concluimos que también $\alpha$ es o satisfacible o refutable.
@@ -188,9 +188,27 @@ proposición.
 Probamos primeramente el siguiente resultado.
 
 \begin{teorema}\label{thm:teoremaIV}
-    Si cada $K$-fórmula de grado $n$ es o refutable o satisfacible, también lo es cada $K$-fórmula de grado $n+1$.
+    Si cada $K$-fórmula de grado $n$ es o refutable o satisfacible, entonces también lo es cada $K$-fórmula de grado $n+1$.
 \end{teorema}
 
+\begin{proof}
+    Sea $\pi_1 \alpha$ una $K$-fórmula de grado $n+1$. Sea $\pi_1 = \forall \mathfrak{x} \exists \mathfrak{y} \pi_2$ y 
+    $\pi_2 = \forall \mathfrak{u} \exists \mathfrak{v} \pi_3$, donde $\pi_2$ tiene grado $n$ y $\pi_3$ el grado $n-1$. Sea además 
+    $\text{F}$ una variable predicativa que no aparezca en $\alpha$. Establezcamos:
+    \begin{equation}
+        \beta = \forall \mathfrak{x}' \exists \mathfrak{y}' \text{F}  \mathfrak{x}' \mathfrak{y}' \wedge 
+        \forall \mathfrak{x} \forall \mathfrak{y} (\text{F}  \mathfrak{x} \mathfrak{y} \rightarrow \pi_2 \alpha)
+    \end{equation}
+    y
+    \begin{equation}
+        \gamma = \forall \mathfrak{x}' \forall \mathfrak{x} \forall \mathfrak{y} \forall \mathfrak{u} \exists \mathfrak{y}' \exists \mathfrak{v} 
+        \pi_3 (\text{F} \mathfrak{x}' \mathfrak{y}' \wedge (\text{F} \mathfrak{x} \mathfrak{y}) \rightarrow \alpha) \footnote{En esta sentencia
+        suponemos que las sucesiones de variables $\mathfrak{x}, \mathfrak{x}', \mathfrak{y}, \mathfrak{y}', \mathfrak{u}, \mathfrak{v}$ son disjuntas
+        entre sí.} % esta llave sale en rojo y no se por que, pero no da error
+    \end{equation}
+
+    Aplicando ahora dos veces el \autoref{lem:lema-4} junto con el \autoref{lem:lema-6}, obtenemos la deducibilidad de 
+\end{proof}
 
 
 
