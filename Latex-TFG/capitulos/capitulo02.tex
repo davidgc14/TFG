@@ -3,6 +3,8 @@
 
 \chapter{La completitud del cálculo lógico de primer orden}
 
+\section{Definiciones y lemas previos}
+
 Definamos previamente el sistema axiomático sobre el que vamos a trabajar:
 \footnote{Coincide, exceptuando el principio de asociatividad (que es redundante), con lo expuesto en los apartados 1 y 10 de 
 \textit{Principia Mathematica} (Véase \cite{an1910principia})}
@@ -35,11 +37,12 @@ Definamos previamente el sistema axiomático sobre el que vamos a trabajar:
 \end{itemize}
 
 Para las deducciones que van a proceder, también es conveniente establecer algunas abreviaturas en calidad de notación:
+
 \begin{enumerate}
     \item Las notaciones $\pi_1, \thinspace \pi_2, \thinspace \pi_3, \thinspace \rho, $ ... designan prefijos\footnote{Con prefijos 
     se hace referencia a conjuntos de signos básicos primitivos.} cualesquiera, es decir, filas de signos
             finitas de la forma $\forall \text{x} \exists \text{y}, \thinspace \forall \text{x} \forall \text{y} \exists \text{z} \forall \text{u},$ ...
-    \item Las letras alemanas minúsculas $\mathfrak{x, \thinspace y, \thinspace u, \thinspace v,} $ etc., designan $n-tuplos$ de variables
+    \item Las letras alemanas minúsculas $\mathfrak{x, \thinspace y, \thinspace u, \thinspace v,} $ etc., designan \textit{n-tuplos} de variables
             individuales, es decir, filas de signos del tipo $\text{xyz}, \thinspace \text{x}_2\text{x}_1\text{x}_2\text{x}_3,$ ..., 
             donde la misma variable puede aparecer varias veces en la misma sentencia.
             \begin{itemize}
@@ -48,6 +51,54 @@ Para las deducciones que van a proceder, también es conveniente establecer algu
                             en $\forall \mathfrak{x} \thinspace \exists \mathfrak{y},$ ...
             \end{itemize}
 \end{enumerate}
+
+Consideremos a continuación una serie de lemas, para las que no presentamos demostración por no ser relevantes para el desarrollo del resto de resultados 
+(además de ser demostraciones relativamente sencillas de realizar).
+
+\begin{lema} \label{lem:lema-1}
+    Para cada n-tuplo $\mathfrak{x}$ los siguientes resultados son deducibles:
+    \begin{enumerate}
+        \item[$a)$] $ \forall \mathfrak{x} \text{F} \mathfrak{x} \rightarrow \exists \mathfrak{x} \text{F} \mathfrak{x}  $
+        \item[$b)$] $ \forall \mathfrak{x} \text{F} \mathfrak{x} \wedge \exists \mathfrak{x} \text{G} \mathfrak{x} \rightarrow \exists \mathfrak{x} 
+                    (\text{F} \mathfrak{x} \wedge \text{G} \mathfrak{x}) $
+        \item[$c)$] $ \forall \mathfrak{x} \lnot \text{F} \mathfrak{x} \leftrightarrow \exists \mathfrak{x} \text{F} \mathfrak{x} $
+    \end{enumerate}
+\end{lema}
+
+\begin{lema} \label{lem:lema-2}
+    Si $\mathfrak{x}$ y $\mathfrak{x}'$ sólo se diferencian por el orden en que están escritas las variables, entonces el siguente enunciado es deducible:
+    $$\exists \mathfrak{x} \text{F} \mathfrak{x} \rightarrow \exists \mathfrak{x}' \text{F} \mathfrak{x}'$$ 
+\end{lema}
+
+\begin{lema} \label{lem:lema-3}
+    Si todas las variables $\mathfrak{x}$ son distintas entre sí y $\mathfrak{x}'$ tiene el mismo número de miembros que $\mathfrak{x}$, entonces el siguiente enunciado
+    es deducible:
+    $$\forall \mathfrak{x} \text{F} \mathfrak{x} \rightarrow \forall \mathfrak{x}' \text{F} \mathfrak{x}'$$
+\end{lema}
+
+\begin{lema} \label{lem:lema-4}
+    Si $\pi_i$ designa uno de los prefijos $\forall x_i$, $\exists x_i$; y $\rho_i$ designa uno de los prefijos $\forall y_i$, $\exists y_i$, 
+    entonces el siguiente es deducible:\footnote{Un resultado análogo vale para $\vee$ en vez de para $\wedge$.}
+    $$ \pi_1 \pi_2 \cdots \pi_n Fx_1 x_2 \cdots x_n \wedge \rho_1 \rho_2 \cdots \rho_m G y_1 y_2 \cdots y_m \leftrightarrow \pi(Fx_1 x_2 \cdots x_n \wedge Gy_1 y_2 \cdots y_m ) $$
+    para cada prefijo $\pi$ que se componga de los $\pi_i$ y $\rho_i$ y que satisfaga la condición de que $\pi_i$ esté delante de $\pi_k$ 
+    para $i < k \leq n$ y de que $\rho_i$ esté delante de $\rho_k$ para $i < k \leq m$ 
+\end{lema}
+
+\begin{lema} \label{lem:lema-5}
+    Toda fórmula puede ponerse en forma normal prenexa, es decir, para cada fórmula $\alpha$ hay una fórmula prenexa $\gamma$, tal que $\alpha \leftrightarrow \gamma$ es deducible.
+\end{lema}
+
+\begin{lema} \label{lem:lema-6}
+    Si $\alpha \leftrightarrow \beta$ es deducible, entonces también lo es $\varphi(\alpha) \leftrightarrow \varphi(\beta)$, 
+    donde $\varphi(\alpha)$ designa una fórmula cualquiera que contenga $\alpha$ como parte.\footnote{Estos dos últimos resultados se pueden estudiar 
+    en detalle en la tercera sección de \cite{hilbert1962elementos}.}  
+\end{lema}
+
+\begin{lema} \label{lem:lema-7}
+    Cada fórmula conectiva válida es deducible, es decir, los axiomas 1-4 constituyen un sistema suficiente de axiomas para el cálculo conectivo.
+\end{lema}
+
+Con estos resultados previos ya estamos en condiciones de afrontar el problema que nos concierne.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
