@@ -235,14 +235,50 @@ Probamos primeramente el siguiente resultado.
 
 Ahora, para acabar de probar la \autoref{prop:satisf-refut}, sólo necesitamos probar el siguiente resultado:
 
-\begin{teorema}
+\begin{teorema} \label{thm:teoremaV}
     Cada $K$-fórmula de primer grado es o satisfacible o refutable.
 \end{teorema}
 
 La demostración de este teorema requiere algunas definiciones previas, así como algunos resultados derivados de las definiciones que vamos a establecer, por lo que
 se deja la presente demostración para más adelante.
 
+Sea $\forall \mathfrak{x} \exists \mathfrak{y} \alpha (\mathfrak{x} ; \mathfrak{y} )$ $-$abreviado como $\pi\alpha$$-$ una fórmula cualquiera de primer grado.
+Mediante $\mathfrak{x}$ representamos un r-tuplo de variables, con $\mathfrak{y}$ un s-tuplo. COnsideremos los r-tuplos sacados de la sucesión $\text{x}_0, \text{x}_1,
+\text{x}_2,\dots \text{x}_i \dots$ ordenados por la suma creciente de sus índices en una sucesión:
+\begin{equation}
+    \mathfrak{x}_1 = (\text{x}_0, \text{x}_0, \dots, \text{x}_0), \quad \mathfrak{x}_2 = (\text{x}_1, \text{x}_0, \dots, \text{x}_0), \quad 
+    \mathfrak{x}_3 = (\text{x}_0, \text{x}_1, \text{x}_0, \dots, \text{x}_0) \quad \dots
+\end{equation}
+y definamos una sucesión $\{\alpha_n\}$ de fórmulas derivadas a partir de $\pi\alpha$ del siguiente modo:
+\begin{equation}
+    \begin{aligned}
+        &\alpha_1 = \alpha(\mathfrak{x}_1 ; \text{x}_1, \text{x}_2, \dots, \text{x}_s) \\
+        &\alpha_2 = \alpha(\mathfrak{x}_2 ; \text{x}_{s+1}, \text{x}_{s+2}, \dots, \text{x}_{2s}) \wedge \alpha_1 \\
+        &\cdots \\ 
+        &\alpha_n = \alpha(\mathfrak{x}_n ; \text{x}_{(n-1)s+1}, \text{x}_{(n-1)s+2}, \dots, \text{x}_{ns}) \wedge \alpha_{n-1}    
+    \end{aligned}
+\end{equation}
 
+Designemos mediante $\mathfrak{y}_n$ el s-tuplo $\text{x}_{(n-1)s+1}, \text{x}_{(n-1)s+2}, \dots, \text{x}_{ns}$ de tal modo que:
+\begin{equation} \label{eq:def-V}
+    \alpha_n = \alpha(\mathfrak{x}_n ; \mathfrak{y}_n) \wedge \alpha_{n-1}
+\end{equation}
+
+Además, definimos $\pi_n\alpha_n$ estableciendo como sigue:
+\begin{equation}
+    \pi_n\alpha_n = \exists \text{x}_0 \exists \text{x}_1 \cdots \exists \text{x}_{ns} \alpha_n
+\end{equation}
+
+Como fácilmente se comprueba, en $\alpha_n$ aparecen precisamente las variables desde $\text{x}_0$ hasta $\text{x}_{ns}$, que están también ligadas por el prefijo $\pi_n$. 
+Además, es evidente que las variables del r-tuplo $\mathfrak{x}_{n+1}$ ya aparecen en $\pi_n$ (y por tanto son distintas de las que aparecen en $\mathfrak{y}_{n+1}$).
+Designemos mediante $\pi_n'$ lo que queda de $\pi_n$ cuando suprimimos las variables de r-tuplo $\mathfrak{x}_{n+1}$. Si nos olvidamos del orden de aparición de las variables,
+tenemos que $\exists \mathfrak{x}_{n+1} \pi_n' = \pi_n$.
+
+Supuestas todas estas notaciones previas, tenemos como resultado directo el teorema siguiente:
+
+\begin{teorema} \label{thm:teoremaVI}
+    Para cada $n$ es deducible $\pi\alpha \rightarrow \pi_n\alpha_n$.
+\end{teorema}
 
 \chapter{El teorema de Incompletitud}
 
