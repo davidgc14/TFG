@@ -329,19 +329,56 @@ Supuestas todas estas notaciones previas, tenemos como resultado directo el teor
 \end{proof}
 
 
+\section{Corolarios}
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{El teorema de Incompletitud}
+\chapter{Sobre sentencias formalmente indecidibles}
 \dictum[John von Neumann]{El logro de Gödel en la lógica moderna es singular y monumental - más que monumental, es una señal que 
 permanecerá visible lejos en el espacio y en el tiempo.}
-
 \footnote{Palabras de von Neumann en la entrega a Gödel del premio Einstein en 1951, recogidas en \textit{New York Times}, 15 de marzo de 1951, pág. 31.}
 
 
+\section{Definiciones y conceptos previos}
+Tendremos como objetivo principal probar la existencia de sentencias indecidibles para un sistema formal $P$. Dicho sistema $P$ es
+esencialmente el sistema que se obtiene cuando a los axiomas de peano se les añade la lógica de \textit{Principia Mathematica} ($PM$ de aquí en adelante).
+\footnote{El hecho de de los axiomas de Peano, así como todas las otras modificaciones del sistema $PM$ introducidas en toda la demostración, sólo 
+tienen como finalidad simplificar la prueba, y por ellos son prescindibles.}
+
+Los signos primitivos del sistema $P$ son los siguientes:
+\begin{enumerate}
+    \item Constantes: « $\sim$ » (no), « $\vee$ » (o), « $\Pi$ » (para todo), « $0$ »(cero), « s » (el siguiente de), «()» (paréntesis).
+    \item Variables tipo 1 (para individuos\footnote{Cuando tratamos de individuos hacemos referencia al conjunto de los números naturales.}, 
+            incluyendo el 0):  «$\text{x}_1$», «$\text{y}_1$», «$\text{z}_1$», \dots \\
+          Variables tipo 2 (para clases de individuos): «$\text{x}_2$», «$\text{y}_2$», «$\text{z}_2$», \dots \\
+          Variables tipo 3 (para clases de clases de individuos): «$\text{x}_3$», «$\text{y}_3$», «$\text{z}_3$», \dots \\
+          \dots \\
+          etc., para cada número natural como tipo.\footnote{Suponemos que disponemos de una cantidad infinita numerable de signos para cada tipo de variables.}
+\end{enumerate}
+\begin{itemize}
+    \item[Observación:] No necesitamos disponer de varaibles para relaciones binarias o $n$-arias ($n>2$) como signos primitivos, ya que podemos definir
+                        las relaciones como clase de pares ordenados y los pares ordenados a su vez como clases de clases. Por ejemplo, podemos considerar
+                        el par ordenado $<a,b>$ como $\{\{a\}, \{a.b\}\}$, donde $\{x,y\}$ denota la clase cuyos únicos elementos son $x$ e $y$, y $\{x\}$ 
+                        la clase cuyo único elemento es $x$.\footnote{Las relaciones no homogéneas también pueden definirse de esta manera; por ejemplo, una
+                        relación entre individuos y clases puede definirse como una clase de elementos de la forma $\{\{x_2\}, \{\{x_1\},x_2\}\}$. Todos los 
+                        teoremas deducibles en $PM$ son también deducibles cuando se los reformula de esta manera.}
+\end{itemize}
                            
+Llamaremos \textit{signo de primer tipo} a una combinación de signos que tenga una de las siguientes formas:
+\begin{equation}
+    a,\thinspace sa,\thinspace ssa,\thinspace sssa,\thinspace \dots,\thinspace \text{etc.,}
+\end{equation}
+Donde $a$ es $0$ ó es variable de tipo 1. En el primer caso llamamos a tal signo un numeral. Para $n>1$ entendemos por \textit{signo de tipo n} lo mismo que por 
+\textit{variable de tipo n}. Llamaremos \textit{fórmulas elementales} a las combianciones de signos de la forma $a(b)$, donde $b$ es un signo de tipo $n$, y $a$ 
+es un signo de tipo $n+1$. Definimos la calse de las \textit{fórmulas} como la mínima clase que abarca todas las fórmulas elementales y que, siempre que contenga 
+$\alpha$ y $\beta$, contiene también $\sim(\alpha), (\alpha)\vee (\beta)$ y $\Pi\text{x}(\alpha)$ (donde x es una variable cualquiera)
+\footnote{Por tanto, $\Pi\text{x}(\alpha)$ es también una fórmula cuando x no aparece o no está libre en $\alpha$. Naturalmente, en ester caso $\Pi\text{x}(\alpha)$
+significaría lo mismo que $\alpha$.}. Llamamos a $(\alpha)\vee (\beta)$ la \textit{disyunción} de $\alpha$ y $\beta$, a $\sim(\alpha)$ la \textit{negación} de $\alpha$
+y a $\Pi\text{x}(\alpha)$ una \textit{generalización} de $\alpha$. Una \textit{sentencia} es una fórmula sin variables libres (donde la noción de variable libre se 
+define del modo usual). A una fórmula con exactamente $n$ variables libres (y ninguna otra variable libre) la llamaremos \textit{signo relacional n-ario}; para $n=1$
+lo llamaremos también \textit{signo de clase}.
 
 \endinput
 %------------------------------------------------------------------------------------
