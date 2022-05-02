@@ -279,8 +279,65 @@ Supuestas todas estas notaciones previas, tenemos como resultado directo el teor
 \begin{teorema} \label{thm:teoremaVI}
     Para cada $n$ es deducible $\pi\alpha \rightarrow \pi_n\alpha_n$.
 \end{teorema}
+\begin{proof}
+    Probaremos el teorema mediante inducción.
+    \begin{itemize}
+        \item Para $n = 1$ tenemos que $\pi\alpha \rightarrow \pi_1\alpha_1$ es deducible, ya que, por el \autoref{lem:lema-3} y la cuarta regla de inferencia, tenemos:
+                \begin{equation}
+                    \forall \mathfrak{x} \exists \mathfrak{y} \alpha (\mathfrak{x} ; \mathfrak{y} ) \rightarrow 
+                    \forall \mathfrak{x}_1 \exists \mathfrak{y}_1 \alpha(\mathfrak{x}_1 ; \mathfrak{y}_1 )
+                \end{equation}
+                y además, por el \autoref{lem:lema-1} tenemos: 
+                \begin{equation}
+                    \forall \mathfrak{x}_1 \exists \mathfrak{y}_1 \alpha(\mathfrak{x}_1 ; \mathfrak{y}_1 ) \rightarrow  
+                    \exists \mathfrak{x}_1 \exists \mathfrak{y}_1 \alpha(\mathfrak{x}_1 ; \mathfrak{y}_1 )
+                \end{equation}
+        \item Para un $n$ arbitrario tenemos que $\pi\alpha \wedge \pi_n\alpha_n \rightarrow \pi_{n+1}\alpha_{n+1}$ es deducible ya que, al igual que antes, 
+                aplicando el \autoref{lem:lema-3} y la cuarta regla de inferencia, tenemos:
+                \begin{equation} \label{eq:VI-1}
+                    \forall \mathfrak{x} \exists \mathfrak{y} \alpha (\mathfrak{x} ; \mathfrak{y} ) \rightarrow 
+                    \forall \mathfrak{x}_{n+1} \exists \mathfrak{y}_{n+1} \alpha(\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} )
+                \end{equation}
+                y además, por el \autoref{lem:lema-2} tenemos:
+                \begin{equation} \label{eq:VI-2}
+                    \pi_n\alpha_n \rightarrow \exists \mathfrak{x}_{n+1} \pi_n'\alpha_n
+                \end{equation}
+                Ahora, aplicamos el \autoref{lem:lema-1} y sustituimos F por $\exists \mathfrak{x}_{n+1} \alpha(\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} )$
+                y G por $\pi'\alpha_{n}$, con lo que obtenemos:
+                \begin{equation} \label{eq:VI-3}
+                    \forall \mathfrak{x}_{n+1} \exists \mathfrak{y}_{n+1} \alpha (\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} ) \wedge \exists \mathfrak{x}_{n+1} \pi_n'\alpha_n
+                    \rightarrow  \exists \mathfrak{x}_{n+1} (\exists \mathfrak{y}_{n+1} \alpha (\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} ) \wedge \pi_n'\alpha_n)       
+                \end{equation} 
 
+                Fijándonos ahora en que el antecedente del condicional \eqref{eq:VI-3} es la conyunción de los consiguientes de \eqref{eq:VI-1} y \eqref{eq:VI-2},
+                obtenemos que es deducible:
+                \begin{equation} \label{eq:VI-4}
+                    \pi\alpha \wedge \pi_n\alpha_n \rightarrow \exists \mathfrak{x}_{n+1} (\exists \mathfrak{y}_{n+1} 
+                    \alpha (\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} ) \wedge \pi_n'\alpha_n)
+                \end{equation}
+                Por otro lado, de \eqref{eq:VI-1} y de los lemas 2, 4 y 6 obtenemos la deducibilidad de:
+                \begin{equation} \label{eq:VI-5}
+                    \exists \mathfrak{x}_{n+1} (\exists \mathfrak{y}_{n+1} \alpha (\mathfrak{x}_{n+1} ; \mathfrak{y}_{n+1} ) \wedge \pi_n'\alpha_n)
+                    \leftrightarrow \pi_{n+1}\alpha_{n+1}
+                \end{equation}
+                Y gracias a \eqref{eq:VI-4} y \eqref{eq:VI-5} obtenemos la inducción, y por tanto la prueba del teorema.
+    \end{itemize}
+\end{proof}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{El teorema de Incompletitud}
+\dictum[John von Neumann]{El logro de Gödel en la lógica moderna es singular y monumental - más que monumental, es una señal que 
+permanecerá visible lejos en el espacio y en el tiempo.}
+
+\footnote{Palabras de von Neumann en la entrega a Gödel del premio Einstein en 1951, recogidas en \textit{New York Times}, 15 de marzo de 1951, pág. 31.}
+
+
+                           
 
 \endinput
 %------------------------------------------------------------------------------------
