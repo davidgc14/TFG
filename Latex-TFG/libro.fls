@@ -439,14 +439,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Regular-tlf-t1.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Regular-tlf-t1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
-INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
+INPUT /home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/glosario.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/glosario.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
