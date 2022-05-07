@@ -405,15 +405,15 @@ Nótese que las expresiones así obtenidas deben ser "fórmulas" en el sentido a
                 %\end{equation}
     \item[II.] Cada fórmula que resulta de sustituir X, Y por cualesquiera fórmulas en los siguientes esquemas:
                 \begin{flalign}
-                    1.\quad \text{X} \vee \text{X} \supset \text{X} \\
-                    2.\quad \text{X} \supset \text{X} \vee \text{Y} \\
-                    3.\quad \text{X} \vee \text{Y} \supset \text{Y} \vee \text{X} \\
-                    4.\quad (\text{X} \supset \text{Y}) \supset (\text{Z} \vee \text{X} \supset \text{Z} \vee \text{Y})
+                    &1.\quad \text{X} \vee \text{X} \supset \text{X} \\
+                    &2.\quad \text{X} \supset \text{X} \vee \text{Y} \\
+                    &3.\quad \text{X} \vee \text{Y} \supset \text{Y} \vee \text{X} \\
+                    &4.\quad (\text{X} \supset \text{Y}) \supset (\text{Z} \vee \text{X} \supset \text{Z} \vee \text{Y})
                 \end{flalign}
     \item[III.] Cada fórmula que resulta de uno de estos dos esquemas:
                 \begin{flalign}
-                    1.\quad \Pi v\alpha \supset \daleth_v^c \alpha \\ 
-                    2.\quad \Pi v(\beta \vee \alpha) \supset \beta \vee \Pi v(\alpha)
+                    &1.\quad \Pi v\alpha \supset \daleth_v^c \alpha \\ 
+                    &2.\quad \Pi v(\beta \vee \alpha) \supset \beta \vee \Pi v(\alpha)
                 \end{flalign}
                 Cuando sustituimos $\alpha, v, \beta, c$ del siguiente modo (y realizamos la operación indicada por «$\daleth$» en $1.$):
                 \begin{enumerate}
@@ -429,7 +429,25 @@ Nótese que las expresiones así obtenidas deben ser "fórmulas" en el sentido a
                 (así como esta fórmula misma). Este axioma dice que una clase está completamente determinada por sus elementos.
 \end{enumerate}
 
+Una fórmula $\gamma$ se llama una \textit{inferencia inmediata} de $\alpha$ y $\beta$, si $\alpha$ es la fórmula $\sim \beta \vee \gamma$ (y $\gamma$ se llama una 
+\textit{inferencia inmediata} de $\alpha$, si $\gamma$ es la fórmula $\Pi v \alpha $, donde $v$ designa una variable cualquiera). La clase de las \textit{fórmulas deducibles}
+se define como la mínima clase de fórmulas que contiene los axiomas y está clausurada respecto a la relación de «inferencia inmediata»\footnote{La regla de sustitución 
+resulta aquí supreflua, pues en los axiomas mismo ya tenemos realizadas todas las sustituciones posibles (véase \cite{v1927hilbertschen})}.
 
+Ahora asignamos unívocamente números naturas a los signos primitivos del sistema $P$ del siguiente modo:
+\begin{equation}
+    \begin{aligned}
+        &\text{«}0\text{»} \thinspace \dots \thinspace 1 \\
+        &\text{«}s\text{»} \thinspace \dots \thinspace 3 \\
+        &\text{«}\sim\text{»} \thinspace \dots \thinspace 5 \\
+        &\text{«}\vee\text{»} \thinspace \dots \thinspace 7 \\
+        &\text{«}\Pi\text{»} \thinspace \dots \thinspace 9 \\
+        &\text{«}(\text{»} \thinspace \dots \thinspace 11 \\
+        &\text{«})\text{»} \thinspace \dots \thinspace 13 \\    
+    \end{aligned}
+\end{equation}
+
+A las variables
 
 
 \endinput
