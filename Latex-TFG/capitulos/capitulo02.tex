@@ -337,8 +337,8 @@ Supuestas todas estas notaciones previas, tenemos como resultado directo el teor
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Sobre sentencias formalmente indecidibles}
 \dictum[John von Neumann]{El logro de Gödel en la lógica moderna es singular y monumental - más que monumental, es una señal que 
-permanecerá visible lejos en el espacio y en el tiempo.}
-\footnote{Palabras de von Neumann en la entrega a Gödel del premio Einstein en 1951, recogidas en \textit{New York Times}, 15 de marzo de 1951, pág. 31.}
+permanecerá visible lejos en el espacio y en el tiempo.\footnote{Palabras de von Neumann en la entrega a Gödel del premio Einstein 
+en 1951, recogidas en \textit{New York Times}, 15 de marzo de 1951, pág. 31.}}
 
 
 \section{Definiciones y conceptos previos}
@@ -379,6 +379,26 @@ significaría lo mismo que $\alpha$.}. Llamamos a $(\alpha)\vee (\beta)$ la \tex
 y a $\Pi\text{x}(\alpha)$ una \textit{generalización} de $\alpha$. Una \textit{sentencia} es una fórmula sin variables libres (donde la noción de variable libre se 
 define del modo usual). A una fórmula con exactamente $n$ variables libres (y ninguna otra variable libre) la llamaremos \textit{signo relacional n-ario}; para $n=1$
 lo llamaremos también \textit{signo de clase}.
+
+Por $\daleth^b_v \alpha$ (donde $\alpha$ designa una fórmula, $v$ una variable y $b$ un signo del mismo tipo que $v$) entendemos la fórmula que resulta de reemplazar 
+en $\alpha$ cada aparición libre de $v$ por $b$\footnote{Si $v$ no aparece libre en $\alpha$, entonces $\daleth^b_v \alpha = \alpha$. Nótese que $\daleth$ es un signo 
+matemático.}. Decimos que una fórmula $\alpha$ es una \textit{elevación de tipo} de otra fórmula $\beta$ si $\alpha$ se obtiene a partir de $\beta$ mediante una elevación
+por el mismo número de cada variable que aparece en $\beta$.
+
+Las siguientes fórmulas (de I a V) se llaman \textit{axiomas} (están escritas con ayuda de abreviaturas: $\wedge, \supset, \equiv, \Sigma, =$\footnote{Como en $PM$, 
+consideramos que $\text{x}_1 = \text{y}_1$ está definido por $\Pi \text{x}_2 (\text{x}_2(\text{x}_1) \supset \text{x}_2(\text{y}_1))$; de igual modo para los tipos 
+superiores.}, definidas del modo usual y conforme a las conveciones habituales sobre la omisión de paréntesis)\footnote{Para obtener los axiomas a partir de los esquemas
+indicados debemos (después de realizar las sustituciones permitidas en II, III y IV), además,
+\begin{enumerate}
+    \item[(1)] eliminar las abreviaturas
+    \item[(2)] añadir los paréntesis omitidos.
+\end{enumerate} 
+Nótese que las expresiones así obtenidas deben ser "fórmulas" en el sentido arriba definido.}:
+
+
+
+
+
 
 \endinput
 %------------------------------------------------------------------------------------
