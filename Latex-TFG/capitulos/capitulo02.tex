@@ -519,6 +519,50 @@ Los siguientes teoremas valen:
     donde $\mu x \varphi(x)$ significa el mínimo número $x$, para el que vale $\varphi(x)$, si hay algún tal, y $0$, si no lo hay.
 \end{teorema}
 
+El \autoref{teo:TeoremaI} se sigue inmediatamente de la definición de «recursivo primitivo». Tanto el \autoref{teo:TeoremaII} como el \autoref{teo:TeoremaIII}
+se basan en que las funciones numéricas
+\begin{equation}
+    ne(x), \\
+    di(x,y), \\
+    id(y,x)
+\end{equation}
+correspondientes a las nociones lógicas $\lnot, \vee, =$, a saber
+\begin{flalign}
+    &ne(x) = 1; \quad ne(x) = 0 \text{ para } x \neq 0 \\
+    &di(0,x) = di(x,0) = 0; \quad di(x,y) = 1 \text{ si } x \neq 0, y \neq 0 \\
+    &id(x,y) = 0 \text{ si } x=y; \quad id(x,y) = 1 \text{ si } x \neq y 
+\end{flalign}
+
+son recursivas primitivas, como fácilmente se comprueba. He aquí la prueba resumida del \autoref{theo:TeoremaIV}:
+\begin{proof}
+    Por hipótesis hay una función recursiva primitiva $r(x, \mathfrak{y})$, tal que
+    \begin{equation}
+        R x, \mathfrak{y} \leftrightarrow r(x, \mathfrak{y}) = 0.
+    \end{equation}
+
+    Definamos ahroa mediante el esquema de recursión \eqref{eq:recdef} una función $j(x, \mathfrak{y})$ del siguiente modo:
+    \begin{equation}
+        \begin{aligned}
+            &j(0, \mathfrak{y}) = 0 \\
+            &j(n+1, \mathfrak{y}) = (n+1) \cdot a + j(n, \mathfrak{y}) \cdot ne(a) 
+            \footnote{Presuponemos como ya es sabido que las funciones $x+y$ (adición) y $x\cdot y$ (multiplicación) son recursivas primitivas.}
+        \end{aligned}
+    \end{equation}
+    donde $a = ne(ne(r(0, \mathfrak{y}))) \cdot ne(r(n+1, \mathfrak{y})) \cdot ne(j(n, \mathfrak{y}))$.
+
+    Por tanto, $j(n+1, \mathfrak{y})$ es igual a $n+1$ (si $a=1$) o es igual a $j(n, \mathfrak{y})$ (si $a=0$)\footnote{$a$ no puede tomar otros valores que
+    $0$ y $1$, como se sigue en la definición de $ne$.}. Evidentemente, el primer caso ocurre si y sólo si todos los factores de $a$ son $1$, es decir, si ocurre que
+    \begin{equation}
+        \lnot R \thinspace 0, \mathfrak{y} \wedge R \thinspace n+1, \mathfrak{y} \wedge j(n, \mathfrak{y}) = 0
+    \end{equation}
+
+    De aquí se sigue que la función $j(n, \mathfrak{y})$, considerada como función de $n$, da siempre $0$ hasta (pero no incluyendo) el mínimo valor de $n$
+    para el que ocurre $R \thinspace n, \mathfrak{y}$, y a partir de ahí siempre da ese valor. (Por consiguiente, si ya ocurre que $R \thinspace 0, \mathfrak{y},
+    j(n, \mathfrak{y})$ es constante e igual a $0$). Por tanto, ocurre que
+\end{proof}
+
+
+
 
 
 
