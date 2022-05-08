@@ -383,7 +383,7 @@ lo llamaremos también \textit{signo de clase}.
 Por $\daleth^b_v \alpha$ (donde $\alpha$ designa una fórmula, $v$ una variable y $b$ un signo del mismo tipo que $v$) entendemos la fórmula que resulta de reemplazar 
 en $\alpha$ cada aparición libre de $v$ por $b$\footnote{Si $v$ no aparece libre en $\alpha$, entonces $\daleth^b_v \alpha = \alpha$. Nótese que $\daleth$ es un signo 
 matemático.}. Decimos que una fórmula $\alpha$ es una \textit{elevación de tipo} de otra fórmula $\beta$ si $\alpha$ se obtiene a partir de $\beta$ mediante una elevación
-por el mismo número de cada variable que aparece en $\beta$.
+por el mismo número de cada variable que aparece en $\beta$. \\
 
 Las siguientes fórmulas (de I a V) se llaman \textit{axiomas} (están escritas con ayuda de abreviaturas: $\wedge, \supset, \equiv, \Sigma, =$\footnote{Como en $PM$, 
 consideramos que $\text{x}_1 = \text{y}_1$ está definido por $\Pi \text{x}_2 (\text{x}_2(\text{x}_1) \supset \text{x}_2(\text{y}_1))$; de igual modo para los tipos 
@@ -458,9 +458,33 @@ o secuencias de signos primitivos $\text{a}_1, \text{a}_2, \dots, \text{a}_n$, t
 $\text{a}_1, \text{a}_2, \dots, \text{a}_n$ están en la relación $R$. Las clases y relaciones de números naturales, que corresponden de este modo a los conceptos
 metamatemáticos hasta ahora definidos, como por ejemplo «variable», «fórmula», «sentencia», «axioma», «fórmula deducible», etc., serán designadas por las mismas 
 palabras escritas con letras mayúsculas pequeñas. Por ejemplo, el enunciado de que en el sistema $P$ hay problemas indecidibles se convierte en la siguiente afirmación:
-Hay SENTENCIAS $a$, tales que ni $a$ ni la NEGACIÓN de $a$ son FÓRMULAS DEDUCIBLES.
+Hay SENTENCIAS $a$, tales que ni $a$ ni la NEGACIÓN de $a$ son FÓRMULAS DEDUCIBLES.\\
 
+Ahora vamos a insertar aquí una disgresión que por el momento no tiene nada que ver con el sistema formal $P$. Empecemos por dar la siguiente definición: 
+Decimos que una función numérica\footnote{Es decir, su dominio definicional es la clase de los números naturales (o de los $n$-tuplos de números naturales) 
+y sus valores son números naturales.} $f(x_1, x_2, \dots, x_n)$ está \textit{recursivamente definida a partir} de las funciones numéricas $h(x_1, x_2, \dots, x_{n-1})$
+y $g(x_1, x_2, \dots, x_{n+1})$, si para cada $x_2, \dots, x_n$, $k$ vale lo siguiente:\footnote{En lo sucesivo las letras latinas minúsculas (a veces con subíndices) 
+son siempre variables para números naturales (a no ser que se indique explícitamente lo contrario).}
+\begin{equation} \label{eq:recdef}
+    \begin{aligned}
+        &f(0, x_2, \dots, x_n) = h(x_2, \dots, x_n) \\
+        &f(k+1, x_2, \dots, x_n) = g(k, f(k, x_2, \dots, x_n), x_2, \dots, x_n) 
+    \end{aligned}
+\end{equation}
 
+Una función numérica $f$ se llama \textit{recursiva primitiva} si hay una secuencia finita de funciones $f_1, f_2, \dots, f_n$, que acaba con $f$ y que tiene 
+la propiedad de que cada función $f_k$ de la secuencia está recursivamente definida a partir de dos de las funciones precedentes o resulta de alguna de las 
+funciones precedentes por sustitución\footnote{Más precisamente: por introducción de algunas de las funciones precedentes en los lugares argumentales de una 
+de las funciones precedentes, por ejemplo, $f_k(x_1, x_2) = f_p(f_q(x_1, x_2), f_r(x_2))$, con $p, q, r < k$. No es necesario que todas las variables
+del lado izquierdo aparezcan también en el derecho.}, o, finalmente, es una constante o la función del siguiente, $x+1$. La longitud de la mínima secuencia de $f_i$
+corresponde a una función recursiva primitiva $f$ se llama su \textit{grado}. Una relación $n$-ara $R$ entre números naturales se llama recursiva 
+primitiva\footnote{Incluimos las clases entre las relaciones (como relaciones monarias). Las relaciones recursivas primitivas tienen desde luego la propiedad 
+de que para cada $n$-tuplo dado de números naturales $x_1, x_2, \dots, x_n$ \textit{se puede decidir si} $R$ $x_1, x_2, \dots, x_n$ o no.} si hay una función $n$-aria
+recursiva primitiva $f$ tal que para cada $n$ números naturales $x_1, x_2, \dots, x_n$ 
+\begin{equation}
+    R x_1, x_2, \dots, x_n \leftrightarrow f(x_1, x_2, \dots, x_n) = 0 
+    \footnote{Para todas las consideraciones intuitivas (y especialmente para las metamatemáticas) usamos el simbolismo de Hilbert definido en \cite{hilbert1962elementos}.}
+\end{equation}
 
 
 \endinput
