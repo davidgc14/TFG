@@ -567,9 +567,24 @@ son recursivas primitivas, como fácilmente se comprueba. He aquí la prueba res
     La relación $T$ puede ser reducida, por negación, a un caso análogo al de $S$. Con esto queda probado el \autoref{teo:TeoremaIV}.
 \end{proof}
 
+Las funciones $x+y, x\cdot y, x^v$, así como las relaciones $x<y$ y $x=y$ son recursivas primitivas, como fácilmente se comprueba. Partiendo de estos conceptos, 
+vamos a definir u n a secuencia de funciones (o relaciones) $1$-$45$, cada una de las cuales se define a partir de las precedentes mediante los procedimientos indicados
+en los cuatro teoremas anteriores. En la mayor parte de estas definiciones condensamos en un solo paso varios de los pasos permitidos por estos cuatro teoremas. 
+Por tanto, cada una de las funciones (o relaciones) $1$-$45$, entre las que se encuentran, por ejemplo, los conceptos «FÓRMULA», «AXIOMA» e «INFERENCIA INMEDIATA»,
+es recursiva primitiva.
 
-
-
+\begin{enumerate}
+    \item $x/y \leftrightarrow \exists z (z \leq x \wedge x = y \cdot z)$\footnote{Después del definiendum, el signo $=$ se usa en el sentido de «igualdad por
+            definición»; el signo $\leftrightarrow$, en el de «equivalencia por definición» (por lo demás, el simbolismo es el de Hilbert).}\\
+            $x$ es divisible por $y$.\footnote{Cada vez que en las definiciones siguientes aparece uno de los signos $\forall x, \exists x, \mu x$, éste está 
+            seguido de una acotación de $x$. Esta acotación sirve meramente para asegurar que la noción definida es recursiva primitiva (véase \autoref{teo:TeoremaIV}).
+            La extensión de la noción definida, por el contrario, no cambiaría en la mayor parte de los casos, aunque dejásemos de lado dicha acotación.}
+    \item $\text{Prim } x \leftrightarrow \lnot \exists z (z \leq x \wedge z \neq 1 \wedge z \neq x \wedge x/z) \wedge x>1$\\ $x$ es un número primo.
+    \item $0 \thinspace Pr \thinspace x = 0$\\ 
+            $(n+1) \thinspace Pr \thinspace x = \mu y (y \leq x \wedge \text{Prim } y \wedge x/y \wedge y>n \thinspace Pr \thinspace x)$ \\
+            $n \thinspace Pr \thinspace x$ es el $n$-avo número primo (por orden de magnitud creciente) contenido en $x$\footnote{Para $0 < n \leq z$, donde
+            $z$ es el número de diferentes factores primos de $x$. Obsérvese que $n \thinspace Pr \thinspace x = 0$ para $n = z+1$.}.
+\end{enumerate}
 
 
 
