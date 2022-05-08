@@ -486,6 +486,41 @@ recursiva primitiva $f$ tal que para cada $n$ números naturales $x_1, x_2, \dot
     \footnote{Para todas las consideraciones intuitivas (y especialmente para las metamatemáticas) usamos el simbolismo de Hilbert definido en \cite{hilbert1962elementos}.}
 \end{equation}
 
+Los siguientes teoremas valen:
+
+\begin{teorema} \label{teo:TeoremaI}
+    Cada función (o relación) obtenida a partir de funciones (o relaciones) recursivas primitivas por sustitución de las variables por funciones recursivas 
+    primitivas es recursiva primitiva; igualmente lo es cada función obtenida a partir de funciones recursivas primitivas por definición recursiva según el
+    esquema de \eqref{eq:recdef}.
+\end{teorema}
+
+\begin{teorema} \label{teo:TeoremaII}
+    Si $R$ y $S$ son relaciones recursivas primitivas, también lo son $\lnot R$ y $R \vee S$ (por tanto, también $R \wedge S$).
+\end{teorema}
+
+\begin{teorema} \label{teo:TeoremaIII}
+    Si las funciones $f(\mathfrak{x})$, $h(\mathfrak{y})$ son recursivas primitivas, entonces también lo es la relación 
+    $f(\mathfrak{x}) = h(\mathfrak{y})$\footnote{Usamos las letras alemanas $\mathfrak{x}, \mathfrak{y}$ como abreviaturas para cualesquiera $n$-tuplos de variables, 
+    como por ejemplo $x_1, x_2, \dots, x_n$.}.
+\end{teorema}
+
+\begin{teorema} \label{theo:TeoremaIV}
+    Si la función $f(\mathfrak{x})$ y la relación $Rx, \mathfrak{y}$ son recursivas primitivas, también lo son las relaciones $S$ y $T$ definidas por 
+    \begin{equation}
+        \begin{aligned}
+            &S(\mathfrak{x}, \mathfrak{y}) \leftrightarrow \exists x (x \leq f(\mathfrak{x}) \wedge Rx, \mathfrak{y} ) \\
+            &T(\mathfrak{x}, \mathfrak{y}) \leftrightarrow \forall x (x \leq h(\mathfrak{x}) \wedge Rx, \mathfrak{y} )
+        \end{aligned}
+    \end{equation}
+    así como la función
+    \begin{equation}
+        q(\mathfrak{x}, \mathfrak{y}) = \mu x (x \leq f(\mathfrak{x}) \wedge Rx, \mathfrak{y}),
+    \end{equation}
+    donde $\mu x \varphi(x)$ significa el mínimo número $x$, para el que vale $\varphi(x)$, si hay algún tal, y $0$, si no lo hay.
+\end{teorema}
+
+
+
 
 \endinput
 %------------------------------------------------------------------------------------
