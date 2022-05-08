@@ -504,7 +504,7 @@ Los siguientes teoremas valen:
     como por ejemplo $x_1, x_2, \dots, x_n$.}.
 \end{teorema}
 
-\begin{teorema} \label{theo:TeoremaIV}
+\begin{teorema} \label{teo:TeoremaIV}
     Si la función $f(\mathfrak{x})$ y la relación $Rx, \mathfrak{y}$ son recursivas primitivas, también lo son las relaciones $S$ y $T$ definidas por 
     \begin{equation}
         \begin{aligned}
@@ -533,7 +533,7 @@ correspondientes a las nociones lógicas $\lnot, \vee, =$, a saber
     &id(x,y) = 0 \text{ si } x=y; \quad id(x,y) = 1 \text{ si } x \neq y 
 \end{flalign}
 
-son recursivas primitivas, como fácilmente se comprueba. He aquí la prueba resumida del \autoref{theo:TeoremaIV}:
+son recursivas primitivas, como fácilmente se comprueba. He aquí la prueba resumida del \autoref{teo:TeoremaIV}:
 \begin{proof}
     Por hipótesis hay una función recursiva primitiva $r(x, \mathfrak{y})$, tal que
     \begin{equation}
@@ -559,7 +559,15 @@ son recursivas primitivas, como fácilmente se comprueba. He aquí la prueba res
     De aquí se sigue que la función $j(n, \mathfrak{y})$, considerada como función de $n$, da siempre $0$ hasta (pero no incluyendo) el mínimo valor de $n$
     para el que ocurre $R \thinspace n, \mathfrak{y}$, y a partir de ahí siempre da ese valor. (Por consiguiente, si ya ocurre que $R \thinspace 0, \mathfrak{y},
     j(n, \mathfrak{y})$ es constante e igual a $0$). Por tanto, ocurre que
+    \begin{flalign}
+        &q(\mathfrak{x}, \mathfrak{y}) = j(f(\mathfrak{x}), \mathfrak{y}) \\
+        &S \thinspace \mathfrak{x}, \mathfrak{y} \leftrightarrow R \thinspace q(\mathfrak{x}, \mathfrak{y}), \mathfrak{y} 
+    \end{flalign}
+
+    La relación $T$ puede ser reducida, por negación, a un caso análogo al de $S$. Con esto queda probado el \autoref{teo:TeoremaIV}.
 \end{proof}
+
+
 
 
 
