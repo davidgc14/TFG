@@ -584,6 +584,28 @@ es recursiva primitiva.
             $(n+1) \thinspace Pr \thinspace x = \mu y (y \leq x \wedge \text{Prim } y \wedge x/y \wedge y>n \thinspace Pr \thinspace x)$ \\
             $n \thinspace Pr \thinspace x$ es el $n$-avo número primo (por orden de magnitud creciente) contenido en $x$\footnote{Para $0 < n \leq z$, donde
             $z$ es el número de diferentes factores primos de $x$. Obsérvese que $n \thinspace Pr \thinspace x = 0$ para $n = z+1$.}.
+    \item $0! = 1$ \\ $(n+1)! = (n+1) \cdot n!$
+    \item $Pr(0) = 0$ \\ $Pr(n+1) = \mu y (y \leq (Pr(n))! + 1 \wedge \text{Prim } y \wedge y > Pr(n))$ \\ $Pr(n)$ es el $n$-avo número primo (por orden de 
+            magnitud creciente)
+    \item $n \thinspace Gl \thinspace x = \mu y (y \leq x \wedge x/(n \thinspace Pr \thinspace x)^y \wedge \lnot x/(n \thinspace Pr \thinspace x)^{y+1})$ \\ 
+            $n \thinspace Gl \thinspace x$ es el miembro $n$-avo de la secuencia numérica correspondiente al número $x$ (para $n>0$ y $n$ no mayor que la 
+            longitud de esa secuencia).
+    \item $l(x) = \mu y (y \leq x \wedge y \thinspace Pr \thinspace x > 0 \wedge (y+1) \thinspace Pr \thinspace x = 0)$ \\ $l(x)$ es la longitud de la secuencia 
+            numérica correspondiente a $x$.
+    \item   $\begin{aligned}
+                x * y = \mu z (&z \leq (Pr(l(x) + l(y)))^{x+y} \wedge \forall n (n \leq l(x) \rightarrow n \thinspace Gl \thinspace z = n \thinspace Gl \thinspace x) \wedge \\ 
+                &\wedge \forall n (0 < n \leq l(y) \rightarrow (n + l(x)) \thinspace Gl \thinspace z = n \thinspace Gl \thinspace y))
+            \end{aligned}$ \\
+            $x*y$ corresponde a la operación de concatenación de dos secuencias finitas de números.
+    \item $R(x) = 2^x$ \\ $R(x)$ corresponde a la secuencia numérica que sólo consta del número $x$ (para $x>0$).
+    \item $E(x) = R(11) * x * R(13)$ \\ $E(x)$ corresponde a la operación de poner entre paréntesis (11 y 13 son los números asignados a los 
+            signos primitivos «(» y «)» ).
+    \item $n text{ Var } x \leftrightarrow \exists z (13 < z \leq x \wedge text{Prim}(z) \wedge x = z^n) \wedge n \neq 0$ \\ $x$ es una VARIABLE DE TIPO $n$.
+    \item $text{ Var } x \leftrightarrow \exists n (n \leq x \wedge n text{ Var } x )$ \\ $x$ es una VARIABLE.
+    \item $text{Neg}(x) = R(5) * E(x)$ \\ $text{Neg}(x)$ es la NEGACIÓN de $x$.
+    \item $x \text{ Dis } y = E(x) * R(7) * E(y)$ \\ $x \text{ Dis } y$ es la DISYUNCIÓN de $x$ e $y$.
+    \item $x \text{ Gen } y = R(9) * R(x) * E(y)$ \\ $x \text{ Gen } y$ es la GENERACIÓN de $y$ respecto a la variable $x$ (suponiendo que $x$ sea una variable).
+    \item 
 \end{enumerate}
 
 
