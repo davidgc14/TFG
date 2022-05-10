@@ -617,11 +617,21 @@ es recursiva primitiva.
     \item $Op \thinspace x \thinspace y \thinspace z \leftrightarrow x = \text{Neg}(y) \wedge x = y \text{ Dis } z \vee \exists v (v \leq x \wedge \text{Var } v \wedge 
             x = v \text{ Gen } y)$ 
     \item $\begin{aligned}
-        FR \thinspace x \leftrightarrow \forall n (0 < n \leq l(x) \rightarrow Elf(n \thinspace Gl \thinspace x) &\vee \exists pq (0 < p,q < n \wedge \\
-        \wedge &Op(n \thinspace Gl \thinspace x, p \thinspace Gl \thinspace x,q \thinspace Gl \thinspace x))) \wedge l(x) > 0
-    \end{aligned}$ \\
+            FR \thinspace x \leftrightarrow \forall n (0 < n \leq l(x) \rightarrow Elf(n \thinspace Gl \thinspace x) &\vee \exists pq (0 < p,q < n \wedge \\
+            \wedge &Op(n \thinspace Gl \thinspace x, p \thinspace Gl \thinspace x,q \thinspace Gl \thinspace x))) \wedge l(x) > 0
+        \end{aligned}$ \\
             $x$ es una SECUENCIA DE FÓRMULAS, cada una de las cuales es o una FÓRMULA ELEMENTAL o se obtiene de las precedentes mediante las operaciones de 
             NEGACIÓN, DISYUNCIÓN o GENERALIZACIÓN.
+    \item $\text{Form } x \leftrightarrow \exists n (n \leq (Pr(l(x)^2))^{x \cdot (l(x)^2)} \wedge FR \thinspace n \wedge x = (l(x)) \thinspace Gl \thinspace n)$\footnote{La
+            acotación $n \leq (Pr(l(x)^2))^{x \cdot (l(x)^2)}$ puede comprobarse así: La longitud de la más corta secuencia de  fórmulas correspondientes a $x$ puede ser a lo 
+            sumo igual al número de subfórmulas de $x$. Pero hay a lo sumo $l(x)$ subfórmulas de longitud $1$, a lo sumo $l(x) -1$ de longitud $2$, \dots, por tanto en conjunto
+            a lo sumo $\frac{l(x) \cdot (l(x) + 1)}{2} \leq n \leq (l(x))^2$. Por tanto podemos suponer que todos los factores primos de $n$ son menores que $Pr((l(x))^2)$, 
+            que su número es $\leq (l(x))^2$ y que sus exponentes (que son subfórmulas de $x$) son $\leq x$.} \\ 
+            $x$ es una FÓRMULA (es decir, el último miembro de una SECUENCIA DE FÓRMULAS $n$).
+    \item $v \thinspace \text{Geb} \thinspace n, x \leftrightarrow \text{Var } v \wedge \text{Form } x \wedge \exists a \thinspace b \thinspace c \thinspace 
+            (a, b, c \leq x \wedge x = a*(v \text{ Gen } b)* c \wedge \text{Form } x \wedge l(a) + 1 \leq n \leq l(a) + l(v \text{ Gen } b))$ \\ La VARIABLE $v$
+            está LIGADA en $x$ en el $n$-avo lugar.
+    \item 
 \end{enumerate}
 
 
