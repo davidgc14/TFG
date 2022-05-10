@@ -604,7 +604,7 @@ es recursiva primitiva.
     \item $text{ Var } x \leftrightarrow \exists n (n \leq x \wedge n text{ Var } x )$ \\ $x$ es una VARIABLE.
     \item $text{Neg}(x) = R(5) * E(x)$ \\ $text{Neg}(x)$ es la NEGACIÓN de $x$.
     \item $x \text{ Dis } y = E(x) * R(7) * E(y)$ \\ $x \text{ Dis } y$ es la DISYUNCIÓN de $x$ e $y$.
-    \item $x \text{ Gen } y = R(9) * R(x) * E(y)$ \\ $x \text{ Gen } y$ es la GENERACIÓN de $y$ respecto a la variable $x$ (suponiendo que $x$ sea una variable).
+    \item $x \text{ Gen } y = R(9) * R(x) * E(y)$ \\ $x \text{ Gen } y$ es la GENERALIZACIÓN de $y$ respecto a la variable $x$ (suponiendo que $x$ sea una variable).
     \item $0 \thinspace N \thinspace x = x$ \\ $(n+1) \thinspace N \thinspace x = R(3) * n \thinspace N \thinspace x$ \\ 
             $n \thinspace N \thinspace x$ corresponde a la operación de poner $n$ veces el signo $s$ delante de $x$.
     \item $Z(n) = n \thinspace N \thinspace (R(1))$ \\ $Z(n)$ es el NUMERAL que designa el número $n$.
@@ -616,6 +616,12 @@ es recursiva primitiva.
     \item $Elf \thinspace x \leftrightarrow \exists yzn (y, z, n \leq x \wedge \text{Typ}_n(y) \wedge \text{Typ}_{n+1}(z) \wedge x = x* E(y))$ \\ $x$ es una FÓRMULA ELEMENTAL.
     \item $Op \thinspace x \thinspace y \thinspace z \leftrightarrow x = \text{Neg}(y) \wedge x = y \text{ Dis } z \vee \exists v (v \leq x \wedge \text{Var } v \wedge 
             x = v \text{ Gen } y)$ 
+    \item $\begin{aligned}
+        FR \thinspace x \leftrightarrow \forall n (0 < n \leq l(x) \rightarrow Elf(n \thinspace Gl \thinspace x) &\vee \exists pq (0 < p,q < n \wedge \\
+        \wedge &Op(n \thinspace Gl \thinspace x, p \thinspace Gl \thinspace x,q \thinspace Gl \thinspace x))) \wedge l(x) > 0
+    \end{aligned}$ \\
+            $x$ es una SECUENCIA DE FÓRMULAS, cada una de las cuales es o una FÓRMULA ELEMENTAL o se obtiene de las precedentes mediante las operaciones de 
+            NEGACIÓN, DISYUNCIÓN o GENERALIZACIÓN.
 \end{enumerate}
 
 
