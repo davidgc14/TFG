@@ -642,6 +642,12 @@ es recursiva primitiva.
             p(n < p \leq k \thinspace St \thinspace v, x \wedge v \thinspace Fr \thinspace p, x))$\\
             $k \thinspace St \thinspace v, x$ es el $k+1$-avo lugar de $x$ (contado a partir del extremo derecho de la FÓRMULA $x$), en el que $v$ aparece LIBRE en $x$ 
             (y es $0$ si no hay tal lugar).
+    \item $A(v,x) = \mu n (n \leq l(x) \wedge n \thinspace St \thinspace v, x = 0)$ \\ $A(v,x)$ es el número de lugares en que $v$ aparece LIBRE en $x$.
+    \item $Sb_0 (x^v_y) = x$ \\ $Sb_{k+1} (x^v_y) = Su \thinspace (Sb_k (x^v_y)) \tbinom{\text{\textit{k St v,x}}}{y}$
+    \item $Sb (x^v_y) = Sb_{A(v,x)} (x^v_y)$\footnote{Si $v$ no es una VARIABLE  o $x$ no es una FÓRMULA, enotnces $Sb (x^v_y) = x$.}\\
+            $Sb (x^v_y)$ es la noción anteriormente definida de $\daleth^b_v \alpha$\footnote{En vez de $Sb(Sb(x^v_w)^w_z)$ escribimos $Sb \thinspace x^{v \thinspace w}_{y \thinspace z}$, 
+            (y análogamente para más de dos VARIABLES).}.
+    \item $x \text{ Imp } y = (\text{Neg}(x)) \text{ Dis } y \\ x \text{ Con } y = \text{Neg } ((\text{Neg}(x)) \text{ Dis } (\text{Neg}(y))) \\$
 \end{enumerate}
 
 
