@@ -647,7 +647,51 @@ es recursiva primitiva.
     \item $Sb (x^v_y) = Sb_{A(v,x)} (x^v_y)$\footnote{Si $v$ no es una VARIABLE  o $x$ no es una FÓRMULA, enotnces $Sb (x^v_y) = x$.}\\
             $Sb (x^v_y)$ es la noción anteriormente definida de $\daleth^b_v \alpha$\footnote{En vez de $Sb(Sb(x^v_w)^w_z)$ escribimos $Sb \thinspace x^{v \thinspace w}_{y \thinspace z}$, 
             (y análogamente para más de dos VARIABLES).}.
-    \item $x \text{ Imp } y = (\text{Neg}(x)) \text{ Dis } y \\ x \text{ Con } y = \text{Neg } ((\text{Neg}(x)) \text{ Dis } (\text{Neg}(y))) \\$
+    \item $x \text{ Imp } y = (\text{Neg}(x)) \text{ Dis } y \\ x \text{ Con } y = \text{Neg } ((\text{Neg}(x)) \text{ Dis } (\text{Neg}(y))) \\
+            x \text{ Aeq } y = (x \text{ Imp } y) \text{ Cong}(y \text{ Imp } x) \\ v \text{ Ex } y = \text{Neg } (v \text{ Gen} (\text{Neg}(y))).$
+    \item $ n \thinspace Th \thinspace x = \mu y (y \leq x^{(x^n)} \wedge \forall k (k \leq l(x) \rightarrow (k \thinspace Gl \thinspace x > 13 
+            \wedge k \thinspace Gl \thinspace y = k \thinspace Gl \thinspace x \cdot (1 \thinspace Pr(k \thinspace Gl \thinspace x))^n)))$ \\
+            $ n \thinspace Th \thinspace x $ es la $n$-ava ELEVACIÓN DE TIPO de $x$ (suponiendo que $x$ y $ n \thinspace Th \thinspace x $ sean fórmulas).
+            \begin{itemize}
+                \item[Nota. ] A los axiomas I,$1$-$3$, corresponden tres números determinados, que designamos mediante $z_1$, $z_2$ y $z_3$. 
+                                Procedemos a definir los siguientes:
+            \end{itemize}
+    \item $Z - Ax \thinspace x \leftrightarrow x = z_1 \vee x = z_2 \vee x = z_3$
+    \item $A_1 - Ax \thinspace \leftrightarrow \exists y (y \leq x \wedge \text{Form } y \wedge x = (y \text{ Dis } y) \text{ Imp } y)$ \\
+            $x$ es una FÓRMULA que se obtiene a partir del esquema axiomático II,$1$ por sustitución. De modo análogo se definen $A_2-Ax$, 
+            $A_3-Ax$ y $A_4-Ax$, correspondientes a los axiomas II,$2$-$4$. 
+    \item $A-Ax \thinspace x \leftrightarrow A_1-Ax \thinspace x \vee A_2-Ax \thinspace x \vee A_3-Ax \thinspace x \vee A_4-Ax \thinspace x$\\
+            $x$ es una FÓRMULA que se obtiene por sustitución a partir de un esquema axiomático conectivo. 
+    \item $Q \thinspace z, y, v \leftrightarrow \lnot \exists n \thinspace m \thinspace w \thinspace (n \leq l(y) \wedge m \leq l(z) \wedge 
+            w \leq z \wedge w = m \thinspace Gl \thinspace z \wedge w \text{ Geb } n,y \wedge v \thinspace Fr \thinspace n, y)$ \\
+            $z$ no contiene VARIABLE alguna que esté LIGADA en $y$ en un lugar, en el cual $v$ esté LIBRE.
+    \item $L_1 - Ax \thinspace x \leftrightarrow \exists v\thinspace y \thinspace z \thinspace n (v,y,z,n \leq x \wedge n \text{ Var } v 
+            \wedge \text{Typ}_n z \wedge \text{Form } y \wedge Q \thinspace z,y,v \wedge \\ \wedge x = (v \text{ Gen } y) \text{ Imp } (Sb(y_z^v)))$\\ 
+            $x$ es una FÓRMULA que se obtiene por sustitución a partir del esquema axiomático III,$1$.
+    \item $L_2 - Ax \thinspace x \leftrightarrow \exists v\thinspace q \thinspace p \thinspace (v,p,q \leq x \wedge n \text{ Var } v 
+            \wedge \text{Form } p \wedge \lnot v \thinspace Fr \thinspace p \wedge \text{Form } q \wedge \\
+            \wedge x = (v \text{ Gen } (p \text{ Dis } q)) \text{ Imp } (p \text{ Dis } (v \text{ Gen } q)))$\\ 
+            $x$ es una FÓRMULA que se obtiene por sustitución a partir del esquema axiomático III,$2$.
+    \item $R-Ax \thinspace x \leftrightarrow \exists u \thinspace v \thinspace y \thinspace n \thinspace (u,v,y,n \leq x \wedge 
+            n \text{ Var } v \wedge (n+1) \text{ Var } u \wedge \lnot u \thinspace Fr \thinspace y \wedge \text{Form } y \wedge 
+            x = u \text{ Ex} (v \text{ Gen } ((R(u) * E(R(v))) \text{ Aeq } y)))$ \\ 
+            $x$ es una FÓRMULA que se obtiene por sustitución a partir del esquema axiomático IV,$1$.
+            \begin{itemize}
+                \item[Nota. ] Al axioma V,$1$ le corresponde un número determinado $z_4$. Así, procedemos a definir:
+            \end{itemize}
+    \item $M-Ax \thinspace x \leftrightarrow \exists n(n\leq x \wedge x = n \thinspace Th \thinspace z_4)$
+    \item $Ax \thinspace x \leftrightarrow Z-Ax \thinspace x \vee L_1-Ax \thinspace x \vee L_2-Ax \thinspace x \vee R-Ax \thinspace x \vee M-Ax \thinspace x$\\ 
+            $x$ es un AXIOMA.
+    \item $Fl \thinspace x \thinspace y \thinspace z \leftrightarrow y = z \text{ Imp } x \vee \exists v (v \leq x 
+            \wedge \text{Var } v \wedge x = v \text{ Gen } y)$\\ 
+            $x$ es una INFERENCIA INMEDIATA de $y$ y $z$.
+    \item $Bw \thinspace x \leftrightarrow \forall n (0 < n \leq l(x) \rightarrow Ax(n \thinspace Gl \thinspace x) \wedge \exists pq (0 < p,q < n \wedge 
+            Fl \thinspace (n \thinspace Gl \thinspace x, p \thinspace Gl \thinspace x, q \thinspace Gl \thinspace x))) \wedge l(x) > 0 $\\
+            $x$ es una DEDUCCIÓN (una secuencia finita de FÓRMULAS, cada una de las cuales es o un AXIOMA o una INFERENCIA INMEDIATA 
+            de dos de las FÓRMULAS precedentes).
+    \item $x \thinspace B \thinspace y \leftrightarrow Bw \thinspace x \wedge (l(x)) \thinspace Gl \thinspace x = y$ \\ $x$ es una DEDUCCIÓN DE LA FÓRMULA y.
+    \item $\text{Bew } x \leftrightarrow \exists y \thinspace yBx$ \\ $x$ es una FÓRMULA DEDUCIBLE. ($\text{Bew } x$ es la única de las nociones 
+            $1$-$46$ de la que no podemos afirmar que sea recursiva primitiva).
 \end{enumerate}
 
 
