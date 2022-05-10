@@ -605,7 +605,17 @@ es recursiva primitiva.
     \item $text{Neg}(x) = R(5) * E(x)$ \\ $text{Neg}(x)$ es la NEGACIÓN de $x$.
     \item $x \text{ Dis } y = E(x) * R(7) * E(y)$ \\ $x \text{ Dis } y$ es la DISYUNCIÓN de $x$ e $y$.
     \item $x \text{ Gen } y = R(9) * R(x) * E(y)$ \\ $x \text{ Gen } y$ es la GENERACIÓN de $y$ respecto a la variable $x$ (suponiendo que $x$ sea una variable).
-    \item 
+    \item $0 \thinspace N \thinspace x = x$ \\ $(n+1) \thinspace N \thinspace x = R(3) * n \thinspace N \thinspace x$ \\ 
+            $n \thinspace N \thinspace x$ corresponde a la operación de poner $n$ veces el signo $s$ delante de $x$.
+    \item $Z(n) = n \thinspace N \thinspace (R(1))$ \\ $Z(n)$ es el NUMERAL que designa el número $n$.
+    \item $\text{Typ}_1' \thinspace x \leftrightarrow \exists m \thinspace n(m,n \leq x \wedge (m=1 \vee 1 \text{ Var } m) 
+            \wedge x = n \thinspace N \thinspace (R(m)))$\footnote{$m,n \leq x$ es una abreviatura de $m \leq x \wedge n \leq x$ (y lo mismo para 
+            más de dos variables)} \\ $x$ es un SIGNO DE TIPO $1$.
+    \item $\text{Typ}_n \thinspace x \leftrightarrow (n=1 \wedge \text{Typ}_1' \thinspace (x)) \wedge (n>1 \wedge \exists v (v \leq x \wedge n \text{ Var } v \wedge x = R(v)))$ \\
+            $x$ es un SIGNO DE TIPO $n$.
+    \item $Elf \thinspace x \leftrightarrow \exists yzn (y, z, n \leq x \wedge \text{Typ}_n(y) \wedge \text{Typ}_{n+1}(z) \wedge x = x* E(y))$ \\ $x$ es una FÓRMULA ELEMENTAL.
+    \item $Op \thinspace x \thinspace y \thinspace z \leftrightarrow x = \text{Neg}(y) \wedge x = y \text{ Dis } z \vee \exists v (v \leq x \wedge \text{Var } v \wedge 
+            x = v \text{ Gen } y)$ 
 \end{enumerate}
 
 
