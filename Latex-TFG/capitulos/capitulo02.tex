@@ -631,7 +631,17 @@ es recursiva primitiva.
     \item $v \thinspace \text{Geb} \thinspace n, x \leftrightarrow \text{Var } v \wedge \text{Form } x \wedge \exists a \thinspace b \thinspace c \thinspace 
             (a, b, c \leq x \wedge x = a*(v \text{ Gen } b)* c \wedge \text{Form } x \wedge l(a) + 1 \leq n \leq l(a) + l(v \text{ Gen } b))$ \\ La VARIABLE $v$
             está LIGADA en $x$ en el $n$-avo lugar.
-    \item 
+    \item $v \thinspace Fr \thinspace n, x \leftrightarrow \text{Var } v \wedge \text{Form } x \wedge v = n \thinspace Gl \thinspace x \wedge n \leq l(x) 
+            \wedge \lnot v \text{ Geb } n, x$ \\ La VARIABLE $v$ está LIBRE en $x$  en el $n$-avo lugar.
+    \item $v \thinspace Fr \thinspace x \leftrightarrow \exists n (n \leq l(x) \wedge v \thinspace Fr \thinspace n, x)$ \\ $v$ aparece como VARIABLE LIBRE EN $x$.
+    \item $Su \thinspace x\tbinom{n}{y} = \mu z (z \leq (Pr(l(x) + l(y)))^{x+y} \wedge \exists u \thinspace v(u,v \leq x \wedge x = u * R(n \thinspace Gl \thinspace x) * v \wedge \\ 
+            \wedge z =  u * y * v \wedge n = l(u) + 1))$ \\
+            $Su \thinspace x\tbinom{n}{y}$ se obtiene a partir de $x$ cuando sustituimos el $n$-avo miembro de $x$ por $y$ (suponiendo que $0 < n \leq (x)$).
+    \item $\qquad \quad 0 \thinspace St \thinspace v, x = \mu n (n \leq l(x) \wedge v \thinspace Fr \thinspace n, x \wedge \lnot \exists p(n < p \leq l(x) \wedge v \thinspace Fr \thinspace p, x))$\\
+            $(k+1) \thinspace St \thinspace v, x = \mu n (n < k \thinspace St \thinspace v, x \wedge v \thinspace Fr \thinspace n, x \wedge \lnot \exists 
+            p(n < p \leq k \thinspace St \thinspace v, x \wedge v \thinspace Fr \thinspace p, x))$\\
+            $k \thinspace St \thinspace v, x$ es el $k+1$-avo lugar de $x$ (contado a partir del extremo derecho de la FÓRMULA $x$), en el que $v$ aparece LIBRE en $x$ 
+            (y es $0$ si no hay tal lugar).
 \end{enumerate}
 
 
