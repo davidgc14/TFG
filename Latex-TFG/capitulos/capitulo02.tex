@@ -702,7 +702,7 @@ mediante el siguiente teorema:
     Para cada relación recursiva primitiva $n$-aria $R$ hay un SIGNO RELACIONAL $r$ (con las VARIABLES LIBRES\footnote{Las VARIABLES $u_1, \dots, u_n$ pueden
     estar elegidas de cualquier manera.} $u_1, u_2, \dots, u_n$ tal que para cada $n$-tuplo de números naturales $(x_1, \dots, x_n)$ vale:
     
-    \begin{equation} \label{eq:Teo5-1}
+    \begin{equation} \label{eq:Teo5-3}
         R x_1, \dots, x_n \rightarrow \text{Bew} \left(Sb \left(r 
         \begin{aligned}
             &u_1, \dots, u_n\\
@@ -710,7 +710,7 @@ mediante el siguiente teorema:
         \end{aligned}\right)\right)
     \end{equation}
 
-    \begin{equation} \label{eq:Teo5-2}
+    \begin{equation} \label{eq:Teo5-4}
         \lnot R x_1, \dots, x_n \rightarrow \text{Bew} \left(\text{Neg } Sb \left(r 
         \begin{aligned}
             &u_1, \dots, u_n\\
@@ -728,11 +728,11 @@ mediante el siguiente teorema:
     primitiva) por inducción completa sobre el grado de $f$. Para funciones de grado $1$ (es decir, constantes y la función $x + 1$) el teorema es trivial. 
     Sea $f$ de grado $m$. Entonces $f$ se obtiene a partir de las funciones $f_1, \dots, f_k$ de menor grado mediante las operaciones de sustitución o de 
     definición recursiva. Puesto que el teorema ya está probado para $f_1, \dots, f_k$, por hipótesis inductiva, hay SIGNOS RELACIONALES correspondientes
-    $r_1, \dots, r_k$, tales que \eqref{eq:Teo5-1} y \eqref{eq:Teo5-2} valen. Los procesos de definición (sustitución y definición recursiva) mediante los 
+    $r_1, \dots, r_k$, tales que \eqref{eq:Teo5-3} y \eqref{eq:Teo5-4} valen. Los procesos de definición (sustitución y definición recursiva) mediante los 
     que se obtiene $f$ a partir de $f_1, \dots, f_k$ pueden ser ambos formalmente deducidos en el sistema $P$. Si se hace esto se obtiene a partir de $r_1, \dots, r_k$
     un nuevo SIGNO RELACIONAL $r$\footnote{Desde luego, cuando esta prueba se lleva a cabo con todo detalle, $r$ no se define indirectamente con ayuda 
-    de su interpretación intuitiva, sino sólo por su estructura puramente formal.} para el cual puede probarse sin dificultad que valen \eqref{eq:Teo5-1} 
-    y \eqref{eq:Teo5-2}, haciendo uso de la hipótesis inductiva. Un SIGNO RELACIONAL $r$, que corresponde\footnote{Que, por tanto, en la interpretación 
+    de su interpretación intuitiva, sino sólo por su estructura puramente formal.} para el cual puede probarse sin dificultad que valen \eqref{eq:Teo5-3} 
+    y \eqref{eq:Teo5-4}, haciendo uso de la hipótesis inductiva. Un SIGNO RELACIONAL $r$, que corresponde\footnote{Que, por tanto, en la interpretación 
     usual expresa que esa relación se da.} de este modo a una relación recursiva primitiva, se llama recursivo primitivo.
 \end{proof}
 
@@ -763,7 +763,23 @@ El resultado general sobre la existencia de sentencias indecidibles dice como si
 \end{teorema}
 
 \begin{proof}
+    Sea $K$ una clase recursiva primitiva y $\omega$-consistente cualquiera de FORMULAS. Definimos:
+    \begin{flalign} \label{eq:TeoVI-5}
+        Bw_K \thinspace x \leftrightarrow \forall n (n \leq l(x) \rightarrow Ax(&n \thinspace Gl \thinspace x) \vee (n \thinspace Gl \thinspace x) \in K 
+        \vee \exists p,q (0 < p,q < n \wedge \\
+        &\wedge Fl \thinspace (n \thinspace Gl \thinspace x, p \thinspace Gl \thinspace x, q \thinspace Gl \thinspace x))) \wedge l(x) > 0
+    \end{flalign}
+    (véase la análoga noción $44$).
+
+    \begin{equation} \label{eq:TeoVI-6}
+        x \thinspace B_K \thinspace y \leftrightarrow Bw_K \thinspace x \wedge (l(x)) \thinspace Gl \thinspace x = y
+    \end{equation}
     
+    \begin{equation} \label{eq:TeoVI-6.1}
+        \text{Bew}_K \thinspace x \leftrightarrow \exists y \thinspace y B_K x
+    \end{equation}
+    (véanse las análogas nociones $45$ y $46$).
+
 \end{proof}
 \endinput
 %------------------------------------------------------------------------------------
