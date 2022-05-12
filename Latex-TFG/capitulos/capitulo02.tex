@@ -694,9 +694,77 @@ es recursiva primitiva.
             $1$-$46$ de la que no podemos afirmar que sea recursiva primitiva).
 \end{enumerate}
 
+El hecho puede ser formulado vagamente diciendo que cada relación recursiva primitiva es definible en el sistema $P$ (interpretado en cuanto a su 
+contenido del modo habitual) puede ser expresado con precisión y sin referencia a ninguna interpretación natural de las fórmulas de $P$, 
+mediante el siguiente teorema:
 
+\begin{teorema} \label{teo:TeoremaV}
+    Para cada relación recursiva primitiva $n$-aria $R$ hay un SIGNO RELACIONAL $r$ (con las VARIABLES LIBRES\footnote{Las VARIABLES $u_1, \dots, u_n$ pueden
+    estar elegidas de cualquier manera.} $u_1, u_2, \dots, u_n$ tal que para cada $n$-tuplo de números naturales $(x_1, \dots, x_n)$ vale:
+    
+    \begin{equation} \label{eq:Teo5-1}
+        R x_1, \dots, x_n \rightarrow \text{Bew} \left(Sb \left(r 
+        \begin{aligned}
+            &u_1, \dots, u_n\\
+            &Z(x_1), \dots, Z(x_n)
+        \end{aligned}\right)\right)
+    \end{equation}
 
+    \begin{equation} \label{eq:Teo5-2}
+        \lnot R x_1, \dots, x_n \rightarrow \text{Bew} \left(\text{Neg } Sb \left(r 
+        \begin{aligned}
+            &u_1, \dots, u_n\\
+            &Z(x_1), \dots, Z(x_n)
+        \end{aligned}\right)\right)
+    \end{equation}
+\end{teorema}
 
+\begin{proof}
+    Aquí nos limitaremos a esbozar la prueba de este teorema\footnote{Desde luego, el \autoref{teo:TeoremaV} se basa en el hecho de que, dada una relación
+    recursiva primitiva $R$, para cada $n$-tuplo de números naturales podemos decidir en base a los axiomas del sistema $P$ si esos números están en la 
+    relación $R$ o no.}, pues no ofrece ninguna dificultad de principio, pero es bastante larga. Probamos el teorema para todas las relaciones
+    $R x_1, \dots, x_n $ de la forma $x_1 = f(x_2, \dots, x_n)$\footnote{De ahí se sigue inmediatamente su validez para toda relación recursiva
+    primitiva, pues cada tal relación es equivalente a $0 = f(x_1, \dots, n_n)$, donde $f$ es recursiva primitiva.} (donde $f$ es una función recursiva 
+    primitiva) por inducción completa sobre el grado de $f$. Para funciones de grado $1$ (es decir, constantes y la función $x + 1$) el teorema es trivial. 
+    Sea $f$ de grado $m$. Entonces $f$ se obtiene a partir de las funciones $f_1, \dots, f_k$ de menor grado mediante las operaciones de sustitución o de 
+    definición recursiva. Puesto que el teorema ya está probado para $f_1, \dots, f_k$, por hipótesis inductiva, hay SIGNOS RELACIONALES correspondientes
+    $r_1, \dots, r_k$, tales que \eqref{eq:Teo5-1} y \eqref{eq:Teo5-2} valen. Los procesos de definición (sustitución y definición recursiva) mediante los 
+    que se obtiene $f$ a partir de $f_1, \dots, f_k$ pueden ser ambos formalmente deducidos en el sistema $P$. Si se hace esto se obtiene a partir de $r_1, \dots, r_k$
+    un nuevo SIGNO RELACIONAL $r$\footnote{Desde luego, cuando esta prueba se lleva a cabo con todo detalle, $r$ no se define indirectamente con ayuda 
+    de su interpretación intuitiva, sino sólo por su estructura puramente formal.} para el cual puede probarse sin dificultad que valen \eqref{eq:Teo5-1} 
+    y \eqref{eq:Teo5-2}, haciendo uso de la hipótesis inductiva. Un SIGNO RELACIONAL $r$, que corresponde\footnote{Que, por tanto, en la interpretación 
+    usual expresa que esa relación se da.} de este modo a una relación recursiva primitiva, se llama recursivo primitivo.
+\end{proof}
+
+Ahora llegamos a la meta de nuestras consideraciones. Sea $K$ una clase cualquiera de FÓRMULAS. Designamos mediante $\text{Flg}(K)$\footnote{conjunto de 
+inferencias a partir de $K$.} el mínimo conjunto de FÓRMULAS que contiene todas las FORMULAS de $K$ y todos los AXIOMAS y está clausurado respecto a 
+la relación de «INFERENCIA INMEDIATA». Decimos que $K$ es $\omega$-consistente si no hay ningún SIGNO DE CLASE $a$, tal que
+\begin{equation}
+    \forall n \left(
+        Sb \left( a
+            \begin{aligned}
+                v \\
+                Z(n)
+            \end{aligned}
+        \right)
+        \in \text{Flg}(K)
+    \right)
+    \wedge (\text{Neg}(v \text{ Gen } a)) \in \text{Flg}(K)
+\end{equation}
+donde $v$ es la VARIABLE LIBRE del SIGNO DE CLASE $a$. 
+
+Cada sistema $\omega$-consistente es también consistente, desde luego. Pero la inversa no vale, como más adelante veremos.
+
+El resultado general sobre la existencia de sentencias indecidibles dice como sigue:
+
+\begin{teorema} \label{teo:TeoremaVI}
+    Para cada clase recursiva primitiva y $\omega$-consistente $K$ de FORMULAS hay un SIGNO DE CLASE $r$ tal que ni $v \text{ Gen } a$ ni 
+    $\text{Neg}(v \text{ Gen } a)$ pertenecen a $\text{Flg}(K)$ (donde $v$ es la VARIABLE LIBRE de $r$).
+\end{teorema}
+
+\begin{proof}
+    
+\end{proof}
 \endinput
 %------------------------------------------------------------------------------------
 % FIN DEL CAPÍTULO. 
