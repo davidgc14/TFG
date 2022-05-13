@@ -851,11 +851,97 @@ El resultado general sobre la existencia de sentencias indecidibles dice como si
     ($r$ es un SIGNO DE CLASE recursivo primitivo con la VARIABLE LIBRE $17$)\footnote{Pues $r$ se obtiene a partir del SIGNO RELACIONAL recursivo primitivo
     $q$ mediante SUSTITUCÓN de una VARIABLE por el NUMERAL de $p$.}. Entonces tenemos
 
-    \begin{equation}
-        Sb
+    \begin{equation} \label{eq:TeoVI-13}
+        Sb \left(p
+        \begin{aligned}
+            &19 \\
+            &Z(y)
+        \end{aligned}
+        \right) = \left( (17 \text{ Gen } q)
+        \begin{aligned}
+            &19 \\
+            &Z(y)
+        \end{aligned}
+        \right) = 17 \text{ Gen } Sb \left(q 
+        \begin{aligned}
+            &19 \\
+            &Z(y)
+        \end{aligned}
+        \right) = 17 \text{ Gen } r
+    \end{equation}
+    (por \eqref{eq:TeoVI-11} y \eqref{eq:TeoVI-12})\footnote{Las operaciones Gen, $Sb$ son intercambiables, si se refieren a distintas VARIABLES.}; además
+
+    \begin{equation} \label{eq:TeoVI-14}
+        Sb\left(q 
+        \begin{aligned}
+            &17 \qquad 19 \\
+            &Z(x)\quad Z(y)
+        \end{aligned}
+        \right) = Sb\left(q 
+        \begin{aligned}
+            &17 \\
+            &Z(x)
+        \end{aligned}
+        \right)
+    \end{equation}
+    (por \eqref{eq:TeoVI-12}). Si ahora sustituimos $y$ por $p$ en \eqref{eq:TeoVI-9} y \eqref{eq:TeoVI-10}, entonces teniendo en cuenta  \eqref{eq:TeoVI-13} y 
+    \eqref{eq:TeoVI-14} obtenemos que 
+
+    \begin{equation} \label{eq:TeoVI-15}
+        \lnot x \thinspace B_K \thinspace (17 \text{ Gen } r) \rightarrow \text{Bew}_K \thinspace \left(Sb\left(r
+        \begin{aligned}
+            &17 \\
+            &Z(x)
+        \end{aligned}
+        \right)\right)
     \end{equation}
 
+    \begin{equation} \label{eq:TeoVI-16}
+        x \thinspace B_K \thinspace (17 \text{ Gen } r) \rightarrow \text{Bew}_K \thinspace \left(\text{Neg } Sb\left(r
+        \begin{aligned}
+            &17 \\
+            &Z(x)
+        \end{aligned}
+        \right)\right)
+    \end{equation}
+
+    De aquí se sigue:
+    \begin{enumerate}
+        \item   $17 \text{ Gen } r$ no es $K$-DEDUCIBLE\footnote{Con «x es $K$-DEDUCIBLE» queremos decir que $x \in \text{Flg}(K)$, lo que, por \eqref{eq:TeoVI-7},
+                significa los mismo que $\text{Bew}_K \thinspace x$.}. Pues si lo fuera, habría (según \eqref{eq:TeoVI-6.1}) un $n$ tal que 
+                $n \thinspace B_K (17 \text{ Gen } r)$. Pero entonces, por \autoref{eq:TeoVI-16} ocurriría que 
+                $\text{Bew}_K \thinspace \left(\text{Neg } Sb\left(r
+                \begin{aligned}
+                    &17 \\
+                    &Z(x)
+                \end{aligned}
+                \right)\right)$, 
+                mientras que, por otro lado, de la $K$-DEDUCIBILIDAD de $(17 \text{ Gen } r)$ se sigue también la de 
+                $Sb\left(r
+                \begin{aligned}
+                    &17 \\
+                    &Z(x)
+                \end{aligned}
+                \right)$.
+                Por otro lado, $K$ sería inconsistente (y en especial $\omega$-consistente).
+        \item Neg $(17 \text{ Gen } r)$ no es $K$-DEDUCIBLE.\\
+                \begin{proof}
+                    Como acabamos de probar, $(17 \text{ Gen } r)$ no es $K$-DEDUCIBLE, es decir, por \eqref{eq:TeoVI-6.1} ocurre que 
+                    $\forall n \lnot (n \thinspace B_K (17 \text{ Gen } r))$. De ahí se sigue por \eqref{eq:TeoVI-15} que
+                    $\forall n \text{ Bew}_K Sb\left(r
+                    \begin{aligned}
+                        &17 \\
+                        &Z(x)
+                    \end{aligned}
+                    \right)$, 
+                    lo que junto con $\text{Bew}_K(\text{Neg }  (17 \text{ Gen } r))$, es incompatible con la $\omega$-consistencia de $K$.
+                \end{proof}
+    \end{enumerate}
+
+    Por tanto, $(17 \text{ Gen } r)$ es indecidible en base a $K$, con lo que el \autoref{teo:TeoremaVI} queda probado.
 \end{proof}
+
+
 \endinput
 %------------------------------------------------------------------------------------
 % FIN DEL CAPÍTULO. 

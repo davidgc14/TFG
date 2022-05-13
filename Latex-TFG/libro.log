@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  13 MAY 2022 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  13 MAY 2022 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -987,15 +987,33 @@ LaTeX Info: Redefining \% on input line 719.
 [25]
 LaTeX Info: Redefining \. on input line 774.
 LaTeX Info: Redefining \% on input line 774.
- [26]) (/home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
+ [26]
+LaTeX Info: Redefining \. on input line 886.
+LaTeX Info: Redefining \% on input line 886.
+ [27]
+Overfull \hbox (9.2455pt too wide) in paragraph at lines 910--927
+\OML/zplm/m/it/10 n B[]\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 17[]\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )$\T1/pplj/m/n/10 (-10) . Pe-ro en-ton-ces, por [][]Ecua-ción 4.1[][][] ocu-rri-ría que $[][]  []$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--929
+
+ []
+
+
+Overfull \hbox (29.3661pt too wide) in paragraph at lines 929--938
+\T1/pplj/m/n/10 (-10) por [][] ocu-rre que $\OMS/zplm/m/n/10 8\OML/zplm/m/it/10 n\OMS/zplm/m/n/10 :\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 n B[]\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 17[]\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 ))$\T1/pplj/m/n/10 (-10) . De ahí se si-gue por [][] que $\OMS/zplm/m/n/10 8\OML/zplm/m/it/10 n[][]Sb []$\T1/pplj/m/n/10 (-10) ,
+ []
+
+) (/home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [27] [28
-
-
-]
+ [28]
 chapter A.
-) (/home/curbelo/Documentos/TFG/Latex-TFG/glosario.tex [29] [30
+) (/home/curbelo/Documentos/TFG/Latex-TFG/glosario.tex [29
+
+
+] [30
 
 
 ]
@@ -1036,10 +1054,10 @@ Package rerunfilecheck Info: File `libro.brf' has not changed.
 (rerunfilecheck)             Checksum: 4D9B8AC344D1E22934A525256DEDEAAE;607.
  ) 
 Here is how much of TeX's memory you used:
- 16604 strings out of 481239
- 283624 string characters out of 5920377
+ 16630 strings out of 481239
+ 283989 string characters out of 5920377
  712004 words of memory out of 5000000
- 30845 multiletter control sequences out of 15000+600000
+ 30858 multiletter control sequences out of 15000+600000
  779282 words of font info for 430 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,14n,72p,10139b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1048,10 +1066,10 @@ pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc}</usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (47 pages, 363382 bytes).
+Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (47 pages, 366743 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 762 compressed objects within 8 object streams
+ 259 named destinations out of 1000 (max. 500000)
  88806 words of extra memory for PDF output out of 89155 (max. 10000000)
 
