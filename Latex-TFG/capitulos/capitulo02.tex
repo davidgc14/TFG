@@ -924,22 +924,27 @@ El resultado general sobre la existencia de sentencias indecidibles dice como si
                 \end{aligned}
                 \right)$.
                 Por otro lado, $K$ sería inconsistente (y en especial $\omega$-consistente).
-        \item Neg $(17 \text{ Gen } r)$ no es $K$-DEDUCIBLE.\\
+        \item Neg $(17 \text{ Gen } r)$ no es $K$-DEDUCIBLE.
                 \begin{proof}
                     Como acabamos de probar, $(17 \text{ Gen } r)$ no es $K$-DEDUCIBLE, es decir, por \eqref{eq:TeoVI-6.1} ocurre que 
                     $\forall n \lnot (n \thinspace B_K (17 \text{ Gen } r))$. De ahí se sigue por \eqref{eq:TeoVI-15} que
-                    $\forall n \text{ Bew}_K Sb\left(r
+                    $$\forall n \text{ Bew}_K Sb\left(r
                     \begin{aligned}
                         &17 \\
                         &Z(x)
                     \end{aligned}
-                    \right)$, 
+                    \right)$$
                     lo que junto con $\text{Bew}_K(\text{Neg }  (17 \text{ Gen } r))$, es incompatible con la $\omega$-consistencia de $K$.
                 \end{proof}
     \end{enumerate}
 
     Por tanto, $(17 \text{ Gen } r)$ es indecidible en base a $K$, con lo que el \autoref{teo:TeoremaVI} queda probado.
 \end{proof}
+
+Fácilmente se ve que la prueba que acabamos de presentar es constructiva\footnote{Pues todas las afirmaciones existenciales que aparecen en la prueba se
+basan en el \autoref{teo:TeoremaV}, que, como fácilmente se ve, es intuicionistamente aceptable.}, es decir, hemos probado de un modo intuicionistamente 
+del todo aceptable lo siguiente: Sea dada una clase cualquiera de FORMULAS, definida de un modo recursivo primitivo. Entonces, si se nos presentara una 
+decisión formal (en base a $K$) de la SENTENCIA $17 \text{ Gen } r$ (que puede ser efectivamente escrita) nosotros podríamos ofrecer efectivamente:
 
 
 \endinput
