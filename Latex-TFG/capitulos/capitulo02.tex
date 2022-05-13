@@ -946,6 +946,82 @@ basan en el \autoref{teo:TeoremaV}, que, como fácilmente se ve, es intuicionist
 del todo aceptable lo siguiente: Sea dada una clase cualquiera de FORMULAS, definida de un modo recursivo primitivo. Entonces, si se nos presentara una 
 decisión formal (en base a $K$) de la SENTENCIA $17 \text{ Gen } r$ (que puede ser efectivamente escrita) nosotros podríamos ofrecer efectivamente:
 
+\begin{enumerate}
+    \item Una DEDUCCIÓN de $\text{Neg }(17 \text{ Gen } r)$.
+    \item Para cada $n$ dado, una DEDUCCIÓN de $Sb\left(r
+            \begin{aligned}
+                &17 \\
+                &Z(x)
+            \end{aligned}
+            \right)$.
+\end{enumerate}
+Es decir, una decisión formal de $17 \text{ Gen } r$ tendría comoconsecuencia la exhibición efectiva de una $\omega$-inconsistencia.
+
+Diremos que una relación (o clase) entre números naturales $Rx_1, \dots, x_n$ es \textit{decidible} si existe un SIGNO RELACIONAL $n$-ario $r$, tal que 
+\eqref{eq:Teo5-3} y \eqref{eq:Teo5-4} valen para él\footnote{Véase el \autoref{teo:TeoremaV}.}. En especial, por tanto, del teorema V resulta que cada 
+relación recursiva primitiva es decidible. Análogamente diremos que un SIGNO RELACIONAL es \textit{decidible} si corresponde de este modo a una relación decidible. 
+Ahora bien, para la existencia de sentencias indecidibles basta con que la clase $K$ sea $\omega$-consistente y decidible. Pues la decidibilidad se transmite de
+$K$ a $xB_K y$ y a $Q\thinspace x \thinspace y$\footnote{Véanse para la primera transmisión \eqref{eq:TeoVI-5} y \eqref{eq:TeoVI-6}; para la segunda véase 
+\eqref{eq:TeoVI-8.1}.}, y esto es todo lo que se utilizó en la prueba antes expuesta. La sentencia indecidible tiene en este caso la forma $v \text{ Gen } r$, 
+donde $r$ es un SIGNO DE CLASE decidible. (Incluso basta con que $K$ sea decidible en el sistema ampliado con $K$).
+
+Si en vez de suponer que $K$ es $\omega$-consistente nos limitamos a suponer que es consistente, entonces ya no se sigue (por la prueba anterior) que exista 
+una sentencia indecidible, pero sí se sigue que existe una propiedad $r$, para la que no se puede dar un contraejemplo, y para la que tampoco se puede probar que
+todos los números la tengan. Pues en la prueba de que $17 \text{ Gen } r$ no es $K$-DEDUCIBLE habíamos utilizado sólo el hecho de que $K$ era consistente y por
+\eqref{eq:TeoVI-15} de $\lnot (\text{Bew}_K (17 \text{ Gen } r))$ se sigue que para cada número $x$ se cumpla $Sb\left(r
+\begin{aligned}
+    &17 \\
+    &Z(x)
+\end{aligned}
+\right)$
+y, por tanto, que $\text{Neg } Sb\left(r
+\begin{aligned}
+    &17 \\
+    &Z(x)
+\end{aligned}
+\right)$ no es $K$-DEDUCIBLE para ningún número.
+
+Si añadimos $\text{Neg } (17 \text{ Gen } r)$ a $K$, obtenemos una CLASE DE FORMULAS $K'$ que es consistente, pero no $\omega$-consistente. $K'$ es consistente, 
+pues si no, $17 \text{ Gen } r$ sería $K$-DEDUCIBLE. Pero $K'$ no es $\omega$-consistente, pues por $\lnot (\text{Bew}_K (17 \text{ Gen } r))$ y \eqref{eq:TeoVI-15}
+ocurre que $\forall x \text{ Bew }_K Sb\left(r
+\begin{aligned}
+    &17 \\
+    &Z(x)
+\end{aligned}
+\right)$ y por tanto que $\forall x \text{ Bew }_{K'} Sb\left(r
+\begin{aligned}
+    &17 \\
+    &Z(x)
+\end{aligned}
+\right)$, mientras que por otro lado ocurre, claro está, que $\text{ Bew }_{K'} (\text{Neg } (17 \text{ Gen } r))$\footnote{Desde luego, con esto sólo hemos probado 
+la existencia de clases $K$, que son consistentes, pero no $\omega$-consistentes, bajo el supuesto de que hay algún $K$ consistente (es decir, de que $P$ es 
+consistente).}.
+
+Un caso especial del \autoref{teo:TeoremaVI} se da cuando la clase $K$ consta de un número finito de FORMULAS (y, si se quiere, de las que se obtiene a partir 
+de ellas por ELEVACION D E TIPO). Naturalmente, cada clase finita $K$ es recursiva primitiva. Sea $a$ el mayor número contenido en $K$. Entonces ocurre para $K$ que
+\begin{equation}
+    x \in K \leftrightarrow \exists n,m \thinspace (m \leq x \wedge n \leq a \wedge n \in K \wedge x = m \thinspace Th \thinspace n)
+\end{equation}
+
+Por tanto, $K$ es recursiva primitiva. Esto nos permite inferir que incluso con ayuda del axioma de elección (para todos los tipos) o de la hipótesis generalizada 
+del continuo no todas las sentencias son decidibles, suponiendo que estas hipótesis sean $\omega$-consistentes.
+
+En la prueba del \autoref{teo:TeoremaVI} no se utilizaron otras propiedades del sistema $P$ que las siguientes:
+
+\begin{enumerate}
+    \item La clase de los axiomas y de las reglas de inferencia (es decir, la relación de «inferencia inmediata») son recursivamente definibles (tan pronto como 
+            reemplazamos de algún modo los signos primitivos por números naturales).
+    \item Cada relación recursiva primitiva es definible (en el sentido del \autoref{teo:TeoremaV}) en el sistema $P$.
+\end{enumerate}
+
+Por eso en cada sistema formal, que satisface los supuestos $1$ y $2$ y es $\omega$-consistente, hay sentencias indecidibles de la forma $\forall x\thinspace Fx$,
+donde $F$ es una propiedad recursiva primitiva de los números naturales, y lo mismo ocurre en cada extensión de un tal sistema resultante de añadir una clase 
+recursivamente definible y $\omega$-consistente de axiomas. Como fácilmente se comprueba, entre los sistemas que satisfacen los supuestos $1$ y $2$ se cuentan
+las teorías axiomáticas de conjuntos de Zermelo-Faenkel y de von Neumann\footnote{La prueba del supuesto 1 resulta aquí incluso más sencilla que en el caso
+del sistema $P$, pues sólo hay un tipo de variable (o dos en el sistema de von Neumann).}, así como el sistema axiomático de la teoría de números que consta de 
+los axiomas de Peano, la definición recursiva (según el esquema \eqref{eq:recdef}) y las reglas lógicas. El supuesto $1$ es satisfecho en general por cada sistema, 
+cuyas reglas de inferencia son las usuales y cuyos axiomas (análogamente a los de $P$) se obtienen por sustitución a partir de un número finito de 
+esquemas.\footnote{1}
 
 \endinput
 %------------------------------------------------------------------------------------
