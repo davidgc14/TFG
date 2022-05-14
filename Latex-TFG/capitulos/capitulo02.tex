@@ -1049,9 +1049,70 @@ Ahora vamos a sacar algunas consecuencias del \autoref{teo:TeoremaVI} y para ell
 De modo análogo se define la noción de «sentencia aritmética». En especial son aritméticas las relaciones «mayor que» y «congruente módulo $n$», pues ocurre
 
 \begin{flalign}
-    x > y \leftrightarrow \lnot \exists z (y = x+z) \\ 
-    x \equiv y \pmod{n} \leftrightarrow  \exists z (x=y+z \cdot n \vee y = x+z\cdot n)
+    &x > y \leftrightarrow \lnot \exists z (y = x+z) \\ 
+    &x \equiv y \pmod{n} \leftrightarrow  \exists z (x=y+z \cdot n \vee y = x+z\cdot n)
 \end{flalign}
+
+Ahora tenemos el siguiente:
+\begin{teorema} \label{teo:TeoremaVII}
+    Cada relación recursiva primitiva es aritmética.
+\end{teorema}
+    
+\begin{proof}
+    Probaremos la siguiente versión de este teorema: \textit{Cada relación de la forma $x_0 = f(x_1 , \dots, x_n)$, donde $f$ es recursiva primitiva, es aritmética}.
+    Procedamos por inducción completa sobre el grado de $f$. Tenga $f$ el grado $s$ $( s > 1 )$ . Entonces ocurre que o bien
+    \begin{enumerate}
+        \item $f(x_1 , \dots, x_n) = h(j_1(x_1 , \dots, x_n), j_2(x_1 , \dots, x_n), \dots, j_m(x_1 , \dots, x_n))$\footnote{Naturalmente, no es necesario que todos 
+                los $x_1 , \dots, x_n$ aparezcan de hecho en los $j_i$.}\\ (donde $h$ y todos los $j_i$ son de grado menor que $s$) o bien se da
+        \item $f(0, x_2, \dots, x_n) = p(x_2 , \dots, x_n)$\\
+                $f(k+1, x_2, \dots, x_n) = q(k, f(k, x_2, \dots, x_n), x_2 , \dots, x_n)$\\ (donde $p$ y $q$ so nde grado menor que $s$).
+    \end{enumerate}
+    En el primer caso tenemos 
+    \begin{flalign}
+        x_0 = f(x_1, \dots, x_n) \leftrightarrow &\exists y_1, \dots, y_m \thinspace (R x_0 y_1, \dots, y_m \wedge \\ 
+        &\wedge S_1 y_1, x_1, \dots, x_n \wedge \cdots \wedge S_m y_m, x_1, \dots, x_n)
+    \end{flalign}
+    donde $R$ y $S_i$ son las relaciones aritméticas, existentes por hipótesis inductiva, que son equivalentes con $x_0 = h(y_1 , \dots, y_n)$ y 
+    $y = j_i(x_1 , \dots, x_n)$. Por eso en este caso $x_0 = f(x_1 , \dots, x_n)$ es aritmética.
+
+    En el segundo caso vamos a aplicar el siguiente procedimiento. Podemos expresar la relación $x_0 = f(x_1 , \dots, x_n)$ con ayuda del concepto «sucesión de 
+    números» $(t)$\footnote{$t$ es aquí una variable que toma como valores las sucesiones de números naturales. $t_k$ designa el miembro $k+1$-avo de una sucesión 
+    $t$; $t_0$ designa su primer miembro.} del siguiente modo:
+    \begin{flalign}
+        x_0 = &f(x_1 , \dots, x_n) \leftrightarrow \exists t (t_0 = p(x_2, \dots, x_n) \wedge \\
+        &\wedge \forall k (k < x_1 \rightarrow t_{k+1} = q(k, t_k, x_2, \dots, x_n)) \wedge x_0 = t_{x_1})
+    \end{flalign}
+
+    Si $S$ y $x_2, \dots, x_n$ y $Tz \thinspace x_1, \dots, x_{n+1}$ son las relaciones aritméticas, existentes por hipótesis inductiva, que son equivalentes a
+    $y = p(x_2, \dots, x_n)$ y $z = q(x_1, \dots, x_{n+1})$, respectivamente, entonces
+    \begin{flalign} \label{eq:TeoVII-17}
+        x_0 = &f(x_1 , \dots, x_n) \leftrightarrow \exists t (St_0 \thinspace x_2, \dots, x_n \wedge \\
+        &\wedge \forall k (k < x_1 \rightarrow T(t_{k+1}, k, t_k, x_2, \dots, x_n)) \wedge x_0 = t_{x_1})
+    \end{flalign}
+    
+    Ahora sustituimos la noción de «sucesión de números» por la de «par de números», asignando al par de números $n$, $d$ la secuencia numérica $t^(n,d)$ (tal que
+    $t^(n,d)_k = [n]_{1 + (k+1)d}$, donde $[n]_m$ denota el mínimo resto no-negativo de $n$ módulo $m$).
+
+    Entonces vale el siguiente lema:
+    \begin{itemize}
+        \item[] \begin{lema}
+                    Si $t$ es una sucesión cualquiera de números naturales y $k$ es un número natural cualquiera, entonces hay un par de números naturales $n$, $d$, 
+                    tales que $t^(n,d)$ y $t$ coinciden en los primeros $k$ miembros.
+                \end{lema}
+        \item[] \begin{proof} (Demostración del Lema) \\
+                    Sea $l$ el máximo de los números $k, t_0, t_1, \dots, t_{k-1}$. Determinemos $n$, de tal modo que
+                    \begin{equation}
+                        n \equiv t_i \pmod{(1 + (i+1)l!)} \qquad \text{para } i = 0, 1, \dots, k-1
+                    \end{equation}
+                    lo cual es posible, pues cada dos números $1 + (i+1)l!) \thinspace (i = 0, 1, \dots, k-1)$ son primos entre sí. En efecto, un número primo contenido
+                    en dos de esos números debería estar contenido en la diferencia $(i_1 - i_2)l!$, y puesto que $| i_1 - i_2 | < l$, también debería estar contenido
+                    en $l!$, lo que es imposible. Así pues, el par de números $n$, $l!$ tiene la propiedad deseada.
+                \end{proof}
+    \end{itemize}
+
+    
+
+\end{proof}
 
 \endinput
 %------------------------------------------------------------------------------------
