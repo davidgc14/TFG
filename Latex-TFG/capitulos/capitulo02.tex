@@ -1095,7 +1095,7 @@ Ahora tenemos el siguiente:
 
     Entonces vale el siguiente lema:
     \begin{itemize}
-        \item[] \begin{lema}
+        \item[] \begin{lema} \label{lem:lema-01}
                     Si $t$ es una sucesión cualquiera de números naturales y $k$ es un número natural cualquiera, entonces hay un par de números naturales $n$, $d$, 
                     tales que $t^(n,d)$ y $t$ coinciden en los primeros $k$ miembros.
                 \end{lema}
@@ -1110,9 +1110,55 @@ Ahora tenemos el siguiente:
                 \end{proof}
     \end{itemize}
 
-    
+    Puesto que la relación $x = [n]_m$ está definida por 
+    \begin{equation}
+        x \equiv n \pmod{m} \wedge x < m
+    \end{equation}
+    y por tanto es aritmética, también es aritmética la relación
+    \begin{equation}
+        P x_0, x_1, \dots, x_n
+    \end{equation}
+    definida del siguiente modo:
+    \begin{flalign}
+        P &x_0, \dots, x_n \leftrightarrow \exists n, d \thinspace (S[n]_{d+1}, x_2, \dots, x_n \wedge \\
+        \wedge \forall k(k <x_1 \rightarrow &T[n]_{1+d(k+2)}, k, [n]_{1+d(k+1)}, x_2, \dots, x_n) \wedge x_0 = [n]_{1+d(x_1+1)})
+    \end{flalign}
 
+    Pero por \eqref{eq:TeoVII-17} y el \autoref{lem:lema-01} esta relación es equivalente a $x_0 = f(x_1 , \dots, x_n)$ (en la sucesión $t$, tal como interviene
+    en \eqref{eq:TeoVII-17}, sólo importan sus primeros $x_1 + 1$ miembros).
+
+    Con esto queda probado el \autoref{teo:TeoremaVII}.
 \end{proof}
+
+Conforme al \autoref{teo:TeoremaVII} para cada problema de la forma $\forall x F x$ (donde $F$ es recursiva primitiva) hay un problema aritmético equivalente, 
+y puesto que toda la prueba del \autoref{teo:TeoremaVII} (para cada $F$ particular) se puede formalizar en el sistema $P$, esta equivalencia es deducible en $P$. 
+Por eso vale el siguiente
+
+\begin{teorema} \label{teo:TeoremaVIII}
+    En cada uno de los sistemas formales\footnote{Se trata de los sistemas formales $\omega$-consistentes que resultan de añadir a $P$ una clase recursivamente 
+    definible de axiomas.} mencionados en el \autoref{teo:TeoremaVI} hay sentencias aritméticas indecidibles.
+\end{teorema}
+
+Lo mismo vale (según el \autoref{lem:lema-01}) para la teoría axiomática de conjuntos y sus extensiones mediante clases recursivas primitivas y $\omega$-consistentes 
+de axiomas.
+
+Finalmente derivamos todavía el siguiente resultado:
+
+\begin{teorema} \label{teo:TeoremaIX}
+    En todos los sistemas formales mencionados en el \autoref{teo:TeoremaVI} hay problemas indecidibles de la lógica pura de predicados de primer orden\footnote{Véase 
+    \cite{hilbert1999principles}. En el sistema $P$ entendemos por fórmulas de la lógica pura de predicados de primer orden las fórmulas que se obtienen al sustituir 
+    las relaciones por clases de tipo superior en las fórmulas del cálculo de predicados de primer orden de $PM$.} (es decir, fórmulas de la lógica pura de primer 
+    orden, respecto a las cuales no podemos probar ni su validez ni la existencia de un contraejemplo).
+\end{teorema}
+
+Esto se basa en el siguiente
+\begin{teorema} \label{teo:TeoremaX}
+    Cada problema de la forma $\forall x F x$ (donde $F$ es recursiva primitiva) es reducible a la cuestión de si una determinada fórmula de la lógica pura de primer 
+    orden es satisfacible o no (es decir, para cada F recursiva primitiva podemos encontrar una fórmula de la lógica pura de primer orden, cuya satisfacibilidad es
+    equivalente a la verdad de $\forall x F x$).
+\end{teorema}
+
+Consideramos como fórmulas de la lógica pura de primer orden las fórmulas formadas con los signos primitivos:
 
 \endinput
 %------------------------------------------------------------------------------------

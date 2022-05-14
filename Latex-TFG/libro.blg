@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: libro.aux
 The style file: alpha.bst
 Database file #1: library.bib
-You've used 13 entries,
+You've used 14 entries,
             2543 wiz_defined-function locations,
-            643 strings with 6070 characters,
-and the built_in function-call counts, 4525 in all, are:
-= -- 446
-> -- 182
-< -- 8
-+ -- 58
-- -- 56
-* -- 290
-:= -- 768
-add.period$ -- 42
-call.type$ -- 13
-change.case$ -- 66
-chr.to.int$ -- 13
-cite$ -- 13
-duplicate$ -- 207
-empty$ -- 354
-format.name$ -- 74
-if$ -- 927
+            649 strings with 6192 characters,
+and the built_in function-call counts, 4862 in all, are:
+= -- 476
+> -- 201
+< -- 9
++ -- 64
+- -- 62
+* -- 312
+:= -- 826
+add.period$ -- 45
+call.type$ -- 14
+change.case$ -- 71
+chr.to.int$ -- 14
+cite$ -- 14
+duplicate$ -- 222
+empty$ -- 379
+format.name$ -- 81
+if$ -- 995
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 69
-num.names$ -- 39
-pop$ -- 75
+missing$ -- 21
+newline$ -- 74
+num.names$ -- 42
+pop$ -- 83
 preamble$ -- 1
-purify$ -- 85
+purify$ -- 92
 quote$ -- 0
-skip$ -- 157
+skip$ -- 170
 stack$ -- 0
-substring$ -- 215
-swap$ -- 22
-text.length$ -- 8
+substring$ -- 222
+swap$ -- 24
+text.length$ -- 9
 text.prefix$ -- 6
 top$ -- 0
-type$ -- 80
+type$ -- 84
 warning$ -- 0
-while$ -- 43
-width$ -- 18
-write$ -- 170
+while$ -- 46
+width$ -- 19
+write$ -- 183
