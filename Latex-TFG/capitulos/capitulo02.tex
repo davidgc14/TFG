@@ -458,7 +458,12 @@ o secuencias de signos primitivos $\text{a}_1, \text{a}_2, \dots, \text{a}_n$, t
 $\text{a}_1, \text{a}_2, \dots, \text{a}_n$ están en la relación $R$. Las clases y relaciones de números naturales, que corresponden de este modo a los conceptos
 metamatemáticos hasta ahora definidos, como por ejemplo «variable», «fórmula», «sentencia», «axioma», «fórmula deducible», etc., serán designadas por las mismas 
 palabras escritas con letras mayúsculas pequeñas. Por ejemplo, el enunciado de que en el sistema $P$ hay problemas indecidibles se convierte en la siguiente afirmación:
-Hay SENTENCIAS $a$, tales que ni $a$ ni la NEGACIÓN de $a$ son FÓRMULAS DEDUCIBLES.\\
+Hay SENTENCIAS $a$, tales que ni $a$ ni la NEGACIÓN de $a$ son FÓRMULAS DEDUCIBLES.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{La indecidibilidad}
 
 Ahora vamos a insertar aquí una disgresión que por el momento no tiene nada que ver con el sistema formal $P$. Empecemos por dar la siguiente definición: 
 Decimos que una función numérica\footnote{Es decir, su dominio definicional es la clase de los números naturales (o de los $n$-tuplos de números naturales) 
@@ -955,7 +960,7 @@ decisión formal (en base a $K$) de la SENTENCIA $17 \text{ Gen } r$ (que puede 
             \end{aligned}
             \right)$.
 \end{enumerate}
-Es decir, una decisión formal de $17 \text{ Gen } r$ tendría comoconsecuencia la exhibición efectiva de una $\omega$-inconsistencia.
+Es decir, una decisión formal de $17 \text{ Gen } r$ tendría como consecuencia la exhibición efectiva de una $\omega$-inconsistencia.
 
 Diremos que una relación (o clase) entre números naturales $Rx_1, \dots, x_n$ es \textit{decidible} si existe un SIGNO RELACIONAL $n$-ario $r$, tal que 
 \eqref{eq:Teo5-3} y \eqref{eq:Teo5-4} valen para él\footnote{Véase el \autoref{teo:TeoremaV}.}. En especial, por tanto, del teorema V resulta que cada 
@@ -998,7 +1003,7 @@ la existencia de clases $K$, que son consistentes, pero no $\omega$-consistentes
 consistente).}.
 
 Un caso especial del \autoref{teo:TeoremaVI} se da cuando la clase $K$ consta de un número finito de FORMULAS (y, si se quiere, de las que se obtiene a partir 
-de ellas por ELEVACION D E TIPO). Naturalmente, cada clase finita $K$ es recursiva primitiva. Sea $a$ el mayor número contenido en $K$. Entonces ocurre para $K$ que
+de ellas por ELEVACIÓN DE TIPO). Naturalmente, cada clase finita $K$ es recursiva primitiva. Sea $a$ el mayor número contenido en $K$. Entonces ocurre para $K$ que
 \begin{equation}
     x \in K \leftrightarrow \exists n,m \thinspace (m \leq x \wedge n \leq a \wedge n \in K \wedge x = m \thinspace Th \thinspace n)
 \end{equation}
@@ -1021,7 +1026,32 @@ las teorías axiomáticas de conjuntos de Zermelo-Faenkel y de von Neumann\footn
 del sistema $P$, pues sólo hay un tipo de variable (o dos en el sistema de von Neumann).}, así como el sistema axiomático de la teoría de números que consta de 
 los axiomas de Peano, la definición recursiva (según el esquema \eqref{eq:recdef}) y las reglas lógicas. El supuesto $1$ es satisfecho en general por cada sistema, 
 cuyas reglas de inferencia son las usuales y cuyos axiomas (análogamente a los de $P$) se obtienen por sustitución a partir de un número finito de 
-esquemas.\footnote{1}
+esquemas.\footnote{Como se mostrará en la segunda parte de este artículo, la verdadera razón de la incompletud inherente a todos los sistemas formales de la matemática 
+es que la formación de tipos cada vez mayores puede continuarse hasta lo transfinito (véase \cite{hilbert1926unendliche}), mientras que en cada sistema formal a lo 
+sumo disponemos de un número infinito numerable de ellos. En efecto, se puede mostrar que las sentencias indecidibles aquí construidas se vuelven decidibles si 
+añadimos tipos más altos adecuados (por ejemplo, el tipo $\omega$ al sistema $P$). Algo parecido ocurre con la teoría axiomática de conjuntos.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Consecuencias}
+
+Ahora vamos a sacar algunas consecuencias del \autoref{teo:TeoremaVI} y para ello damos la siguiente definición:
+
+\begin{definicion}
+    Una relación (o clase) se llama \textit{aritmética} si puede ser definida con la sola ayuda de las nociones $+$ y $\cdot$ (adición y multiplicación de números 
+    naturales)\footnote{Aquí y en lo sucesivo consideramos siempre que el cero es un número natural.} y de las constantes lógicas $\vee, \lnot, \forall x$ y $=$,
+    donde $\forall x$ y $=$ sólo pueden referirse a números naturales\footnote{de un tal concepto debe constar exclusivamente de los signos indicados, de variables 
+    $x, y, \dots$, para números naturales y de las constantes $0$ y $1$ (no pueden aparecer en él variables para funciones o conjuntos). En los prefijos, desde luego, 
+    puede aparecer cualquier otra variable para números en vez de $x$.}. 
+\end{definicion}
+
+De modo análogo se define la noción de «sentencia aritmética». En especial son aritméticas las relaciones «mayor que» y «congruente módulo $n$», pues ocurre
+
+\begin{flalign}
+    x > y \leftrightarrow \lnot \exists z (y = x+z) \\ 
+    x \equiv y \pmod{n} \leftrightarrow  \exists z (x=y+z \cdot n \vee y = x+z\cdot n)
+\end{flalign}
 
 \endinput
 %------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  13 MAY 2022 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.26)  14 MAY 2022 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -799,6 +799,8 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 23.
 Package tocbasic Info: Using my definition of `\numberline' on input line 24.
 Package tocbasic Info: Using my definition of `\numberline' on input line 25.
 Package tocbasic Info: Using my definition of `\numberline' on input line 26.
+Package tocbasic Info: Using my definition of `\numberline' on input line 27.
+Package tocbasic Info: Using my definition of `\numberline' on input line 28.
 )
 \tf@toc=\write4
 \openout4 = `libro.toc'.
@@ -952,58 +954,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--387
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 450--462
-
- []
-
 LaTeX Info: Redefining \. on input line 462.
 LaTeX Info: Redefining \% on input line 462.
-[19]
-LaTeX Info: Redefining \. on input line 514.
-LaTeX Info: Redefining \% on input line 514.
+ [19]
+LaTeX Info: Redefining \. on input line 519.
+LaTeX Info: Redefining \% on input line 519.
  [20]
-LaTeX Info: Redefining \. on input line 575.
-LaTeX Info: Redefining \% on input line 575.
+LaTeX Info: Redefining \. on input line 573.
+LaTeX Info: Redefining \% on input line 573.
  [21]
-LaTeX Info: Redefining \. on input line 605.
-LaTeX Info: Redefining \% on input line 605.
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
  [22]
-LaTeX Info: Redefining \. on input line 637.
-LaTeX Info: Redefining \% on input line 637.
+LaTeX Info: Redefining \. on input line 641.
+LaTeX Info: Redefining \% on input line 641.
  [23]
-Overfull \hbox (0.90144pt too wide) in paragraph at lines 652--655
+Overfull \hbox (0.90144pt too wide) in paragraph at lines 657--660
 []$\OML/zplm/m/it/10 n Th x \OT1/zplm/m/n/10 = \OML/zplm/m/it/10 ^^Vy\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 y \OMS/zplm/m/n/10 ^^T \OML/zplm/m/it/10 x[] \OMS/zplm/m/n/10 ^ 8\OML/zplm/m/it/10 k\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 k \OMS/zplm/m/n/10 ^^T \OML/zplm/m/it/10 l\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 x\OT1/zplm/m/n/10 ) \OMS/zplm/m/n/10 ! \OT1/zplm/m/n/10 (\OML/zplm/m/it/10 k Gl x > \OT1/pplx/m/n/10 13 \OMS/zplm/m/n/10 ^ \OML/zplm/m/it/10 k Gl y \OT1/zplm/m/n/10 = \OML/zplm/m/it/10 k Gl x \OMS/zplm/m/n/10 ^^A \OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 1 \OML/zplm/m/it/10 Pr\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 k Gl x\OT1/zplm/m/n/10 ))[])))$ 
  []
 
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
 [24]
-Overfull \hbox (8.33784pt too wide) in paragraph at lines 688--692
+Overfull \hbox (8.33784pt too wide) in paragraph at lines 693--697
 []$\OML/zplm/m/it/10 Bw x \OMS/zplm/m/n/10 $ 8\OML/zplm/m/it/10 n\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 0 \OML/zplm/m/it/10 < n \OMS/zplm/m/n/10 ^^T \OML/zplm/m/it/10 l\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 x\OT1/zplm/m/n/10 ) \OMS/zplm/m/n/10 ! \OML/zplm/m/it/10 Ax\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 n Gl x\OT1/zplm/m/n/10 ) \OMS/zplm/m/n/10 ^ 9\OML/zplm/m/it/10 pq\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 0 \OML/zplm/m/it/10 < p\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 q < n \OMS/zplm/m/n/10 ^ \OML/zplm/m/it/10 Fl \OT1/zplm/m/n/10 (\OML/zplm/m/it/10 n Gl x\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 p Gl x\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 q Gl x\OT1/zplm/m/n/10 ))) \OMS/zplm/m/n/10 ^
  []
 
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
+LaTeX Info: Redefining \. on input line 724.
+LaTeX Info: Redefining \% on input line 724.
 [25]
-LaTeX Info: Redefining \. on input line 774.
-LaTeX Info: Redefining \% on input line 774.
+LaTeX Info: Redefining \. on input line 779.
+LaTeX Info: Redefining \% on input line 779.
  [26]
-LaTeX Info: Redefining \. on input line 886.
-LaTeX Info: Redefining \% on input line 886.
+LaTeX Info: Redefining \. on input line 891.
+LaTeX Info: Redefining \% on input line 891.
  [27]
-Overfull \hbox (9.2455pt too wide) in paragraph at lines 910--927
-\OML/zplm/m/it/10 n B[]\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 17[]\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )$\T1/pplj/m/n/10 (-10) . Pe-ro en-ton-ces, por [][]Ecua-ción 4.1[][][] ocu-rri-ría que $[][]  []$,
+Overfull \hbox (9.2455pt too wide) in paragraph at lines 915--932
+\OML/zplm/m/it/10 n B[]\OT1/zplm/m/n/10 (\OT1/pplx/m/n/10 17[]\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )$\T1/pplj/m/n/10 (-10) . Pe-ro en-ton-ces, por [][]Ecua-ción 4.2[][][] ocu-rri-ría que $[][]  []$,
  []
 
-LaTeX Info: Redefining \. on input line 960.
-LaTeX Info: Redefining \% on input line 960.
+LaTeX Info: Redefining \. on input line 965.
+LaTeX Info: Redefining \% on input line 965.
 [28]
-Overfull \hbox (2.0035pt too wide) in paragraph at lines 984--999
+Overfull \hbox (2.0035pt too wide) in paragraph at lines 989--1004
 \OML/zplm/m/it/10 K[]$ \T1/pplj/m/n/10 (-10) no es $\OML/zplm/m/it/10 !$\T1/pplj/m/n/10 (-10) -consistente, pues por $\OMS/zplm/m/n/10 :\OT1/zplm/m/n/10 ([][](\OT1/pplx/m/n/10 17[]\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 ))$ \T1/pplj/m/n/10 (-10) y [][] ocu-rre que $\OMS/zplm/m/n/10 8\OML/zplm/m/it/10 x[][]Sb []$
  []
 
-LaTeX Info: Redefining \. on input line 1015.
-LaTeX Info: Redefining \% on input line 1015.
+LaTeX Info: Redefining \. on input line 1020.
+LaTeX Info: Redefining \% on input line 1020.
 [29]) (/home/curbelo/Documentos/TFG/Latex-TFG/apendices/apendice01.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
@@ -1050,14 +1048,14 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `libro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `libro.brf' has not changed.
-(rerunfilecheck)             Checksum: 4D9B8AC344D1E22934A525256DEDEAAE;607.
+(rerunfilecheck)             Checksum: DAB54D14919F32A09B48DC097D354092;665.
  ) 
 Here is how much of TeX's memory you used:
- 16652 strings out of 481239
- 284199 string characters out of 5920377
+ 16672 strings out of 481239
+ 284526 string characters out of 5920377
  712004 words of memory out of 5000000
- 30859 multiletter control sequences out of 15000+600000
- 779719 words of font info for 437 fonts, out of 8000000 for 9000
+ 30868 multiletter control sequences out of 15000+600000
+ 780000 words of font info for 441 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,14n,72p,10139b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not exist, replaced by a fixed one
@@ -1065,10 +1063,10 @@ pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc}</usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (49 pages, 375473 bytes).
+Output written on /home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf (49 pages, 378520 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
- 801 compressed objects within 9 object streams
- 272 named destinations out of 1000 (max. 500000)
- 88806 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 821 compressed objects within 9 object streams
+ 278 named destinations out of 1000 (max. 500000)
+ 88822 words of extra memory for PDF output out of 89155 (max. 10000000)
 
