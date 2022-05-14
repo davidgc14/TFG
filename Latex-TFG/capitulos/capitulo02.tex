@@ -1034,7 +1034,7 @@ añadimos tipos más altos adecuados (por ejemplo, el tipo $\omega$ al sistema $
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Consecuencias}
+\section{Consistencia}
 
 Ahora vamos a sacar algunas consecuencias del \autoref{teo:TeoremaVI} y para ello damos la siguiente definición:
 
@@ -1158,7 +1158,51 @@ Esto se basa en el siguiente
     equivalente a la verdad de $\forall x F x$).
 \end{teorema}
 
-Consideramos como fórmulas de la lógica pura de primer orden las fórmulas formadas con los signos primitivos:
+Consideramos como fórmulas de la lógica pura de primer orden las fórmulas formadas con los signos primitivos: 
+$\lnot, \vee, \forall\text{x}, =; \text{x}, \text{y}, \dots \text{(variables individuales)}, \text{Hx}, \text{Gxy}, \text{Lxyz}$ (variables relacionales y de 
+propiedades), donde $\forall \text{x y } =$ sólo pueden referirse a individuos\footnote{Hilbert y W. Ackermann no incluyen el signo $=$
+entre los del cálculo lógico de primer orden. Pero para cada fórmula en que aparece el signo $=$ existe otra fórmula en que ese signo no aparece y que es
+satisfacible si y sólo si la primera fórmula lo es.}. A estos signos añadimos todavía una tercera especie de variables $\text{g(x), l(x,y), j(x,y,z)}$, etc., 
+que representan funciones de objetos (es decir, $\text{g(x), l(x,y)}$, etc., designan funciones cuyos argumentos y valores son individuos)\footnote{Además, el dominio 
+de definición debe ser siempre el dominio entero de individuos.}. Una fórmula que, además de los signos de la lógica pura de primer orden, contenga variables de la 
+tercera especie ($\text{g(x), l(x,y)}$, etc.), será llamada una fórmula en sentido amplio\footnote{Variables de la tercera especie pueden aparecer en todos los 
+lugares ocupados por variables individuales, por ejemplo, y=l(x), Gxl(y), Gl(x,g(y)), x, etc.}. Las nociones de «satisfacible» y «válido» pueden extenderse sin
+más a las fórmulas en sentido amplio, y tenemos un teorema que dice que para cada fórmula $\alpha$ en sentido amplio podemos encontrar una fórmula $\beta$ de la lógica 
+pura de primer orden, tal que la satisfacibilidad de $\alpha$ es equivalente a la de $\beta$. $\beta$ se obtiene a partir de $\alpha$, sustituyendo las variables de 
+la tercera especie ($\text{g(x), l(x,y)}$, etc.), \dots que aparecen en $\alpha$ por expresiones de la forma $\iota$zGzx, $\iota$zLzxy, \dots eliminando las funciones 
+«descriptivas» por el método usado en $PM$, y uniendo conyuntivamente\footnote{Es decir, formando la conyunción.} la fórmula así obtenida con una expresión que diga que
+todos los G, L, \dots que hemos puesto en vez de los g, l, \dots son unívocos respecto a su primer lugar.
+
+Ahora mostramos que para cada problema de la forma $\forall x F x$ (donde $F$ es recursiva primitiva) hay un problema equivalente referente a la satisfacibilidad de 
+una fórmula en sentido amplio, de donde -según la observación que acabamos de hacer- se sigue el \autoref{teo:TeoremaX}. 
+
+Puesto que $F$ es recursiva primitiva, hay una función recursiva primitiva $f(x)$, tal que $Fx \leftrightarrow f(x) = 0$, y para $f$ hay una secuencia de funciones
+$f_1, f_2, \dots, f_n$, tales que $f_n = f$, $f_1(x) = x+1$ y para cada $f_k(1 < k \leq n)$ o bien
+
+\begin{enumerate}
+    \item   \begin{flalign} \label{eq:TeoX-18}
+                &\forall x_2, \dots, x_m (f_k(0, x_2, \dots, x_m) = f_p(x_2, \dots, x_m)) \\
+                \forall x, x_2, \dots, x_m& (f_k(f_1(x), x_2, \dots, x_m) = f_q(x, f_k(x_1, x_2, \dots, x_m), x_2, \dots, x_m))
+            \end{flalign}
+            donde $p,q < k$, o bien
+    \item   \begin{equation}\label{eq:TeoX-19}
+                \forall x_1, \dots, x_m (f_k(x_1, \dots, x_m) = f_r(f_{i_1}(\mathfrak{x}_1), \dots, f_{i_s}(\mathfrak{x}_s)))\footnote{Los $\mathfrak{x_i}$ representan
+                cualesquiera secuencias finitas de las variables $x_1, x_2, \dots, x_m$; por ejemplo $x_1, x_3, x_2$.}
+            \end{equation}
+            donde $r<k, i_v <k$ (para cada $v = 1,2,\dots,s)$, o bien
+    \item   \begin{equation}\label{eq:TeoX-20}
+            \forall x_1, \dots, x_m (f_k(x_1, \dots, x_m) = f_1(f_1(\dots(f_1(0))\dots)))
+            \end{equation}
+\end{enumerate}
+
+Además formamos las sentencias:
+\begin{equation} \label{eq:TeoX-21}
+    \forall x \lnot f_1(x) = 0 \wedge \forall x, y \thinspace (f_1(x) = f_1(y) \rightarrow x = y)
+\end{equation}
+
+\begin{equation} \label{eq:TeoX-22}
+    \forall x \thinspace (f_n(x) = 0)
+\end{equation}
 
 \endinput
 %------------------------------------------------------------------------------------

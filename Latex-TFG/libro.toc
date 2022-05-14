@@ -22,7 +22,7 @@
 \contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}La indecidibilidad}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Consecuencias}{30}{section.4.3}%
-\contentsline {chapter}{\numberline {A}Primer apéndice}{33}{appendix.Alph1}%
-\contentsline {chapter}{Glosario}{35}{chapter*.9}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{37}{chapter*.10}%
+\contentsline {section}{\numberline {4.3}Consistencia}{30}{section.4.3}%
+\contentsline {chapter}{\numberline {A}Primer apéndice}{35}{appendix.Alph1}%
+\contentsline {chapter}{Glosario}{37}{chapter*.9}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{39}{chapter*.10}%
