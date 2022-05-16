@@ -1151,7 +1151,7 @@ Finalmente derivamos todavía el siguiente resultado:
     orden, respecto a las cuales no podemos probar ni su validez ni la existencia de un contraejemplo).
 \end{teorema}
 
-Esto se basa en el siguiente
+Esto se basa en el siguiente teorema (y por tanto el presente será demostrado como consecuencia del siguiente):
 \begin{teorema} \label{teo:TeoremaX}
     Cada problema de la forma $\forall x F x$ (donde $F$ es recursiva primitiva) es reducible a la cuestión de si una determinada fórmula de la lógica pura de primer 
     orden es satisfacible o no (es decir, para cada F recursiva primitiva podemos encontrar una fórmula de la lógica pura de primer orden, cuya satisfacibilidad es
@@ -1203,6 +1203,39 @@ Además formamos las sentencias:
 \begin{equation} \label{eq:TeoX-22}
     \forall x \thinspace (f_n(x) = 0)
 \end{equation}
+
+En todas las fórmulas \eqref{eq:TeoX-18}, \eqref{eq:TeoX-19}, \eqref{eq:TeoX-20} (para $ k=2,3, \dots, n$) y en \eqref{eq:TeoX-21} y \eqref{eq:TeoX-22} sustituimos
+ahora las funciones $f_1$ por las variables funcionales $g_i$ y el número $0$ por una variable individual $\text{x}_0$ que no haya aparecido hasta ahora, y a continuación 
+formamos la conyunción $\gamma$ de todas las fórmulas así obtenidas.
+\begin{corolario}
+    La fórmula $\exists \text{x}_0 \thinspace \gamma$ tiene la propiedad requerida, es decir,
+    $$\forall x f(x) = 0 \qquad \leftrightarrow \qquad \exists \text{x}_0 \thinspace \gamma \text{ es satisfacible.}$$
+\end{corolario}
+\begin{proof}
+    La implicación $\rightarrow$ es directa, pues si las funciones $f_1, f_2, \dots, f_n$ se ponen en vez de las variables $g_1, g_2, \dots, g_n$ en 
+    $\exists \text{x}_0 \thinspace \gamma$, evidentemente resulta un enunciado verdadero.
+
+    Veamos ahora el recíproco. Sean $h_1, h_2, \dots, h_n$ las funciones, existentes por hipótesis, que producen un enunciado verdadero cuando se ponen en vez de
+    $g_1, g_2, \dots, g_n$. Su dominio de individuos sea $D$. Puesto que $\exists \text{x}_0 \thinspace \gamma$ vale para las funciones $h_i$ hay un individuo $a$ 
+    (de $D$), tal que todas las fórmulas \eqref{eq:TeoX-18} a \eqref{eq:TeoX-22}, si reemplazamos las $f_i$ por $h_1$ y $0$ por $a$. Ahora formamos la mínima subclase de $D$, que
+    contiene $a$ y está clausurada respecto a la operación $h_1(x)$. Esta subclase $D'$ tiene la propiedad de que cada una de las funciones $h_i$, aplicada a elementos de $D'$, 
+    proporciona de nuevo elementos de $D'$. Pues para $h_1$ vale esto por definición de $D'$, y por \eqref{eq:TeoX-18}, \eqref{eq:TeoX-19} y \eqref{eq:TeoX-20} esta propiedad se 
+    transmite de los $h_1$ con índice menor a los de índice mayor. Designemos mediante $h_i'$las funciones que resultan de restringir los $h_1$ al dominio de individuos $D'$.
+    También para éstas funciones valen todas las fórmulas \eqref{eq:TeoX-18} a \eqref{eq:TeoX-22} (reemplazando las $f_i$ por $h_1$ y $0$ por $a$).
+
+    Puesto que \eqref{eq:TeoX-21} vale para $h_i'$ y $a$, podemos aplicar biunívocamente los individuos de $D'$ a los números naturales, de tal modo que $a$ se convierte en $0$
+    y la función $h_1'$ en la función $f_1$ del siguiente. Pero mediante esta aplicación todas las la funciones $h_i'$ se convierten en la funciones $f_i$, y puesto que 
+    \eqref{eq:TeoX-22} vale para $h_n'$ y $a$, ocurre que $\forall x \thinspace f_n(x) = 0$ o $\forall x \thinspace f(x) = 0$, que es lo que queríamos probar\footnote{Del
+    \autoref{teo:TeoremaX} se sigue, por ejemplo, que los problemas de Fermat y de Goldbach podrían ser resueltos, si se pudiera resolver el problema de la decisión para la 
+    lógica de primer orden.}.
+\end{proof}
+
+Puesto que (para cada $F$ especial) la argumentación que conduce al \autoref{teo:TeoremaX} puede también ser llevada a cabo en el sistema formal $P$, también la equivalencia 
+entre un enunciado de la forma $\forall x F x$ (donde $F$ es recursivo primitivo) y la satisfacibilidad de la fórmula correspondiente de la lógica de primer orden es demostrable en $P$, 
+y por tanto de la indecidibilidad de lo uno se sigue la de lo otro, con lo que queda probado el \autoref{teo:TeoremaIX}\footnote{Naturalmente, el \autoref{teo:TeoremaIX} también vale 
+para la teoría axiomática de conjuntos, así como para sus extensiones obtenidas mediante el añadido de clases recursivas primitivas y $@o$-consistentes de axiomas, pues también en esos
+sistemas hay enunciados indecidibles de la forma $\forall xFx$ (donde $F$ es recursivo primitivo).}.
+
 
 \endinput
 %------------------------------------------------------------------------------------
