@@ -1237,6 +1237,68 @@ para la teoría axiomática de conjuntos, así como para sus extensiones obtenid
 sistemas hay enunciados indecidibles de la forma $\forall xFx$ (donde $F$ es recursivo primitivo).}.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Consecuencias}
+De los resultados del apartado de la Decibilidad, se sigue una sorprendente consecuencia relativa a la prueba de la consistencia del sistema $P$ (y de sus extensiones), que queda 
+expresada en el siguiente teorema:
+
+\begin{teorema} \label{teo:TeoremaXI}
+    Sea $K$ una clase recursiva primitiva y consistente\footnote{$K$ es consistente (abreviadamente, $\text{Wid } K$) se define así: 
+    $\text{Wid } K \leftrightarrow \exists x \thinspace (\text{Form } x \wedge \lnot \text{Bew}_K x)$.} cualquiera de FORMULAS. Entonces ocurre que la SENTENCIA que dice que $K$ es 
+    consistente no es $K$-DEDUCIBLE. En especial, la consistencia de $P$ no es deducible\footnote{Esto se sigue al tomar como K la clase vacía de FORMULAS.} en $P$, suponiendo que $P$ sea
+    consistente (en caso contrario, naturalmente, toda fórmula sería deducible).
+\end{teorema}
+\begin{proof}
+    La prueba (meramente esbozada) es la siguiente: Sea $K$ una clase recursiva primitiva cualquiera (pero elegida de una vez por todas para las siguientes consideraciones) de FORMULAS 
+    (en el caso más simple, la clase vacía). Para probar el hecho de que $17 \text{ Gen } r$\footnote{Naturalmente, $r$ depende (como $p$) de $K$.} no es K-DEDUCIBLE, sólo habíamos utilizado 
+    la consistencia de $K$, es decir, ocurre que
+    \begin{equation} \label{eq:teoXI-23}
+        \text{Wid } K \rightarrow \lnot \text{Bew}_K (17 \text{ Gen } r)
+    \end{equation}
+    es decir, según \eqref{eq:TeoVI-6.1}:
+    \begin{equation}
+        \text{Wid } K \rightarrow \forall x \lnot (x \thinspace B_K (17 \text{ Gen } r))
+    \end{equation}
+
+    Ahora, por \eqref{eq:TeoVI-13} se tiene 
+    \begin{equation}
+        17 \text{ Gen } r = Sb\left(p
+        \begin{aligned}
+            &19 \\
+            &Z(p)
+        \end{aligned}
+        \right)
+    \end{equation}
+    y por tanto
+    \begin{equation}
+        \text{Wid } K \rightarrow \forall x \lnot \left(x \thinspace B_K Sb\left(p
+        \begin{aligned}
+            &19 \\
+            &Z(p)
+        \end{aligned}
+        \right)\right)
+    \end{equation}
+    es decir, por \eqref{eq:TeoVI-8.1}
+    \begin{equation} \label{eq:teoXI-24}
+        \text{Wid } K \rightarrow \forall x \thinspace Qxp
+    \end{equation}
+
+    Ahora constatamos que todas las nociones definidas hasta ahora (y todas las afirmaciones probadas) son también definibles (o deducibles) en $P$. Pues no hemos utilizado más que los 
+    métodos usuales de definición y prueba de la matemática clásica, tal y como están formalizados en $P$. Especialmente ocurre que $K$ (como cada clase recursiva primitiva) es definible en $P$. 
+    Sea $w$ la SENTENCIA mediante la que se expresa en $P$ que $\text{Wid } K$ La relación $Qxy$ expresa (conforme a \eqref{eq:TeoVI-8.1}, \eqref{eq:TeoVI-9} y \eqref{eq:TeoVI-10}) mediante 
+    el SIGNO RELACIONAL $q$, por tanto, $Qxp$ por $r$ (pues por \eqref{eq:TeoVI-12} ocurre que 
+    $r = Sb\left(p
+    \begin{aligned}
+        &19 \\
+        &Z(p)
+    \end{aligned}
+    \right)$), el enunciado $\forall x \thinspace Qxp$ por $17 \text{ Gen } r$.
+
+    Por \eqref{eq:teoXI-24}, se tiene que $w \text{ Imp } (17 \text{ Gen } r)$ es deducible\footnote{Que de \eqref{eq:teoXI-23} podríamos inferir la verdad de $w \text{ Imp } (17 \text{ Gen } r)$ 
+    se debe a que la sentencia indecidible $17 \text{ Gen } r$ afirma su propia indeducibilidad, como ya observamos al principio.} en $P$ (y, por tanto, $K$-DEDUCIBLE). Si $w$ fuese $K$-DEDUCIBLE,
+    también $17 \text{ Gen } r$ sería $K$-DEDUCIBLE, y de ahí se seguiría, por \eqref{eq:teoXI-23}, que $K$ no es consistente.
+\end{proof}
 \endinput
 %------------------------------------------------------------------------------------
 % FIN DEL CAPÍTULO. 

@@ -23,6 +23,7 @@
 \contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}La indecidibilidad}{20}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Consistencia}{30}{section.4.3}%
-\contentsline {chapter}{\numberline {A}Primer apéndice}{35}{appendix.Alph1}%
-\contentsline {chapter}{Glosario}{37}{chapter*.9}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{39}{chapter*.10}%
+\contentsline {section}{\numberline {4.4}Consecuencias}{34}{section.4.4}%
+\contentsline {chapter}{\numberline {A}Primer apéndice}{37}{appendix.Alph1}%
+\contentsline {chapter}{Glosario}{39}{chapter*.9}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{41}{chapter*.10}%
