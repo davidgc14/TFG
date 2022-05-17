@@ -64,6 +64,12 @@ Ian Stewart.
 \newblock {\em The problems of mathematics}.
 \newblock Oxford University Press Oxford, 1987.
 
+\bibitem[T{\etalchar{+}}36]{turing1936computable}
+Alan~Mathison Turing et~al.
+\newblock On computable numbers, with an application to the
+  entscheidungsproblem.
+\newblock {\em J. of Math}, 58(345-363):5, 1936.
+
 \bibitem[vN27]{v1927hilbertschen}
 J~v.~Neumann.
 \newblock Zur hilbertschen beweistheorie.
