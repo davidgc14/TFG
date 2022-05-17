@@ -10,8 +10,46 @@
 
 \chapter{Introducción}
 
-De acuerdo con la comisión de grado, el TFG debe incluir una introducción en la que se describan claramente los objetivos previstos inicialmente en la propuesta de TFG, indicando si han sido o no alcanzados, los antecedentes importantes para el desarrollo, los resultados obtenidos, en su caso y las principales fuentes consultadas.
+En este trabajo se presenta la historia del teorema que hizo tambalear los cimientos de toda la matemática conocida:
+los teoremas de incompletitud de Gödel. Para ello daremos un pequeño repaso histórico acerca de qué fue lo 
+que motivó a este gran matemático del siglo XX a tratar este tema tan peculiar, en el que veremos que dicho 
+mérito se le atribuye a David Hilbert y a su lista de 23 problemas.
 
-Ver archivo \texttt{preliminares/introduccion.tex}
+A finales de siglo XIX, la matemática  siente un pequeño temblor en sus fundamentos, dando lugar a la crisis fundacional
+de la matemática, y es aquí cuando aparece Hilbert con su segundo problema de la lista, en el cual plantea como 
+problema urgente la axiomatización de la aritmética. Lo que Hilbert desconocía es que este problema nunca tendría solución.
+
+Gödel, después de haberse licenciado en matemáticas, se encuentra con un libro recién publicado de Hilbert y Ackermann en el que se plantea
+un problema abierto de la lógica: demostrar la completitud del cálculo lógico 
+de primer orden. Emergiendo del mundo desconocido, este gran matemático prometedor propone una solución irrefutable en menos de un año, 
+y en un artículo de apenas 10 páginas en el que enuncia su resultado fuerte:
+
+\begin{center}
+    \textit{En una lógica de primer orden, toda fórmula que es válida en un sentido lógico es demostrable.}
+\end{center}
+
+Este enunciado tan simple nos promete la existencia de demostración de cualquier enunciado de fórmulas lógicas elementales, siempre
+que estas se encuentren en cantidad infinita numerable. Este gran resultado dio muchas esperanzas a Hilbert, el cual sostenía 
+hasta entonces grandes esperanzas acerca de la posibilidad de resolver su segundo problema propuesto en el congreso de 1900.
+
+Sin embargo, lo que Hilbert no pudo prevenir es que, un año después, Gödel publicaría el resultado que haría temblar a toda la matemática, 
+y no sólo la de su época, sino para siempre. En uno de los artículos más importantes de la matemática del siglo XX, Gödel presenta los 
+conocidos \textit{Teoremas de incompletitud}, mediante una prueba constructiva basada en una \textit{gödelización}, que no es más que una asignación
+de números a elementos de la lógica de primer orden. En ellos enuncia como sigue:
+
+\begin{center}
+    \begin{enumerate}
+        \item \textit{Ninguna teoría matemática formal es consistente y completa}
+        \item \textit{Si el sistema de axiomas de dicho sistema formal es consistente, dicha consistencia no se puede probar mediante dichos axiomas.}
+    \end{enumerate}
+\end{center}
+
+Este resultado supone un gran muro en el avance del conocimiento de la matemática. En una primera instancia, nunca podremos de ninguna manera
+crear un sistema matemático en el que tengamos la certeza de poder probar todo resultado, y además tampoco de que no vayamos a tener contradicciones en el mismo.\\
+
+En este pequeño trabajo bibliográfico se pretende recoger las demostraciones originales publicadas entre los años 1929 y 1931 por el propio Kurt Gödel (aunque 
+posteriormente se hayan publicado otras propuestas más simples y mejoradas, considero que en las originales se pueden entender mejor los objetivos de la misma mediante
+un proceso constructivo), además del contexto histórico necesario para entender la motivación de dichas demostraciones.
+
 
 \endinput
