@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{FdCTF20}
+\begin{thebibliography}{HAdZ62}
 
 \bibitem[AR10]{an1910principia}
 Whitehead AN and B~Russell.
@@ -10,23 +10,6 @@ Whitehead AN and B~Russell.
 Haiïm Brezis and Felix Browder.
 \newblock Partial differential equations in the 20th century.
 \newblock {\em Advances in Mathematics}, 135:76--144, 1998.
-
-\bibitem[FdCTF20]{Fer_Castro_2020}
-Max Fernández~de Castro and Yolanda Torres~Falcón.
-\newblock La constitución del programa de hilbert.
-\newblock {\em Metatheoria - Revista de Filosofía e Historia de la Ciencia},
-  10(2):31--50, abr. 2020.
-
-\bibitem[GR{\etalchar{+}}00]{gray2000hilbert}
-Jeremy Gray, David Rowe, et~al.
-\newblock {\em The Hilbert Challenge}.
-\newblock Oxford University Press on Demand, 2000.
-
-\bibitem[Gra03]{gray2003reto}
-Jeremy~J Gray.
-\newblock {\em El reto de Hilbert: Los 23 problemas que desafiaron a la
-  matem{\'a}tica}.
-\newblock Cr{\'\i}tica, 2003.
 
 \bibitem[HA99]{hilbert1999principles}
 David Hilbert and Wilhelm Ackermann.
@@ -53,17 +36,6 @@ Georg Kreisel.
 \newblock What have we learnt from hilbert's second problem.
 \newblock {\em Browder [8: 1, pp. 93-130]}, 67:8--12, 1976.
 
-\bibitem[Sie13]{alma991014322964704990}
-Wilfried Sieg.
-\newblock {\em Hilbert's programs and beyond / Wilfried Sieg.}
-\newblock Logic and computation in philosophy. Oxford University Press, Oxford,
-  [England] ;, 2013 - 2013.
-
-\bibitem[Ste87]{stewart1987problems}
-Ian Stewart.
-\newblock {\em The problems of mathematics}.
-\newblock Oxford University Press Oxford, 1987.
-
 \bibitem[T{\etalchar{+}}36]{turing1936computable}
 Alan~Mathison Turing et~al.
 \newblock On computable numbers, with an application to the
@@ -74,10 +46,5 @@ Alan~Mathison Turing et~al.
 J~v.~Neumann.
 \newblock Zur hilbertschen beweistheorie.
 \newblock {\em Mathematische Zeitschrift}, 26(1):1--46, 1927.
-
-\bibitem[Zac07]{Zach_2007}
-Richard Zach.
-\newblock Hilbert's program then and now.
-\newblock In {\em Philosophy of Logic}, pages 411--447. Elsevier, 2007.
 
 \end{thebibliography}
