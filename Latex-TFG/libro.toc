@@ -17,11 +17,11 @@
 \contentsline {chapter}{\numberline {3}La completitud del cálculo lógico de primer orden}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Definiciones y lemas previos}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Exposición y demostraciones}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Corolarios}{16}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}La indecidibilidad}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Consistencia}{30}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Consecuencias}{34}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}La noción de sistema formal}{36}{subsection.4.4.1}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{37}{chapter*.9}%
+\contentsline {section}{\numberline {3.3}Corolarios}{17}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}La indecidibilidad}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Consistencia}{32}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Consecuencias}{36}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}La noción de sistema formal}{38}{subsection.4.4.1}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{39}{chapter*.9}%

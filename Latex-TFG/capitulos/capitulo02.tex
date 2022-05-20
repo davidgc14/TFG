@@ -329,9 +329,46 @@ Supuestas todas estas notaciones previas, tenemos como resultado directo el teor
 \end{proof}
 
 
+Supongamos que en $\alpha$ aparecen las variables predicativas $\text{F}_1, \text{F}_2, \dots, \text{F}_k$ y las variables sentenciales $\text{X}_1, \text{X}_2, \dots, \text{X}_l$.
+Entonces $\alpha_n$ se construye con una sola ayuda de los conectores $\vee$ y $\lnot$ a partir de componentes elementales del tipo:
+
+\begin{equation}
+    \text{F}_1 \text{x}_{p_1} \cdots \text{x}_{q_1}, \text{F}_1 \text{x}_{p_2} \cdots \text{x}_{q_2}, \dots; \text{F}_k \text{X}_1, \text{X}_2, \dots, \text{X}_l
+\end{equation}
+
+A cada $\alpha_n$ le hacemos corresponder una fórmula conectiva $\beta_n$, que obtenemos reemplazando los componentes elementales de $\alpha_n$ por variables sentenciales, 
+de tal modo que a diferentes componentes elementales (aunque sólo se diferencien respecto a las variables individuales) los reemplacemos por variables sentenciales distintas. 
+Por otro lado, vamos a designar como
+«modelo de nivel $n$ de $\pi\alpha$» a un sistema de relaciones $R_1^n \cdots R_k^n$, definido en el dominio de los números naturales $z$ ($0 \leq z \leq ns$), así como de valores
+veritativos $w_1^n, w_2^n, \dots, w_l^n$ para las variables sentenciales $\text{X}_1, \text{X}_2, \dots, \text{X}_l$ , tales que la sustitución en $\alpha_n$ de los $\text{F}_i$ 
+por los $R_i^n$, de los $\text{x}_i$ por los números $i$ y de $\text{X}_i$ por los correspondientes valores veritativos $w_i^n$ da lugar a un enunciado verdadero. Evidentemente,
+existen modelos de nivel $n$ si y sólo si $\beta_n$ es satisfacible.
+
+Cada $\beta_n$ como fórmula conectiva, es o satisfacible o refutable (por el \autoref{lem:lema-7}). Por tanto, sólo pueden darse dos casos:
+
+\begin{enumerate}
+    \item Al menos un $\beta_n$ es refutable. Entonces (por las reglas de inferencia 2 y 3 y el \autoref{lem:lema-1}), también es refutable la correspondiente $\pi_n \alpha_n$ y,
+            a causa de la demostrabilidad de $\pi\alpha \rightarrow \pi_n \alpha_n$, también $\pi\alpha$ lo es.
+    \item Ningún $\beta_n$ es refutable, es decir, todos los $\beta_n$ son satisfacibles Entonces hay modelos de cada nivel. Pero puesto que sólo hay un número finito de modelos 
+    para cada nivel (a causa de la fínitud de los correspondientes dominios de individuos) y puesto que además cada modelo de nivel $n + 1$ contiene como parte\footnote{Que un 
+    sistema $\{F_1, F_2, \dots, F_k ; w_1, w_2, \dots, w_k \}$ es parte de otro $\{G_1, G_2, \dots, G_k ; v_1, v_2, \dots, v_k \}$ significa que:
+    \begin{enumerate}
+        \item El dominio de individuos de los $F_i$ es parte del dominio de individuos de los $G_i$.
+        \item Los $F_i$ coinciden con los $G_i$ en el dominio más reducido.
+        \item para $i$, $v_i = w_i$.
+    \end{enumerate}} 
+    otro modelo de nivel $n$ (lo que se desprende inmediatamente de la manera como se construyen los $\alpha_n$ mediante repetidas conyunciones), por conocidos razonamientos se
+    sigue que en este caso hay una sucesión de modelos $S_1, S_2, \dots$ ($S_k$ de nivel $k$), cada uno de los cuales contiene al anterior como parte. Ahora definimos en el dominio 
+    de los números naturales un sistema $\mathcal{S} = \{S_1, S_2, \dots, S_k ; v_1 v_2 \cdots v_l\}$ mediante las siguientes estipulaciones:
+    \begin{enumerate}
+        \item $S_p a_1 \cdots a_i \thinspace (1 \leq p \leq k)$ debe valer si y sólo si para al menos un $S_m$ de la sucesión anteriormente citada (y entonces también para todos los 
+                siguientes) vale $R_p^m a_1 \cdots a_i$.
+        \item $v_i = w_i^m \thinspace (1 \leq i \leq l)$ para al menos un $S_m$ (y entonces también para los siguientes).
+    \end{enumerate}
+\end{enumerate}
+
+
 \section{Corolarios}
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
