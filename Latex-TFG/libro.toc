@@ -17,8 +17,8 @@
 \contentsline {chapter}{\numberline {3}La completitud del cálculo lógico de primer orden}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Definiciones y lemas previos}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Exposición y demostraciones}{12}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Generalizando con identidad}{17}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Corolarios}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}Generalización con identidad}{17}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Corolarios}{18}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}La indecidibilidad}{22}{section.4.2}%

@@ -370,7 +370,7 @@ Cada $\beta_n$ como fórmula conectiva, es o satisfacible o refutable (por el \a
 Entonces está claro, sin más, que el sistema $\mathcal{S}$ hace verdadera la fórmula $\pi\alpha$. Así pues, en este caso $\pi\alpha$ es satisfacible, con lo que ha terminado la prueba 
 de la suficiencia del sistema de axiomas arriba indicado.  
 
-\subsection{Generalizando con identidad}
+\subsection{Generalización con identidad}
 
 Podemos señalar que la ahora ya probada equivalencia entre «válido» y «deducible» implica una reducción de lo supernumerable a lo numerable respecto al problema de la decisión, pues 
 «válido» se refiere al conjunto supernumerable de las relaciones, mientras que «deducible» sólo supone el conjunto numerable de las deducciones.
@@ -383,7 +383,29 @@ El \autoref{thm:teoremaI} y el \autoref{thm:teoremaII} pueden ser generalizados 
 \end{enumerate}
 
 También para este dominio ampliado de fórmulas vale de modo análogo como antes el siguiente teorema:
+\begin{teorema} \label{thm:teoremaVII}
+    Cada fórmula válida (más precisamente, válida en cada dominio de individuos) de la lógica de primer orden con identidad es deducible.
+\end{teorema}
 
+Y equivalente a éste, el siguiente
+\begin{teorema} \label{thm:teoremaVIII}
+    Cada fórmula de la lógica de primer orden con identidad es o refutable o satisfacible (y precisamente sobre un dominio de imdividuos finito o infinito numerable).
+\end{teorema}
+
+\begin{proof}
+    Para probarlo supongamos que $\alpha$ sea una fórmula cualquiera de la lógica de primer orden con identidad. Construimos una fórmula $\beta$ como la conjunción de $\alpha$, de
+    $\forall \text{x}, \thinspace \text{x} = \text{x}$ y de todas las fórmulas que se obtienen del axioma 8 sustituyendo la variable predicativa F por las variables predicativas 
+    que aparecen en $\alpha$, es decir, más precisamente
+    \begin{equation}
+        \forall \text{x} \forall \text{y} (\text{x} = \text{y} \rightarrow (\text{Fx} \rightarrow \text{Fy}))
+    \end{equation}
+    para todas als variables predicativas monádicas de $\alpha$, 
+    \begin{equation}
+        \forall \text{x} \forall \text{y} \forall \text{z} (\text{x} = \text{y} \rightarrow (\text{Fxz} \rightarrow \text{Fyz})) \wedge
+        \forall \text{x} \forall \text{y} \forall \text{z} (\text{x} = \text{y} \rightarrow (\text{Fzx} \rightarrow \text{Fzy})) 
+    \end{equation}
+
+\end{proof}
 
 
 \section{Corolarios}
