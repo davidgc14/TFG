@@ -18,11 +18,11 @@
 \contentsline {section}{\numberline {3.1}Definiciones y lemas previos}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Exposición y demostraciones}{12}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Generalización con identidad}{17}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Corolarios}{18}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}La indecidibilidad}{22}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Consistencia}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Consecuencias}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}La noción de sistema formal}{38}{subsection.4.4.1}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{39}{chapter*.9}%
+\contentsline {subsection}{\numberline {3.2.2}La independencia de los axiomas}{19}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Sobre sentencias formalmente indecidibles}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definiciones y conceptos previos}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}La indecidibilidad}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Consistencia}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Consecuencias}{38}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}La noción de sistema formal}{40}{subsection.4.4.1}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{41}{chapter*.9}%

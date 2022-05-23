@@ -404,11 +404,100 @@ Y equivalente a éste, el siguiente
         \forall \text{x} \forall \text{y} \forall \text{z} (\text{x} = \text{y} \rightarrow (\text{Fxz} \rightarrow \text{Fyz})) \wedge
         \forall \text{x} \forall \text{y} \forall \text{z} (\text{x} = \text{y} \rightarrow (\text{Fzx} \rightarrow \text{Fzy})) 
     \end{equation}
-
+    para todas lasvariables predicativas diádicas $\alpha$ (incluida «$=$» misma); y las fórmulas correspondientes para las variables predicativas triádicas y otras poliádicas. 
+    Sea $\beta'$ la fórmula que se obtiene a partir de $\beta$, sustituyendo en ésta el signo de identidad $=$ por una variable predicativa G que no aparezca en $\beta$. En la
+    fórmula $\beta'$ ya no aparece el signo de identidad y es por tanto refutable o satisfacible, según probamos anteriormente. Si $\beta'$ es refutable, también lo es $\beta$, 
+    que se obtiene de $\beta'$ por sustitución de G por $=$. Pero $\beta$ es la conyunción de $\alpha$ y el resto de la fórmula, que evidentemente es deducible a partir de los 
+    axiomas $7$ y $8$. Por tanto, en este caso también $\alpha$ es refutable. Supongamos ahora que $\beta'$ sea satisfacible por un cierto sistema $\mathcal{S}$ de relaciones
+    \footnote{Si en $\alpha$ aparecen las variables sentenciales, $\mathcal{S}$ debe contener, además de relaciones, también valores veritativos para esas variables sentenciales.}
+    sobre un dominio numerable de individuos $S$. De la manera de construirse $\beta'$ se desprende que $H$ (es decir, la relación del sistema $\mathcal{S}$ que corresponde a G)
+    es una relación reflexiva, simétrica y transitiva, y que por tanto genera una partición de los elementos de $S$, tal que los elementos de la misma clase pueden ser sustituidos 
+    unos por otros sin que cambie nada respecto al darse o no darse de una relación del sistema $\mathcal{S}$. Por consiguiente, si identificamos entre sí todos los elementos que
+    pertenecen a la misma clase (por ejemplo, considerando las clases mismas como elementos de un nuevo dominio de individuos), $H$ se convierte en la relación de identidad, con 
+    lo que tenemos una satisfacción de $\beta$ y por tanto también de $\alpha$. De hecho, pues, $\alpha$ es o satisfacible\footnote{Y en un dominio numerable (pues consta de clases 
+    disjuntas de individuos de un dominio denumerable $S$).} o refutable.
 \end{proof}
 
+Otra generalización del \autoref{thm:teoremaI} se obtiene considerando conjuntos infinitos numerables de fórmulas lógicas. También para ellos valen los análogos del 
+\autoref{thm:teoremaI} y del \autoref{thm:teoremaII}, es decir:
 
-\section{Corolarios}
+\begin{teorema} \label{thm:teoremaIX}
+    Todo conjunto infinito numerable de fórmulas de la lógica de primer orden es o satisfacible (es decir, todas las fórmulas del conjunto son simultáneamente satisfacibles) o 
+    contiene un subconjunto finito, cuya conyunción es refutable.
+\end{teorema}
+
+Este resultado se sigue inmediatamente de:
+
+\begin{teorema} \label{thm:teoremaX}
+    Para que un conjunto infinito numerable de fórmulas sea satisfacible es necesario y suficiente que cada subconjunto finito suyo sea satisfacible.
+\end{teorema}
+
+\begin{proof}
+    Respecto al \autoref{thm:teoremaX} empezaremos por constatar que en su prueba podemos limitarnos a conjuntos de fórmulas normales\footnote{Es decir, $K$-fórmulas, en la 
+    terminología anterior.} de primer grado, pues aplicando repetidamente el procedimiento empleado en la prueba de los \autoref{thm:teoremaIII} y \autoref{thm:teoremaIV} 
+    a cada fórmula concreta podemos indicar para cada conjunto $\Sigma$ de fórmulas un conjunto $\Sigma'$ de fórmulas normales de primer grado, tal que la satisfacibilidad 
+    de un subconjunto cualquiera de $\Sigma$ es equivalente con la del correspondiente subconjunto de $\Sigma'$.
+
+    Sea pues 
+    \begin{equation}
+        \forall \mathfrak{x}_1 \exists \mathfrak{y}_1 \alpha_1 (\mathfrak{x}_1 ; \mathfrak{y}_1), \thinspace 
+        \forall \mathfrak{x}_2 \exists \mathfrak{y}_2 \alpha_2 (\mathfrak{x}_2 ; \mathfrak{y}_2), \cdots
+        \forall \mathfrak{x}_n \exists \mathfrak{y}_n \alpha_n (\mathfrak{x}_n ; \mathfrak{y}_n), \cdots
+    \end{equation}
+    un conjunto numerable $\Sigma$ de fórmulas normales de primer grado, $\mathfrak{x}_i$ sea un $r_i$-tuplo $\mathfrak{y}_i$ un $s_i$-tuplo de variables 
+    $\mathfrak{x}_1^i,\mathfrak{x}_2^i, \dots, \mathfrak{x}_n^i,\dots$ sea una sucesion de los $r_i$-tuplos,  de elementos de la sucesión $\text{x}_0, \text{x}_1, \text{x}_2,
+    \dots, \text{x}_n, \dots$, ordenados por suma creciente de índices, además sea $\mathfrak{y}_k^i$ un $s_i$-tuplo de variables de la sucesión antes citada, tal que si en la sucesión
+    \begin{equation}
+        \mathfrak{y}_1^1,\mathfrak{y}_2^1, \mathfrak{y}_1^2,\mathfrak{y}_3^1, \mathfrak{y}_2^2, \mathfrak{y}_1^3, \mathfrak{y}_4^1, \cdots, \text{etc.}
+    \end{equation}
+    reemplazamos cada uno de los $\mathfrak{y}_k^i$ por el correspondiente $s_i$-tuplo de variables, obtenemos la sucesión $\text{x}_i, \text{x}_2, \dots, \text{x}_n, \dots$
+    Además definimos, de modo análogo a como ya antes hicimos, una sucesión de fórmulas $\beta_n$ mediante estipulaciones: 
+    \begin{flalign}
+        & \beta_1 = \alpha_1 (\mathfrak{x}_1^1 ; \mathfrak{y}_1^1) \\
+        & \beta_n = \beta_n \wedge \alpha_1 (\mathfrak{x}_n^1 ; \mathfrak{y}_n^1) \wedge \alpha_2 (\mathfrak{x}_{n-1}^2 ; \mathfrak{y}_{n-1}^2) \wedge \cdots 
+                    \wedge \alpha_{n-1} (\mathfrak{x}_2^{n-1} ; \mathfrak{y}_2^{n-1}) \wedge \alpha_{n} (\mathfrak{x}_1^{n} ; \mathfrak{y}_1^{n})
+    \end{flalign}
+
+    Fácilmente se ve que $\pi_n \beta_n$ (es decir, la fórmula que se obtiene a partir de $\beta_n$ ligando todas sus variables libres mediante cuantificadores $\exists$) es una 
+    consecuencia de las primeras $n$ fórmulas del anterior conjunto $\Sigma$. Por tanto, si cada conjunto $\Sigma$ es satisfacible, también lo es cada $\beta_n$. Pero si cada $\beta_n$
+    es satisfacible, también lo es el conjunto $\Sigma$ entero (lo cual puede obtenerse aplicando el razonamiento empleado en la prueba del \autoref{thm:teoremaVI}). 
+    Con esto queda probado el \autoref{thm:teoremaX}.
+\end{proof}
+
+Los \autoref{thm:teoremaIX} y \autoref{thm:teoremaX} pueden ampliarse sin dificultad a sistemas formales que contengan el signo $=$ por el procedimiento empleado en la prueba del 
+\autoref{thm:teoremaVIII}.
+
+Todavía se puede dar otra versión del \autoref{thm:teoremaIX}, si nos limitamos a conjuntos de fórmulas sin variables sentenciales y si consideramos que estos conjuntos son sistemas 
+axiomáticos, cuyos conceptos primitivos son las variables predicativas que allí aparecen. Entonces el \autoref{thm:teoremaIX} dice, evidentemente, que cualquier sistema axiomático 
+finito o numerable, en cuyos axiomas «todo» y «hay» nunca se refieren a clases o relaciones, sino sólo a individuos\footnote{El sistema axiomático de Hilbert para la geometría, 
+exceptuando el axioma de continuidad, puede servir como ejemplo.}, o es contradictorio (es decir, se puede obtener en él una contradicción en un número finito de pasos formales) o 
+posee un modelo.
+
+
+\subsection{La independencia de los axiomas}
+
+Tratemos, finalmente, de la cuestión de la independencia de los axiomas $1-8$. Ninguno de los axiomas $1-4$ se sigue de los otros tres, como ya ha mostrado P. Bernays\footnote{Véase 
+\cite{Fer_Castro_2020}}. Su independencia no resulta alterada por el añadido de los axiomas $5-8$, como puede mostrarse mediante las mismas interpretaciones usadas por Bernays, 
+extendiéndolas también a fórmulas que contengan variables predicativas y el signo $=$ mediante la estipulación de que:
+
+\begin{enumerate}
+    \item Se suprimen los prefijos y las variables individuales.
+    \item En el resto de la fórmula, las variables predicativas se tratan como variables sentenciales.
+    \item El signo $=$ sólo puede ser sustituido por uno de los varores veritativos «señalados».
+\end{enumerate}
+
+Para mostrar la independencia del axioma 5 hacemos corresponder a cada fórmula otra fórmula, obtenida sustituyendo cada uno de sus componentes (caso de que los tenga) del tipo:
+\begin{equation}
+    \forall \text{xFx}, \forall \text{yFy}, \cdots ; \forall \text{xGx}, \forall \text{yGy},\cdots ; \cdots \footnote{Es decir, las variables predicativas F, G, ..., etc., precedidas 
+    de un cuantilicador universal, cuyo alcance se limita a la fórmula formada por la F, G, etcétera, en cuestión y su correspondiente variable individual.} 
+\end{equation}
+Por $\text{X} \vee \lnot \text{X}$. Con esto los axiomas $1$-$4$ y $6$-$8$ se convierten en fórmulas válidas y lo mismo ocurre con las fórmulas derivadas de esos axiomas mediante las 
+reglas de inferencia $1$-$4$, como puede comprobarse por inducción completa, mientras que el axioma $5$ no posee esa propiedad. De exactamente el mismo modo se muestra la independencia 
+del axioma $6$, sólo que ahora $\forall \text{xFx}, \forall \text{yFy}, \cdots, etc.$, han de ser reemplazadas por $\text{X} \vee \lnot \text{X}$. Para probar la independencia del axioma 
+$7$ basta con señalar que los axiomas $1$-$6$ y $8$ (y por tanto todas las fórmulas derivadas de ellos) continúan siendo válidos al reemplazar la relación de identidad por la relación vacía, 
+mientras que ello no ocurre con el axioma $7$. Análogamente, las fórmulas derivadas de los axiomas $1$-$7$ siguen siendo lógicamente válidas al reemplazar la relación de identidad por la 
+relación universal, mientras que ello no ocurre con el axioma $8$ (en un dominio de individuos con al menos dos individuos). También es fácil comprobar que ninguna de las reglas de inferencia 
+$1$-$4$ es superflua, aunque aquí renunciamos a mostrarlo en detalle.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

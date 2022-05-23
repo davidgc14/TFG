@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{HAdZ62}
+\begin{thebibliography}{FdCTF20}
 
 \bibitem[AR10]{an1910principia}
 Whitehead AN and B~Russell.
@@ -10,6 +10,12 @@ Whitehead AN and B~Russell.
 Haiïm Brezis and Felix Browder.
 \newblock Partial differential equations in the 20th century.
 \newblock {\em Advances in Mathematics}, 135:76--144, 1998.
+
+\bibitem[FdCTF20]{Fer_Castro_2020}
+Max Fernández~de Castro and Yolanda Torres~Falcón.
+\newblock La constitución del programa de hilbert.
+\newblock {\em Metatheoria - Revista de Filosofía e Historia de la Ciencia},
+  10(2):31--50, abr. 2020.
 
 \bibitem[HA99]{hilbert1999principles}
 David Hilbert and Wilhelm Ackermann.
