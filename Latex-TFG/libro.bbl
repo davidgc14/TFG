@@ -27,6 +27,11 @@ Max Fernández~de Castro and Yolanda Torres~Falcón.
 \newblock {\em Metatheoria - Revista de Filosofía e Historia de la Ciencia},
   10(2):31--50, abr. 2020.
 
+\bibitem[Fer12]{fernandez2012esperando}
+F.J.G. Fern{\'a}ndez.
+\newblock {\em Esperando a G{\"o}del: Literatura y matem{\'a}ticas}.
+\newblock Ciencia abierta. Nivola Libros y Ediciones, S.L., 2012.
+
 \bibitem[GR{\etalchar{+}}00]{gray2000hilbert}
 Jeremy Gray, David Rowe, et~al.
 \newblock {\em The Hilbert Challenge}.
@@ -63,6 +68,12 @@ Georg Kreisel.
 \newblock What have we learnt from hilbert's second problem.
 \newblock {\em Browder [8: 1, pp. 93-130]}, 67:8--12, 1976.
 
+\bibitem[Man97]{mancosu1997brouwer}
+Paolo Mancosu.
+\newblock {\em From Brouwer to Hilbert: The debate on the foundations of
+  mathematics in the 1920s}.
+\newblock Oxford University Press, 1997.
+
 \bibitem[Sie13]{alma991014322964704990}
 Wilfried Sieg.
 \newblock {\em Hilbert's programs and beyond / Wilfried Sieg.}
@@ -80,13 +91,20 @@ Alan~Mathison Turing et~al.
   entscheidungsproblem.
 \newblock {\em J. of Math}, 58(345-363):5, 1936.
 
+\bibitem[Tor49]{toranzos1949panorama}
+Fausto~I. Toranzos.
+\newblock El panorama actual de la filosof{\'\i}a de la matem{\'a}tica y la
+  influencia en {\'e}l de d. hilbert.
+\newblock In {\em Actas del Primer Congreso Nacional de Filosof{\'\i}a,
+  Mendoza, Argentina}, 1949.
+
 \bibitem[VB93]{van1993strong}
 Jean~Paul Van~Bendegem.
 \newblock The strong hilbert program.
 \newblock {\em Revue internationale de philosophie}, pages 343--353, 1993.
 
 \bibitem[vN27]{v1927hilbertschen}
-J~v.~Neumann.
+J.~v.~Neumann.
 \newblock Zur hilbertschen beweistheorie.
 \newblock {\em Mathematische Zeitschrift}, 26(1):1--46, 1927.
 
