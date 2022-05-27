@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex libro"] 1653594563 "libro.aux" "libro.bbl" "libro" 1653594564
+["bibtex libro"] 1653668716 "libro.aux" "libro.bbl" "libro" 1653668879
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
   "library.bib" 1653594559 6730 77d23701fce2ff3f90bf220f25538a47 ""
-  "libro.aux" 1653594564 17882 ad468aa7da9a3b3d0cab7a21f54dd815 "pdflatex"
+  "libro.aux" 1653668776 17815 eb8aa2d1db6d03e496023eb862aa8f0c "pdflatex"
   (generated)
-  "libro.blg"
   "libro.bbl"
-["pdflatex"] 1653594563 "/home/curbelo/Documentos/TFG/Latex-TFG/libro.tex" "/home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf" "libro" 1653594564
+  "libro.blg"
+["pdflatex"] 1653668775 "/home/curbelo/Documentos/TFG/Latex-TFG/libro.tex" "/home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf" "libro" 1653668879
   "/etc/texmf/web2c/texmf.cnf" 1645912500 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/curbelo/Documentos/TFG/Latex-TFG/libro.aux" 1653594564 17882 ad468aa7da9a3b3d0cab7a21f54dd815 ""
-  "/home/curbelo/Documentos/TFG/Latex-TFG/libro.tex" 1653594559 14361 9e7ffacac4512566cf62c205add4b214 ""
+  "/home/curbelo/Documentos/TFG/Latex-TFG/libro.aux" 1653668776 17815 eb8aa2d1db6d03e496023eb862aa8f0c ""
+  "/home/curbelo/Documentos/TFG/Latex-TFG/libro.tex" 1653668878 14386 048626e3f148c561e0662d59cd29a2cd ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc" 1571691482 2975 c954546004be455abfe6aeb9c285b1f9 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc" 1571691482 3110 66f31943a4dc43c1efc53226afa4b36b ""
@@ -201,12 +201,12 @@
   "capitulos/capitulo02.tex" 1653310628 111616 fd21a2c0aa4a67123ea140ad794af0ed ""
   "glosario.tex" 1652779531 462 d02172799c55768ea9414445b566287d ""
   "img/portada-ugr-sencilla-color.pdf" 1613475118 57947 fbabc804d392777d03caeaeedf0965c3 ""
-  "libro.aux" 1653594564 17882 ad468aa7da9a3b3d0cab7a21f54dd815 "pdflatex"
-  "libro.bbl" 1653594563 3971 2ec212160807f0b5de0b8a7ac2f5ac1b "bibtex libro"
-  "libro.brf" 1653594564 1515 3959d89cae01e2006115a1d0ad491cb2 "pdflatex"
-  "libro.out" 1653594563 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "libro.tex" 1653594559 14361 9e7ffacac4512566cf62c205add4b214 ""
-  "libro.toc" 1653594564 2195 e50a7a6ab43e6cf4ebf9d6d82e603e56 "pdflatex"
+  "libro.aux" 1653668776 17815 eb8aa2d1db6d03e496023eb862aa8f0c "pdflatex"
+  "libro.bbl" 1653668716 3971 2ec212160807f0b5de0b8a7ac2f5ac1b "bibtex libro"
+  "libro.brf" 1653668776 1465 84b6a4b1359390f2154f0252e63a165a "pdflatex"
+  "libro.out" 1653668776 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "libro.tex" 1653668878 14386 048626e3f148c561e0662d59cd29a2cd ""
+  "libro.toc" 1653668776 2195 e50a7a6ab43e6cf4ebf9d6d82e603e56 "pdflatex"
   "paquetes/comandos-entornos.tex" 1613475118 768 0cb52b72ff26e41d0c84dfc312fcbf4e ""
   "paquetes/hyperref.tex" 1613475118 1641 5cb44f90bd6db5b7b6db45f6cfcc78f7 ""
   "preliminares/declaracion-originalidad.tex" 1613475118 699 41a5dbc8f5101ef1ccd823a81b420124 ""
@@ -218,10 +218,10 @@
   "preliminares/titulo.tex" 1613475118 857 9ba13429b23c2f81cac1b54ca8bc4eb9 ""
   (generated)
   "libro.toc"
+  "libro.out"
   "libro.aux"
   "libro.brf"
-  "libro.out"
   "/home/curbelo/Documentos/TFG/Latex-TFG/libro.pdf"
-  "libro.log"
   "libro.pdf"
   "/home/curbelo/Documentos/TFG/Latex-TFG/libro.log"
+  "libro.log"
