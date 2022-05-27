@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{FdCTF20}
 
+\bibitem[Alc00]{alcaraz2000logica}
+Carlos~Torres Alcaraz.
+\newblock La l{\'o}gica matem{\'a}tica en el siglo xx.
+\newblock {\em Miscel{\'a}nea Matem{\'a}tica}, 31:61--105, 2000.
+
 \bibitem[AR10]{an1910principia}
 Whitehead AN and B~Russell.
 \newblock Principia mathematica.
@@ -31,6 +36,11 @@ Max Fernández~de Castro and Yolanda Torres~Falcón.
 F.J.G. Fern{\'a}ndez.
 \newblock {\em Esperando a G{\"o}del: Literatura y matem{\'a}ticas}.
 \newblock Ciencia abierta. Nivola Libros y Ediciones, S.L., 2012.
+
+\bibitem[G{\"o}d86]{godel1986collected}
+Kurt G{\"o}del.
+\newblock {\em Collected Works, Volume 1: Publications 1929-1936}.
+\newblock Oxford University Press, 1986.
 
 \bibitem[GR{\etalchar{+}}00]{gray2000hilbert}
 Jeremy Gray, David Rowe, et~al.
