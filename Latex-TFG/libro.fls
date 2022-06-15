@@ -323,9 +323,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Bold-tlf-t1.v
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-t1--base.tfm
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/preliminares/summary.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/preliminares/summary.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-0.tfm
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/preliminares/introduccion.tex
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/preliminares/introduccion.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-t1.tfm
@@ -489,12 +486,10 @@ INPUT /home/curbelo/Documentos/TFG/Latex-TFG/libro.brf
 INPUT /home/curbelo/Documentos/TFG/Latex-TFG/libro.brf
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc
-INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
