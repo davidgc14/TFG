@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: libro.aux
 The style file: alpha.bst
 Database file #1: library.bib
-You've used 24 entries,
+Warning--there's a number but no series in hilbert1991fundamentos
+You've used 27 entries,
             2543 wiz_defined-function locations,
-            706 strings with 7501 characters,
-and the built_in function-call counts, 7918 in all, are:
-= -- 769
-> -- 292
-< -- 19
-+ -- 90
-- -- 86
-* -- 481
-:= -- 1328
-add.period$ -- 76
-call.type$ -- 24
-change.case$ -- 116
-chr.to.int$ -- 24
-cite$ -- 24
-duplicate$ -- 387
-empty$ -- 643
-format.name$ -- 122
-if$ -- 1630
+            723 strings with 7799 characters,
+and the built_in function-call counts, 8832 in all, are:
+= -- 858
+> -- 316
+< -- 23
++ -- 96
+- -- 92
+* -- 538
+:= -- 1477
+add.period$ -- 86
+call.type$ -- 27
+change.case$ -- 129
+chr.to.int$ -- 27
+cite$ -- 28
+duplicate$ -- 434
+empty$ -- 723
+format.name$ -- 134
+if$ -- 1818
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 36
-newline$ -- 124
-num.names$ -- 72
-pop$ -- 147
+missing$ -- 41
+newline$ -- 139
+num.names$ -- 81
+pop$ -- 166
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 170
 quote$ -- 0
-skip$ -- 291
+skip$ -- 321
 stack$ -- 0
-substring$ -- 351
-swap$ -- 44
-text.length$ -- 19
-text.prefix$ -- 14
+substring$ -- 397
+swap$ -- 48
+text.length$ -- 23
+text.prefix$ -- 17
 top$ -- 0
-type$ -- 144
-warning$ -- 0
-while$ -- 73
-width$ -- 30
-write$ -- 308
+type$ -- 160
+warning$ -- 1
+while$ -- 81
+width$ -- 33
+write$ -- 346
+(There was 1 warning)

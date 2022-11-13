@@ -26,6 +26,11 @@ Leo Corry.
 \newblock Los 23 problemas de hilbert y su transfondo histórico.
 \newblock {\em Boletín de la Asociación Matemática Venezolana}, V(2), 1998.
 
+\bibitem[Dys70]{dyson1970life}
+Freeman Dyson.
+\newblock Life of a mathematician: Hilbert.
+\newblock {\em Science}, 170(3961):965--966, 1970.
+
 \bibitem[FdCTF20]{Fer_Castro_2020}
 Max Fernández~de Castro and Yolanda Torres~Falcón.
 \newblock La constitución del programa de hilbert.
@@ -68,6 +73,11 @@ David Hilbert.
 \newblock {\"U}ber das unendliche.
 \newblock {\em Mathematische Annalen}, 95(1):161--190, 1926.
 
+\bibitem[Hil91]{hilbert1991fundamentos}
+David Hilbert.
+\newblock {\em Fundamentos de la geometr{\'\i}a}.
+\newblock Number~5. Editorial CSIC-CSIC Press, 1991.
+
 \bibitem[KM00]{kline2000matematicas}
 M.~Kline and A.R. Merino.
 \newblock {\em Matem{\'a}ticas: La p{\'e}rdida de la Certidumbre}.
@@ -83,6 +93,11 @@ Paolo Mancosu.
 \newblock {\em From Brouwer to Hilbert: The debate on the foundations of
   mathematics in the 1920s}.
 \newblock Oxford University Press, 1997.
+
+\bibitem[Rei86]{reid1986hilbert}
+Constance Reid.
+\newblock {\em Hilbert-Courant}.
+\newblock Springer Science \& Business Media, 1986.
 
 \bibitem[Sie13]{alma991014322964704990}
 Wilfried Sieg.
