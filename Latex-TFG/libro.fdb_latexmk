@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex libro"] 1672222696 "libro.aux" "libro.bbl" "libro" 1672222700 0
-  "./library.bib" 1672134834 8969 779221525818744a4e6a0519ed0b62a4 ""
+["bibtex libro"] 1672237689 "libro.aux" "libro.bbl" "libro" 1672238534 0
+  "./library.bib" 1672237638 9293 9cf94b051678257c9a6a6374d2f7ed40 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "libro.aux" 1672222699 13445 68502d69c5e17575d5c8a59a94251422 "pdflatex"
+  "libro.aux" 1672238533 13414 b093a91895e33adbb761c6b84c060b2b "pdflatex"
   (generated)
   "libro.bbl"
   "libro.blg"
   (rewritten before read)
-["pdflatex"] 1672222696 "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1672222700 0
-  "C:/Users/david.garciacurbelo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1672222691 117281 9d390a6da559811b748ce5fdd95ca8ff ""
+["pdflatex"] 1672238531 "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1672238534 0
+  "C:/Users/david.garciacurbelo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1672237988 117281 9d390a6da559811b748ce5fdd95ca8ff ""
   "C:/Users/david.garciacurbelo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1672222590 23175215 23d4bca544e5071a1645f9c6439c7b98 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc" 1594817604 2809 947aec6f9801b5a045e999c93403fba2 ""
@@ -181,16 +181,16 @@
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
   "apendices/apendice01.tex" 1672134834 400 d2624e3c6afbcfd6689f1ccbd115c1ac ""
   "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" 1672222639 15027 25638ac74920ca09bd9df88ed199254c ""
-  "capitulos/capitulo01.tex" 1672134834 19833 3454537a925eb8f9a93af38977ff418b ""
-  "capitulos/capitulo02.tex" 1672222577 373 2fcbce42d4b705af6453f0fde237c7d9 ""
+  "capitulos/capitulo01.tex" 1672227337 19850 eb6c98e6dabe846d3617aa8305fad9d7 ""
+  "capitulos/capitulo02.tex" 1672238530 1676 1fc4608253dc61da86624ac8cebc9ef1 ""
   "glosario.tex" 1672134834 480 d02172799c55768ea9414445b566287d ""
   "img//portada-ugr-sencilla-color.pdf" 1672134834 57947 fbabc804d392777d03caeaeedf0965c3 ""
-  "libro.aux" 1672222699 13445 68502d69c5e17575d5c8a59a94251422 "pdflatex"
-  "libro.bbl" 1672222696 4325 2907e8e8d6c2d03ca6076fb6e33cca3d "bibtex libro"
-  "libro.brf" 1672222699 1307 c8c276cc686bcc73c11aa3f64d5a2d80 "pdflatex"
-  "libro.out" 1672222698 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "libro.aux" 1672238533 13414 b093a91895e33adbb761c6b84c060b2b "pdflatex"
+  "libro.bbl" 1672237689 4606 a7fc835a7514dcb927ebca5d20c6f4aa "bibtex libro"
+  "libro.brf" 1672238534 1367 a2eb5bab94488ff68acfd4e00c1f7a9e "pdflatex"
+  "libro.out" 1672238533 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "libro.tex" 1672222639 15027 25638ac74920ca09bd9df88ed199254c ""
-  "libro.toc" 1672222699 1475 65a67df02fdd262814981e3e26471314 "pdflatex"
+  "libro.toc" 1672238534 1459 eebee194ed5b18338424f8e4a3cab31a "pdflatex"
   "paquetes/comandos-entornos.tex" 1672134834 793 0cb52b72ff26e41d0c84dfc312fcbf4e ""
   "paquetes/hyperref.tex" 1672134834 1687 5cb44f90bd6db5b7b6db45f6cfcc78f7 ""
   "preliminares/declaracion-originalidad.tex" 1672134834 727 41a5dbc8f5101ef1ccd823a81b420124 ""

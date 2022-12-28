@@ -31,6 +31,13 @@ Freeman Dyson.
 \newblock Life of a mathematician: Hilbert.
 \newblock {\em Science}, 170(3961):965--966, 1970.
 
+\bibitem[F{\etalchar{+}}79]{frege1879begriffsschrift}
+Gottlob Frege et~al.
+\newblock Begriffsschrift, a formula language, modeled upon that of arithmetic,
+  for pure thought.
+\newblock {\em From Frege to G{\"o}del: A source book in mathematical logic},
+  1931:1--82, 1879.
+
 \bibitem[FdCTF20]{Fer_Castro_2020}
 Max Fernández~de Castro and Yolanda Torres~Falcón.
 \newblock La constitución del programa de hilbert.

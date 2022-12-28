@@ -1287,6 +1287,8 @@ INPUT glosario.tex
 INPUT .\glosario.tex
 INPUT .\glosario.tex
 INPUT glosario.tex
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr9d.tfm
 INPUT .\libro.bbl
 INPUT libro.bbl

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  28 DEC 2022 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  28 DEC 2022 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -972,23 +972,23 @@ LaTeX Info: Redefining \% on input line 33.
 Package rerunfilecheck Info: File `libro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `libro.brf' has not changed.
-(rerunfilecheck)             Checksum: C8C276CC686BCC73C11AA3F64D5A2D80;1307.
+(rerunfilecheck)             Checksum: A2EB5BAB94488FF68ACFD4E00C1F7A9E;1367.
  ) 
 Here is how much of TeX's memory you used:
- 20485 strings out of 476406
- 371134 string characters out of 2782958
+ 20505 strings out of 476406
+ 371475 string characters out of 2782958
  1873787 words of memory out of 3000000
- 39829 multiletter control sequences out of 15000+600000
- 745631 words of font info for 466 fonts, out of 8000000 for 9000
+ 39836 multiletter control sequences out of 15000+600000
+ 746498 words of font info for 475 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10653b,774s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_meva6t.enc}<C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Bold.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Italic.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Regular.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on libro.pdf (30 pages, 320281 bytes).
+Output written on libro.pdf (30 pages, 322777 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  165038 words of extra memory for PDF output out of 184870 (max. 10000000)
 
