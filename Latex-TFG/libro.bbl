@@ -58,20 +58,10 @@ Jeremy~J Gray.
   matem{\'a}tica}.
 \newblock Cr{\'\i}tica, 2003.
 
-\bibitem[HA99]{hilbert1999principles}
-David Hilbert and Wilhelm Ackermann.
-\newblock {\em Principles of mathematical logic}, volume~69.
-\newblock American Mathematical Soc., 1999.
-
 \bibitem[HAdZ62]{hilbert1962elementos}
 David Hilbert, Wilhelm Ackermann, and V{\'\i}ctor~S{\'a}nchez de~Zavala.
 \newblock {\em Elementos de l{\'o}gica te{\'o}rica}.
 \newblock Tecnos, 1962.
-
-\bibitem[Hil26]{hilbert1926unendliche}
-David Hilbert.
-\newblock {\"U}ber das unendliche.
-\newblock {\em Mathematische Annalen}, 95(1):161--190, 1926.
 
 \bibitem[Hil91]{hilbert1991fundamentos}
 David Hilbert.
@@ -115,12 +105,6 @@ Ian Stewart.
 \newblock {\em The problems of mathematics}.
 \newblock Oxford University Press Oxford, 1987.
 
-\bibitem[T{\etalchar{+}}36]{turing1936computable}
-Alan~Mathison Turing et~al.
-\newblock On computable numbers, with an application to the
-  entscheidungsproblem.
-\newblock {\em J. of Math}, 58(345-363):5, 1936.
-
 \bibitem[Tor49]{toranzos1949panorama}
 Fausto~I. Toranzos.
 \newblock El panorama actual de la filosof{\'\i}a de la matem{\'a}tica y la
@@ -132,11 +116,6 @@ Fausto~I. Toranzos.
 Jean~Paul Van~Bendegem.
 \newblock The strong hilbert program.
 \newblock {\em Revue internationale de philosophie}, pages 343--353, 1993.
-
-\bibitem[vN27]{v1927hilbertschen}
-J.~v.~Neumann.
-\newblock Zur hilbertschen beweistheorie.
-\newblock {\em Mathematische Zeitschrift}, 26(1):1--46, 1927.
 
 \bibitem[Zac07]{Zach_2007}
 Richard Zach.
