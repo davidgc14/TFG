@@ -19,8 +19,39 @@ la sintaxis formal\footnote{Resultados previos al avance de la lógica proposici
 en relación con el cálculo proposicional (encarcado de, mediante operadores lógicos, distinguir la verdad de la falsedad), siendo ésta la fundamentación de la lógica
 durante todo el período intermedio.}. Este argumento sería fundamental para el desarrollo de los resultados que le precederían en los siguientes años.
 
+Esto igual habría que ampliarlo, o introducir alguna sección intermedia. Me puedo basar en la intro al libro original de Godel. Buscar el libro de los logicos.
 
+Teniendo estas definiciones claras, puede intuirse que el objetivo de Gödel queda fijado en demostrar que el cálculo cuantificacional de primer orden es semánticamente suficiente.
+De esta manera, no sólo se abarca y se da una respuesta positiva al problema abierto de \textit{Elementos de la lógica teórica}, sino que cualquier otro cálculo lógico de primer orden
+(incluido el de Fredge) quedaría probado como semánticamente suficiente también. 
 
+Ver primera pagina del teorema de completitud, nombrando a bernays como adelantado a una primera solución.
+
+En la siguiente sección veremos las demostraciones originales de Gödel, debido a que, a pesar de que existan veriones más modernas y elegantes, la que presentó Gödel en 1930
+presenta una construcción muy lineal y claramente definida, que puede resultar más amena y entendible para el lector.
+
+\section{El proceso de construcción}
+
+Para poder sumergirnos de forma más exaustiva er el proceso de deducción y demostración de los teoremas (tanto de completitud  como
+de incompletitud), será necesario definir un conjunto de definiciiones para una mayor facilidad de entendimiento en las prosiguientes deducciones. En este sentido
+definimos las siguientes:
+\begin{itemize}
+    \item Una \textit{fórmula} se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (es decir, sea la asignación verdadera o falsa) a cada
+            una de las componentes de la fórmula.
+    \item Un cálculo lógico se definirá como \textit{correcto} siempre y cuando sólo permita deducir fórmulas o resultados válidos sin incluir ningún tipo de premisa.
+    \item Un cálculo lógico se definirá como \textit{suficiente} siempre y cuando permita la deducción de todas las fórmulas que sean válidas.
+    \item Un cálculo lógico se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
+            él, se permita el cálculo de todas las fórmulas lógicas, y que no proceda el cálculo de ninguna otra entre las anteriores recogidas.
+\end{itemize}
+
+Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del problema propuesto por Hilbert y Ackermann, que en palabras más concisas se puede enunciar como sigue:
+\begin{equation}\label{th:God_Comp_I}
+    \textit{Cada formula válida de la lógica de primer orden es deducible.} 
+\end{equation}
+
+\autoref{th:God_Comp_I}
+
+\section{Las consecuencias}
 
 \endinput
 %------------------------------------------------------------------------------------
