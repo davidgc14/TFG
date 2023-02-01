@@ -1291,6 +1291,10 @@ INPUT glosario.tex
 INPUT .\glosario.tex
 INPUT .\glosario.tex
 INPUT glosario.tex
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr9d.tfm
 INPUT .\libro.bbl
 INPUT libro.bbl
@@ -1349,6 +1353,10 @@ INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\imp
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\impallari\cabin\Cabin-Regular.pfb
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\mathpazo\fplmri.pfb
+INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\mathpazo\fplmri.pfb
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\fpl\fplrc8a.pfb
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\fpl\fplrc8a.pfb
 INPUT C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\fonts\type1\public\fpl\fplrij8a.pfb

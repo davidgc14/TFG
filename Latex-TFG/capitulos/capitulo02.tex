@@ -42,14 +42,33 @@ definimos las siguientes:
     \item Un cálculo lógico se definirá como \textit{suficiente} siempre y cuando permita la deducción de todas las fórmulas que sean válidas.
     \item Un cálculo lógico se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
             él, se permita el cálculo de todas las fórmulas lógicas, y que no proceda el cálculo de ninguna otra entre las anteriores recogidas.
-\end{itemize}
+    \item -----Deducible
+    \end{itemize}
 
-Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del problema propuesto por Hilbert y Ackermann, que en palabras más concisas se puede enunciar como sigue:
+Denotar que se procederá al estudio de procesos y resultados relacionados con los resultados de Gödel desde un punto de vista no formal, con la simple intención de transmitir el proceso
+de deducciones que le lelvaron a sus resultados, y un esbozo de lo que fue su demostración original. Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del 
+problema propuesto por Hilbert y Ackermann, que en palabras más concisas se puede enunciar como sigue:
 \begin{equation}\label{th:God_Comp_I}
     \textit{Cada formula válida de la lógica de primer orden es deducible.} 
 \end{equation}
 
-\autoref{th:God_Comp_I}
+En el anterior teorema \eqref{th:God_Comp_I}, su demostración quedaría trivialmente conlcuida si dispusiéramos de este segundo teorema, que no deja de ser una reformulación del anterior:
+\begin{equation}\label{th:God_Comp_II}
+    \textit{Cada formula de la lógica de primer orden es o bien refutable o bien satisfacible.}\footnote{Ésto queda definido en un entorno numerable lo suficientemente grande, 
+    o como menciona Gödel textualmente, en un "universo numerable"} 
+\end{equation}
+
+Veamos por tanto que mediante el teorema \eqref{th:God_Comp_II} (suponiendo éste como verdadero) podemos deducir de manera sencilla el primer teorema.
+
+Como podemos ver, \eqref{th:God_Comp_I} afirma que cada fórmula válida que nosotros consideremos será siempre deducible. Por ello, consideremos para comenzar con el proceso de deducción
+una fórmula válida $\phi$ cualquiera. Como dicha fórmula $\phi$ es válida, por contradicción sabemos que $\neg \phi$ no será satisfacible. Ahora, como el teorema \eqref{th:God_Comp_II}
+lo suponemos como verdadero, aplicandolo obtenemos que $\neg \neg \phi$ será deducible, y por sumatoria de negaciones, concluimos que $\phi$ es deducible.\footnote{Cabe destacar que el proceso 
+inverso para la implicaci'on contraria nos lleva a una demostración válida, y con ello al resultado de que ambos teoremas realmente son equivalentes.}
+
+Gödel procede de un modo similar al anterior para el desarrollo de sus resultados, fundamentándose en la lógica semántica, y aún más en profundidad en las demostraciones de los teoremas de 
+incompletitud que veremos más adelante. 
+
+Teniendo ahora la equivalencia entre los dos teoremas anteriores, tratemos de encontrar un proceso lógico que nos conduzca a la demostración del segundo teorema. Para ello Gödel recurre
 
 \section{Las consecuencias}
 
