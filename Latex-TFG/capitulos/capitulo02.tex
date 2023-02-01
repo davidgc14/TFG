@@ -69,6 +69,35 @@ Gödel procede de un modo similar al anterior para el desarrollo de sus resultad
 incompletitud que veremos más adelante. 
 
 Teniendo ahora la equivalencia entre los dos teoremas anteriores, tratemos de encontrar un proceso lógico que nos conduzca a la demostración del segundo teorema. Para ello Gödel recurre
+al concepto de $K$-fórmulas como enunciados prenexos, donde cada uno de los prefijos queda delimitado entre los símbolos $\forall$ y $\exists$. Teniendo este concepto definido, procede a definir
+su tercer teorema, que será fundamental para la demostración de los anteriores:
+\begin{equation}\label{th:God_Comp_III}
+    \textit{Si cada $K$-fórmula es refutable o satisfacible\footnote{Al igual que en resultados anteriores, la satisfacibilidad debe darse e un entorno infinito numerable.}, entonces también lo será cualquier fórmula.} 
+\end{equation}
+
+Queda claro por tanto que si demostramos la primera premisa del presente teorema \eqref{th:God_Comp_III} "Cada $K$-fórmula es refutable o satisfacible", el teorema \eqref{th:God_Comp_II} 
+queda demostrado como consecuencia de éste. Por tanto, tratemos de demostrarlo de la siguiente manera: consideremos y apliquemos un proceso inductivo al grado de las antes definidas $K$-fórmulas, definido 
+dicho proceso como el conteo de secuencias continuas de símbolos "$\forall$", con separación entre si mediante símbolos "$\exists$", en cada uno de los prefijos de las antes mencionadas $K$-fórmulas. 
+Para proseguir, sirvámonos de ayuda del siguiente teorema 
+\begin{equation}
+    \textit{Si cada $K$-fórmula de grado $n$ es satisfacible o refutable,}
+\end{equation}
+\begin{equation}\label{th:God_Comp_IV}
+    \textit{entonces también lo serán cada $K$-fórmula de grado $n+1$.}
+\end{equation}
+
+Dicha demostración se ataca mediante la definición de algunas sentencias auxiliares de grado $n$, con una estructura definida precisa, tal que al estudiar las implicaciones 
+y relaciones que existen entre ellas, se acabe concluyendo que las resultantes sentencias de grado $n+1$ también son satisfacibles o refutables. Con esto probado, para poder demostrar que 
+"Cada $K$-fórmula es refutable o satisfacible", sólo nos faltaría por probar el siguiente teorema:
+\begin{equation}\label{th:God_Comp_V}
+    \textit{Cada $K$-fórmula de primer grado es refutable o satisfacible}
+\end{equation}
+
+Es bien claro que si se cumple para las $K$-fórmulas de grado 1 y para cualquier $K$-fórmula de grado $n+1$, entonces tendremos el resultado deseado para cualquier $K$-fórmula, y por tanto
+el teorema \eqref{th:God_Comp_III} quedará también probado (y en consecuencia el teorema \eqref{th:God_Comp_II} quedará plenamente demostrado). Por ello tratemos de abordar el problema de la 
+demostración del teorema \eqref{th:God_Comp_V} recién enunciado.
+
+
 
 \section{Las consecuencias}
 
