@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex libro"] 1675271161 "libro.aux" "libro.bbl" "libro" 1675335131 0
+["bibtex libro"] 1675338412 "libro.aux" "libro.bbl" "libro" 1675338417 0
   "./library.bib" 1672237638 9293 9cf94b051678257c9a6a6374d2f7ed40 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "libro.aux" 1675335130 14960 482ed26b37ba442cced90f8c4acb0f1e "pdflatex"
+  "libro.aux" 1675338416 15214 4175521455d540e185153a80babcf5c7 "pdflatex"
   (generated)
   "libro.bbl"
   "libro.blg"
   (rewritten before read)
-["pdflatex"] 1675335125 "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1675335131 0
+["pdflatex"] 1675338412 "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1675338417 0
   "C:/Users/david.garciacurbelo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1674594014 117440 d3f92cf484a75c31cd85e87b255d2d49 ""
   "C:/Users/david.garciacurbelo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1672222590 23175215 23d4bca544e5071a1645f9c6439c7b98 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -40,6 +40,7 @@
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/fplmb.tfm" 1136768654 984 3dcde7360ef3d34302e591b511cba83c ""
+  "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/fplmbb.tfm" 1136768654 564 cb1a5fc3f0326dd000c6e6c0fce59d7c ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/fplmr.tfm" 1136768654 1032 7fa31d93ecd4cbdfac02c7a1ebc6facc ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/fplmri.tfm" 1136768654 1148 56b0fdf7ca3f800294e968f64cfdcb87 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/zplmr7m.tfm" 1136768654 2080 40a71f65088bdd047622ce295520749e ""
@@ -53,6 +54,7 @@
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb" 1544554454 62231 526da4dbddad40f1a015252940f23e5c ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb" 1544554454 58411 b08b96d94a2d93415cb87d927a8392f4 ""
+  "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb" 1136849748 12410 7504dd653d0e7cf266cb973aeafd597c ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
@@ -174,6 +176,7 @@
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1zplm.fd" 1585253778 458 5e7baa1a259bab50a2bdffad6426f38c ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pplj.fd" 1585253778 709 8409322997570775faae75e749c76dbf ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ts1pplj.fd" 1585253778 661 e14923a81338a5c5b4606ab2ca590f5e ""
+  "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ufplmbb.fd" 1585253778 338 077609d8fc08b1f1181795378b603500 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657797096 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
@@ -189,15 +192,15 @@
   "apendices/apendice01.tex" 1672134834 400 d2624e3c6afbcfd6689f1ccbd115c1ac ""
   "c:/Users/david.garciacurbelo/Documents/TFG/Latex-TFG/libro.tex" 1672245062 15027 25638ac74920ca09bd9df88ed199254c ""
   "capitulos/capitulo01.tex" 1672238692 19833 3454537a925eb8f9a93af38977ff418b ""
-  "capitulos/capitulo02.tex" 1675335124 9543 11957f474cb3bb99fd97f605871d566d ""
+  "capitulos/capitulo02.tex" 1675338407 11179 061496194ddd11382b39c5261adacb16 ""
   "glosario.tex" 1672134834 480 d02172799c55768ea9414445b566287d ""
   "img//portada-ugr-sencilla-color.pdf" 1672134834 57947 fbabc804d392777d03caeaeedf0965c3 ""
-  "libro.aux" 1675335130 14960 482ed26b37ba442cced90f8c4acb0f1e "pdflatex"
-  "libro.bbl" 1675271161 4606 a7fc835a7514dcb927ebca5d20c6f4aa "bibtex libro"
-  "libro.brf" 1675335130 1367 cef1c88d6ab71e64a3d13e2e8bde9f19 "pdflatex"
-  "libro.out" 1675335129 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "libro.aux" 1675338416 15214 4175521455d540e185153a80babcf5c7 "pdflatex"
+  "libro.bbl" 1675338412 4606 a7fc835a7514dcb927ebca5d20c6f4aa "bibtex libro"
+  "libro.brf" 1675338416 1367 cef1c88d6ab71e64a3d13e2e8bde9f19 "pdflatex"
+  "libro.out" 1675338415 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "libro.tex" 1672245062 15027 25638ac74920ca09bd9df88ed199254c ""
-  "libro.toc" 1675335130 1625 d40b90cf13d290aacd7deced7e933a01 "pdflatex"
+  "libro.toc" 1675338416 1630 54c06ff459e7692df72459ba2f4cbff5 "pdflatex"
   "paquetes/comandos-entornos.tex" 1672134834 793 0cb52b72ff26e41d0c84dfc312fcbf4e ""
   "paquetes/hyperref.tex" 1672134834 1687 5cb44f90bd6db5b7b6db45f6cfcc78f7 ""
   "preliminares/declaracion-originalidad.tex" 1672134834 727 41a5dbc8f5101ef1ccd823a81b420124 ""

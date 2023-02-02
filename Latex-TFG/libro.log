@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  2 FEB 2023 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  2 FEB 2023 12:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,13 +941,17 @@ chapter 3.
 ]
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
- [14]) (apendices/apendice01.tex) (glosario.tex)
+ [14]
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 104.
+ (C:\Users\david.garciacurbelo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)) (apendices/apendice01.tex) (glosario.tex)
 LaTeX Info: Redefining \. on input line 257.
 LaTeX Info: Redefining \% on input line 257.
- [15] [16
-
-
-] (libro.bbl (libro.brf)
+ [15]
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+ [16] (libro.bbl (libro.brf)
 \tf@brf=\write5
 \openout5 = `libro.brf'.
 
@@ -968,6 +972,8 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 [17
 
 
+
+
 ])
 LaTeX Info: Redefining \. on input line 293.
 LaTeX Info: Redefining \% on input line 293.
@@ -983,11 +989,11 @@ Package rerunfilecheck Info: File `libro.brf' has not changed.
 (rerunfilecheck)             Checksum: CEF1C88D6AB71E64A3D13E2E8BDE9F19;1367.
  ) 
 Here is how much of TeX's memory you used:
- 20617 strings out of 476406
- 373120 string characters out of 2782958
+ 20655 strings out of 476406
+ 373855 string characters out of 2782958
  1873787 words of memory out of 3000000
- 39887 multiletter control sequences out of 15000+600000
- 760351 words of font info for 525 fonts, out of 8000000 for 9000
+ 39914 multiletter control sequences out of 15000+600000
+ 762044 words of font info for 539 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10653b,774s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
@@ -996,10 +1002,10 @@ pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exist
 
 pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exist, replaced by a fixed one
 
-{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_meva6t.enc}<C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Bold.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Italic.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Regular.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on libro.pdf (32 pages, 349071 bytes).
+{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_meva6t.enc}<C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Bold.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Italic.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Regular.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on libro.pdf (32 pages, 358310 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
+ 530 PDF objects out of 1000 (max. 8388607)
  116 named destinations out of 1000 (max. 500000)
  181438 words of extra memory for PDF output out of 184870 (max. 10000000)
 
