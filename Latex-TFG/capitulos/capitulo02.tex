@@ -25,7 +25,7 @@ Teniendo estas definiciones claras, puede intuirse que el objetivo de Gödel que
 De esta manera, no sólo se abarca y se da una respuesta positiva al problema abierto de \textit{Elementos de la lógica teórica}, sino que cualquier otro cálculo lógico de primer orden
 (incluido el de Fredge) quedaría probado como semánticamente suficiente también. 
 
-Ver primera pagina del teorema de completitud, nombrando a bernays como adelantado a una primera solución. Lowenheim y Skolem tmbien.
+\textbf{Añadir no más de un párrafo!! Ver primera pagina del teorema de completitud, nombrando a bernays como adelantado a una primera solución. Lowenheim y Skolem tmbien.}
 
 En la siguiente sección veremos las demostraciones originales de Gödel, debido a que, a pesar de que existan veriones más modernas y elegantes, la que presentó Gödel en 1930
 presenta una construcción muy lineal y claramente definida, que puede resultar más amena y entendible para el lector.
@@ -42,7 +42,9 @@ definimos las siguientes:
     \item Un cálculo lógico se definirá como \textit{suficiente} siempre y cuando permita la deducción de todas las fórmulas que sean válidas.
     \item Un cálculo lógico se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
             él, se permita el cálculo de todas las fórmulas lógicas, y que no proceda el cálculo de ninguna otra entre las anteriores recogidas.
-    \item -----Deducible
+    \item Un cálculo lógico se considerará como \textit{deducible para un cierto conjunto de enunciados $(E_1, E_2, ..., E_n)$} (o simplemente \textit{deducible}, siempre y cuando se
+            sobreentienda el conjunto de enunciados a los que se hace referencia como premisas) siempre y cuando dicho cálculo sea demostrable mediante el uso único y exclusivo
+            de sus premisas.
     \end{itemize}
 
 Denotar que se procederá al estudio de procesos y resultados relacionados con los resultados de Gödel desde un punto de vista no formal, con la simple intención de transmitir el proceso
@@ -124,11 +126,25 @@ es bien utilizada en el campo de la lógica a día de hoy para todas las pruebas
 
 En consecuencia de los resultados anteriores, teoremas previamente demostrados como resultados parciales de los que presentó Gödel en su tesis, ahora pasan a ser simples corolarios de los teoremas de completitud.
 Entre ellos podemos estudiar el anteriormente mencionado teorema de Lowenheim-Skolem, el cual se puede estudiar como un caso particular de los teoremas de completitud. Como bien hemos visto, Gödel construye
-todo su modelo en torno a un modelo numerable\footnote{Esto es debido a que cada fórmula no refutable tiene como ámbito al conjunto de los números naturales.}, podemos considerar cualquier fórmula $\phi$
+todo su modelo en torno a un modelo numerable\footnote{Esto es debido a que cada fórmula no refutable tiene como ámbito al conjunto de los números naturales.}, luego podemos considerar cualquier fórmula $\phi$
+que sea no refutable (y por tanto satisfacible) considerando el modelo numerable en el que nos encontramos. Así se concluye que cualquier fórmula considerada como satisfacible, también lo será en un ámbito numerable.
 
-Corolarios, teorema de LS y teorema de compacidad
+Otro de los resultados que presenta Gödel como corolario de sus teoremas de completitud es la generalización de dichos teoremas a la lógica de primer orden con identidad\footnote{La prueba se había realizado 
+sin recurrir al elemento identidad.}. Para ello Gödel plantea como anexo el siguiente teorema:
+\begin{equation}\label{th:God_Comp_VII}
+    \textit{Cada fórmula válidad de primer orden con identidad es deducible con el cálculo correspondiente.}
+\end{equation}
+Generalizando así a cualquier entorno de aplicación del cálculo de primer orden.
+
+Otro resultado de resonada relevancia es el conocido como teorema de compacidad. Éste fue también deducido como corolario de los teoremas de completitud antes demostrados, el cual enuncia que si disponemos de un 
+conjunto de cardinal infinito de fórmulas, y éste cumple que cada uno de sus subconfuntos finitos de fórmulas es satisfacible, entonces el propio conjunto de cardinalidad infinita también lo es (el recíproco también es cierto).
+Este resultado es deducible de los resultados sobre la suficiencia del cálculo lógico de primer orden, y se trata probablemente de la consecuencia de aplicación más directa que hemos podido ver en tiempos posteriores a la 
+publicación de este importante artículo hasta la actualidad.
 
 
+\chapter{Los teoremas de incompletitud}
+
+\section{La decisión}
 
 \endinput
 %------------------------------------------------------------------------------------

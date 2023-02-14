@@ -18,5 +18,7 @@
 \contentsline {section}{\numberline {3.1}La decisión}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}El proceso de construcción}{13}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Consideraciones anexas}{16}{section.3.3}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{17}{chapter*.9}%
+\contentsline {chapter}{\numberline {4}Los teoremas de incompletitud}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}La decisión}{17}{section.4.1}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{19}{chapter*.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
