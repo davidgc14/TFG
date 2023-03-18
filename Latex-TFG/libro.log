@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  8 MAR 2023 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  18 MAR 2023 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -837,6 +837,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 23.
 Package tocbasic Info: Using my definition of `\numberline' on input line 24.
 Package tocbasic Info: Using my definition of `\numberline' on input line 25.
 Package tocbasic Info: Using my definition of `\numberline' on input line 26.
+Package tocbasic Info: Using my definition of `\numberline' on input line 27.
 )
 \tf@toc=\write4
 \openout4 = `libro.toc'.
@@ -1023,10 +1024,10 @@ Package rerunfilecheck Info: File `libro.brf' has not changed.
 (rerunfilecheck)             Checksum: 4C6B4CFFD3E7D68088737B81056E3FC4;1333.
  ) 
 Here is how much of TeX's memory you used:
- 20706 strings out of 476406
- 374674 string characters out of 2782958
+ 20708 strings out of 476406
+ 374691 string characters out of 2782958
  1873787 words of memory out of 3000000
- 39927 multiletter control sequences out of 15000+600000
+ 39928 multiletter control sequences out of 15000+600000
  776299 words of font info for 549 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10653b,773s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1040,9 +1041,9 @@ pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_meva6t.enc}<C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Bold.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Italic.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Regular.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on libro.pdf (40 pages, 379854 bytes).
+Output written on libro.pdf (40 pages, 380717 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 187622 words of extra memory for PDF output out of 221844 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 187630 words of extra memory for PDF output out of 221844 (max. 10000000)
 

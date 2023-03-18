@@ -21,6 +21,7 @@
 \contentsline {chapter}{\numberline {4}Los teoremas de incompletitud}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Después de la tormenta}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Un giro en los acontecimientos}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Definiciones previas}{20}{section.4.3}%
 \contentsline {part}{\numberline {III}La decibilidad de Turing}{21}{part.3}%
 \contentsline {chapter}{\numberline {5}La aparición de Turing}{23}{chapter.5}%
 \contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{25}{chapter*.9}%
