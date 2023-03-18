@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  18 MAR 2023 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.28)  18 MAR 2023 20:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,6 +838,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 24.
 Package tocbasic Info: Using my definition of `\numberline' on input line 25.
 Package tocbasic Info: Using my definition of `\numberline' on input line 26.
 Package tocbasic Info: Using my definition of `\numberline' on input line 27.
+Package tocbasic Info: Using my definition of `\numberline' on input line 28.
 )
 \tf@toc=\write4
 \openout4 = `libro.toc'.
@@ -977,23 +978,26 @@ LaTeX Font Info:    Font shape `T1/Cabin-TLF/m/n' aliased to
 (Font)              `T1/Cabin-TLF/regular/n' on input line 151.
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/regular/n' will be
 (Font)              scaled to size 6.64998pt on input line 151.
-[19])
+[19]
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
+ [20])
 LaTeX Info: Redefining \. on input line 242.
 LaTeX Info: Redefining \% on input line 242.
- [20]
+ [21] [22
+
+
+]
 part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
 (scrkbase)              on input line 242.
-[21
-
-
-] [22] (capitulos/capitulo03.tex
+[23] [24] (capitulos/capitulo03.tex
 chapter 5.
-) (apendices/apendice01.tex) (glosario.tex) [23
+) (apendices/apendice01.tex) (glosario.tex) [25
 
 
-] [24
+] [26
 
 
 ] (libro.bbl (libro.brf)
@@ -1006,13 +1010,13 @@ LaTeX Font Info:    Font shape `T1/Cabin-TLF/b/n' aliased to
 (Font)              `T1/Cabin-TLF/bold/n' on input line 2.
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/bold/n' will be
 (Font)              scaled to size 8.54997pt on input line 2.
-[25
+[27
 
 
 ])
 LaTeX Info: Redefining \. on input line 302.
 LaTeX Info: Redefining \% on input line 302.
- [26] (libro.aux
+ [28] (libro.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 33.
@@ -1021,18 +1025,18 @@ LaTeX Info: Redefining \% on input line 33.
 Package rerunfilecheck Info: File `libro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package rerunfilecheck Info: File `libro.brf' has not changed.
-(rerunfilecheck)             Checksum: 4C6B4CFFD3E7D68088737B81056E3FC4;1333.
+(rerunfilecheck)             Checksum: 6DF0E46EDF9AE49F2531B3443AC8B160;1333.
  ) 
 Here is how much of TeX's memory you used:
- 20708 strings out of 476406
- 374691 string characters out of 2782958
+ 20759 strings out of 476406
+ 375161 string characters out of 2782958
  1873787 words of memory out of 3000000
- 39928 multiletter control sequences out of 15000+600000
- 776299 words of font info for 549 fonts, out of 8000000 for 9000
+ 39930 multiletter control sequences out of 15000+600000
+ 779613 words of font info for 577 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10653b,773s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-pdfTeX warning (dest): name{Hfootnote.26} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exist, replaced by a fixed one
@@ -1041,9 +1045,9 @@ pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cabin/cbn_meva6t.enc}<C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Bold.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Italic.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/cabin/Cabin-Regular.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrij8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/david.garciacurbelo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on libro.pdf (40 pages, 380717 bytes).
+Output written on libro.pdf (42 pages, 388827 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 187630 words of extra memory for PDF output out of 221844 (max. 10000000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 193782 words of extra memory for PDF output out of 221844 (max. 10000000)
 

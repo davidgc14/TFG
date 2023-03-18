@@ -182,6 +182,46 @@ A continuación, veremos algunas definiciones previas para poder entender el pro
 
 \section{Definiciones previas}
 
+Como hemos comentado anteriormente, necesitamos construir un sistema formal, para poder empezar a trabajar con él. Éste se compone de tres partes fundamentales:
+\begin{enumerate}
+    \item Un conjunto de signos fundamentales\footnote{También conocidos como "primitivos".} que sea enumerable, con el que podamos empezar a generar sucesiones de dichos signos, y que posteriormente sean referenciados como razonamientos.
+    \item Un conjunto de reglas que nos definan las operaciones posibles entre sucesiones, y que nos permitan llegar a definir cuál de las sucesiones definidas las podemos catalogar como fórmulas.\footnote{EL conjunto de fórmulas
+            que definamos en el sistema generará el propio lenguaje formal con el que trabajaremos en el sistema.}.
+    \item Otro conjunto distinto de reglas, que nos permitan definir, entre las combinaciones de las anteriores fórmulas, cuáles podemos catalogar como deducciones.
+\end{enumerate}
+
+Definamos ahora los componentes fundamentales de una teoría formalizada o sistema formal. 
+\begin{itemize}
+    \item Cuando consideremos una fórmula sin variables libres, la catalogaremos como \textit{sentencia}.
+    \item Consideraremos una sentencia como \textit{deducible} cuando forme parte de una deducción, y en la sucesión de fórmulas que la componen se encuentre en el último lugar.
+    \item Definiremos como una \textit{teoría formalizada} o \textit{sistema formal} al conjunto de sentencias que sean deducibles (entre las definidas anteriormente).
+\end{itemize}
+
+Teniendo ya nuestro sistema formal construido, en él se pudieran dar distintas casuísticas, dependiendo fundamentalmente de las relaciones que existan entre las sentencias del propio sistema. Veamos a continuación los estados 
+fundamentales en los que se puede encontrar un sistema formal correctamente definido. 
+
+Llamemos a nuestro sistema formal $M$. Entonces:
+\begin{itemize}
+    \item Un sistema formal $M$ se considerará \textit{incompleto} si y sólo si existe al menos una sentencia $\phi$ tal que ni $\phi$ es deducible, ni tampoco su negación $\neg \phi$. En otras palabras, diremos que es incompleto cuando 
+            existan problemas para los que no tengamos ni una demostración ni un contraejemplo.
+    \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{completo} si y sólo si todas las sentencias de su lenguaje son deducibles, es decir, cuando no quede ningún problema sin resolver.
+    \item Un sistema formal $M$ se considerará \textit{consistente} si y sólo si existe alguna sentencia que no puede ser deducible en el propio sistema $M$. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
+            mediante razonamiento lógico válido, lleguemos a probar simultáneamente su verdad y su falsedad\footnote{No necesariamente mediante el mismo proceso deductivo.}.
+    \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{inconsistente}\footnote{Se le suele llamar también por el nombre de \textit{contradictorio}, debido a que se incurre en una doble verdad de la demostración 
+            de las sentencias.} si y sólo si toda sentencia de $M$ es deducible en el propio $M$, es decir, que para todo problema de nuestro sistema formal se puede afirmar su veracidad y su falsedad simultáneamente\footnote{Realmente no es necesario 
+            requerir que todas las sentencias lo cumplan. Con encontrar una sentencia que incurra en esta "doble veracidad", debido a que el proceso lógico que se ha tomado para llegar a la conclusión es constructivo, el resto de sentencias 
+            forzosamente se vuelven también de la misma naturaleza.}.
+\end{itemize}
+
+Notemos que, aunque pueda sonar extraño, un sistema que sea incompleto puede resultar de gran utilidad, ya que, a pesar de tener problemas sin demostración, el resto de resultados no pierden valor y pueden resultar de gran utilidad.
+Sin embargo, los sistemas inconsistentes no son nada útiles, pudiendo catalogarlos incluso como absurdos, debido a que nunca podrás llegar a tener ningún resultado con una veracidad o una falsedad definida de forma única.
+
+Teniendo estas definiciones claras, podemos ver que el objetivo del problema de axiomatización de la aritmética, se puede llegar a reducir a la búsqueda de un sistema formal que sea completo y consistente. La teoría está clara y el objetivo también,
+aunque a lo mejor Hilbert en su segundo problema estuviera pidiendo dos componentes completamente incompatibles.
+
+\section{El proceso de demostración}
+
+
 \endinput
 %------------------------------------------------------------------------------------
 % FIN DEL CAPÍTULO. 
