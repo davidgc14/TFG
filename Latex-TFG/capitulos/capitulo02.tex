@@ -219,9 +219,58 @@ Sin embargo, los sistemas inconsistentes no son nada útiles, pudiendo catalogar
 Teniendo estas definiciones claras, podemos ver que el objetivo del problema de axiomatización de la aritmética, se puede llegar a reducir a la búsqueda de un sistema formal que sea completo y consistente\footnote{Debido a la complejidad 
 del problema, realmente la búsqueda quedaba restringida al campo de la aritmética, que hacía el problema más factible.}. La teoría está clara y el objetivo también, aunque a lo mejor Hilbert en su segundo problema estuviera pidiendo dos componentes completamente incompatibles.
 
-\section{El proceso de demostración}
+En lo sucesivo veremos un esbozo de cómo Gödel afrontó el problema, basándose en un sistema formal fundamentado en la aritmética y en los números naturales. Veremos como, a pesar de que \textit{Principia Mathematica} y la teoría de conjuntos 
+de Zermelo-Fraenkel estuvieran considerados como los sistemas más amplios construidos hasta la fecha, mediante un proceso sencillo e intuitivo, Gödel demuestra que ambos tienen fallos básicos de la teoría de números, y además de imposible solución.
 
-leer demostracion para iniciados, o si no pag 224 de los logicos
+\section{El proceso de demostración de la incompletitud}
+
+Consideremos desde un principio a nuestro sistema formal $M$ ya mencionado anteriormente, el cual estará fundamentado en las reglas fundamentales de la aritmética de los números naturales\footnote{Por supuesto considerando las reglas de inferencia
+habitualies de la aritmética. Véase \cite{godel1986collected} para una mayor comprensión dwe las mismas.}. Por ello, partiremos desde una serie de axiomas previamente definidos y unas reglas de inferencia definidas en el propio sistema. Mediante dichas 
+reglas, podremos proceder al cálculo de veracidades acerca de los enunciados que nos planteemos resolver. Puesto que el objetivo desde un principio es demostrar que cualquier sistema será incompleto, tratemos de buscar una sentencia $R$ tales que ni dicha 
+sentencia ni su negación puedan ser deducibles en el propio sistema.
+
+Para ello, tengamos en cuenta que todo sistema formal (incluido el nuestro) consta de un lenguaje: el conjunto de símbolos a partir de los cuales construimos sucesiones, y con ellas, fórmulas. Estas sentencias que pretendemos buscar como indecidibles 
+no dejan de ser combinaciones de las fórmulas antes definidas. Por este método, concluimos que todas las sentencias son sucesiones de símbolos del propio lenguaje del sistema. Dicha sucesión estará definida de forma única, y por ello podremos asociarle 
+una numeración a dicha sentencia, que denotaremos por $[R]$ para cualquier sentencia $R$. Esta numeración asociada a las sentencias es conocida como numeración de Gödel o \textit{godelización}.
+
+En su trabajo, Gödel asocia a cada símbolo del lenguaje del sistema\footnote{También conocidos como signos primitivos.} un número primo, y debido a que las fórmulas se verán reflejadas como sucesiones de números primos, coloca en el orden único de la fórmula 
+su sucesión asociada como exponentes de la sucesión de los números primos (2,3,5,7,11...). Para acabar, realiza el producto de todos estos primos en potencia, obteniendo así la numeración definida de fórma única asociada a cada sentencia. No es relativamente 
+complejo demostrar que efectivamente dicha relación conforma una biyección\footnote{Un ejemplo de la situación anterior podría ser la siguiente: consideremos en nuestro lenguaje del sistema los símbolos $x$, $=$ y $1$. Asociemos ahora a cada símbolo un número primo
+\begin{itemize}
+    \item $= \rightarrow 1$
+    \item $1 \rightarrow 3$
+    \item $x \rightarrow 5$
+\end{itemize}
+Así, al sucesión de la fórmula $x = 1$ sería $(5,1,3)$. Tomando ahora la sucesión de números primos, podemos calcular la numeración de Gödel asociada a la sentencia 
+$$2^5 3^1 5^3 = 12000$$
+Situando en la base a la sucesión de números primos, y en los exponentes a la sucesión de la fórmula asociada. Como hemos visto, dicha sentencia quedará definida de forma biunívoca.}.
+
+Existen en nuestro sistema fórmulas con variables libres. Estas no son otras que fórmulas que disponen de una variable que podremos sustituir por cualquier valor factible perteneciente a nuestro sistema\footnote{Por ejemplo, la fórmula definida en la nota a pie de página 
+anterior se trata de una fórmula con una variable libre, donde $F(x) = x+1$. De esta manera, podremos afirmar que $F(1)$ es una sentencia verdadera, mientras que $F(5)$ no lo es.}. Denotaremos a dichas fórmulas indicando las variables libres entre 
+paréntesis $R(x)$ y generaremos una sucesión con todas las fórmulas existentes en nuestro sistema: $R_1(x), R_2(x)...$. De esta manera, cuando hablemos de la fórmula $R(x)$ estaremos englobando a todos los números $n$ tales que $R(n)$ sea deducible.
+
+Pero prestemos atención a lo que acabamos de construir. Hemos definido una fórmula tratando a otra fórmula como objeto, es decir, la oración "Todos los números $n$ tales que $R(n)$ sea deducible", ésta es en sí misma una fórmula definida en nuestro sistema. 
+Estamos procediendo de esta manera al estudio del sistema formal desde el propio sistema formal. Y por tanto, al igual que el resto de fórmulas, estas sentencias "metamatemáticas" también pueden ser codificadas en nuestro sistema $M$\footnote{Gödel emplea gran parte 
+de su artículo \textit{Sobre sentencias formalmente indecidibles de los Principia Mathematica y sistemas afines} en la demostración de este punto, siendo la base de su argumentación en resultados posteriores dentro del propio artículo.}.
+
+Si analizamos en detalle dicha sentencia, podemos detectar cierto ingrediente autorreferenciable, al cual Gödel se agarra y sigue su demostración basándose en dicho punto. Y es precisamente mediante este razonar, que se acaba concluyendo que existe una fórmula en nuestro 
+sistema, $R_p(p)$ para un cierto número $p$, la cual no se puede deducir en el sistema. Siempre que supongamos su deducción o su no deducción, siempre llegaremos a contradicción en nuestro sistema $M$. 
+
+Debido a que nuestro sistema $M$ debe cumplir unas condiciones mínimas, para poder sustentar su resultado debe definir cuáles de estos deben ser exigidos a $M$ para poder tratar con él y efectivamente considerar cualquier sistema como incompleto. Y en este estudio Gödel 
+vio que el único requisito indispensable era la consistencia, ya que no podía construir su sistema con contradicciones en el mismo. Es por ello por lo que Gödel presenta su primer teorema de incompletitud de la siguiente manera:
+\begin{equation}\label{th:God_Incomp_I}
+    \textit{Cualquier sistema formal construido de manera recursiva que sea consistente es también incompleto.} 
+\end{equation}
+
+Con este grandioso resultado, tiraba por tierra todo lo especulado en la universidad de Sorbona en el año 1900 por el matemático más influente de la época. Gödel, rompiendo con los esquemas, había demostrado que daba igual cuán complejo fuera tu conjunto de axiomas 
+mediante el que definieras tu teoría, que siempre existirían agujeros en ella. Daba igual cuántos parches trataras de ponerle, siempre existirían sentencias indecidibles. Y por supuesto, entre las teorías formalizadas que caían ante los 
+resultados de Gödel se encuentran los \textit{Principia Mathematica}, los axiomas de Peano, y toda teoría que haya existido o pudiera existir.
+
+Pero el plato fuerte todavía no había llegado a la mesa.
+
+\section{Consecuencias devastadoras}
+
+página 7 incompletitud para no iniciados, la incosistencia
 
 \endinput
 %------------------------------------------------------------------------------------
