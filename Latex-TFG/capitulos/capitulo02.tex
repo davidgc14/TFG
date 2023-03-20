@@ -182,7 +182,7 @@ A continuación, veremos algunas definiciones previas para poder entender el pro
 
 \section{Definiciones previas}
 
-Como hemos comentado anteriormente, necesitamos construir un sistema formal, para poder empezar a trabajar con él. Éste se compone de tres partes fundamentales:
+Como hemos comentado anteriormente, necesitamos construir un sistema formal para poder empezar a trabajar con él. Éste se compone esencialmente de tres partes:
 \begin{enumerate}
     \item Un conjunto de signos fundamentales\footnote{También conocidos como "primitivos".} que sea enumerable, con el que podamos empezar a generar sucesiones de dichos signos, y que posteriormente sean referenciados como razonamientos.
     \item Un conjunto de reglas que nos definan las operaciones posibles entre sucesiones, y que nos permitan llegar a definir cuál de las sucesiones definidas las podemos catalogar como fórmulas.\footnote{EL conjunto de fórmulas
@@ -194,7 +194,7 @@ Definamos ahora los componentes fundamentales de una teoría formalizada o siste
 \begin{itemize}
     \item Cuando consideremos una fórmula sin variables libres, la catalogaremos como \textit{sentencia}.
     \item Consideraremos una sentencia como \textit{deducible} cuando forme parte de una deducción, y en la sucesión de fórmulas que la componen se encuentre en el último lugar.
-    \item Definiremos como una \textit{teoría formalizada} o \textit{sistema formal} al conjunto de sentencias que sean deducibles (entre las definidas anteriormente).
+    \item Definiremos como una \textit{teoría formalizada} al conjunto de sentencias que sean deducibles (entre las definidas anteriormente).
 \end{itemize}
 
 Teniendo ya nuestro sistema formal construido, en él se pudieran dar distintas casuísticas, dependiendo fundamentalmente de las relaciones que existan entre las sentencias del propio sistema. Veamos a continuación los estados 
@@ -205,10 +205,11 @@ Llamemos a nuestro sistema formal $M$. Entonces:
     \item Un sistema formal $M$ se considerará \textit{incompleto} si y sólo si existe al menos una sentencia $\phi$ tal que ni $\phi$ es deducible, ni tampoco su negación $\neg \phi$. En otras palabras, diremos que es incompleto cuando 
             existan problemas para los que no tengamos ni una demostración ni un contraejemplo.
     \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{completo} si y sólo si todas las sentencias de su lenguaje son deducibles, es decir, cuando no quede ningún problema sin resolver.
-    \item Un sistema formal $M$ se considerará \textit{consistente} si y sólo si existe alguna sentencia que no puede ser deducible en el propio sistema $M$. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
+    \item un sistema formal $M$ se considerará \textit{consistente} si y sólo si toda sentencia de $M$ es deducible en el propio $M$. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
             mediante razonamiento lógico válido, lleguemos a probar simultáneamente su verdad y su falsedad\footnote{No necesariamente mediante el mismo proceso deductivo.}.
     \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{inconsistente}\footnote{Se le suele llamar también por el nombre de \textit{contradictorio}, debido a que se incurre en una doble verdad de la demostración 
-            de las sentencias.} si y sólo si toda sentencia de $M$ es deducible en el propio $M$, es decir, que para todo problema de nuestro sistema formal se puede afirmar su veracidad y su falsedad simultáneamente\footnote{Realmente no es necesario 
+            de las sentencias.} si y sólo si existe alguna sentencia que no puede ser deducible en el propio sistema $M$, es decir, que para algún problema de nuestro sistema 
+            formal se puede afirmar su veracidad y su falsedad simultáneamente\footnote{Realmente no es necesario 
             requerir que todas las sentencias lo cumplan. Con encontrar una sentencia que incurra en esta "doble veracidad", debido a que el proceso lógico que se ha tomado para llegar a la conclusión es constructivo, el resto de sentencias 
             forzosamente se vuelven también de la misma naturaleza.}.
 \end{itemize}
@@ -216,7 +217,7 @@ Llamemos a nuestro sistema formal $M$. Entonces:
 Notemos que, aunque pueda sonar extraño, un sistema que sea incompleto puede resultar de gran utilidad, ya que, a pesar de tener problemas sin demostración, el resto de resultados no pierden valor y pueden resultar de gran utilidad.
 Sin embargo, los sistemas inconsistentes no son nada útiles, pudiendo catalogarlos incluso como absurdos, debido a que nunca podrás llegar a tener ningún resultado con una veracidad o una falsedad definida de forma única.
 
-Teniendo estas definiciones claras, podemos ver que el objetivo del problema de axiomatización de la aritmética, se puede llegar a reducir a la búsqueda de un sistema formal que sea completo y consistente\footnote{Debido a la complejidad 
+Teniendo estas definiciones claras, podemos ver que el objetivo del problema de axiomatización de la aritmética se puede llegar a reducir a la búsqueda de un sistema formal que sea completo y consistente\footnote{Debido a la complejidad 
 del problema, realmente la búsqueda quedaba restringida al campo de la aritmética, que hacía el problema más factible.}. La teoría está clara y el objetivo también, aunque a lo mejor Hilbert en su segundo problema estuviera pidiendo dos componentes completamente incompatibles.
 
 En lo sucesivo veremos un esbozo de cómo Gödel afrontó el problema, basándose en un sistema formal fundamentado en la aritmética y en los números naturales. Veremos como, a pesar de que \textit{Principia Mathematica} y la teoría de conjuntos 
@@ -263,7 +264,7 @@ vio que el único requisito indispensable era la consistencia, ya que no podía 
 \end{equation}
 
 Con este grandioso resultado, tiraba por tierra todo lo especulado en la universidad de Sorbona en el año 1900 por el matemático más influente de la época. Gödel, rompiendo con los esquemas, había demostrado que daba igual cuán complejo fuera tu conjunto de axiomas 
-mediante el que definieras tu teoría, que siempre existirían agujeros en ella. Daba igual cuántos parches trataras de ponerle, siempre existirían sentencias indecidibles. Y por supuesto, entre las teorías formalizadas que caían ante los 
+mediante el que definieras tu teoría, que siempre existirían agujeros en ella. Daba igual cuántos parches trataras de ponerle, siempre encontraríamos sentencias indecidibles. Y por supuesto, entre las teorías formalizadas que caían ante los 
 resultados de Gödel se encuentran los \textit{Principia Mathematica}, los axiomas de Peano, y toda teoría que haya existido o pudiera existir.
 
 Pero el plato fuerte todavía no había llegado a la mesa.
@@ -291,11 +292,11 @@ existentes en el sistema y que sean expresivas. Tomemos por ello la sentencia "$
 Definamos la anterior fórmula mediante el acrónimo $Cons$. Por definición de consistencia, podemos afirmar que si se cumple $Cons$, entonces toda fórmula $R_p(p)$ debe ser deducible en el propio sistema $M$.
 
 Teniendo esto claro, sólo falta comprobar si $Cons$ es deducible. Supongamos que sí lo sea. Entonces, como hemos definido antes, el enunciado "toda fórmula $R_p(p)$ es deducible en $M$" debe ser verdadero, lo que implicaría que nuestro sistema $M$ sería completo, lo
-que es una contradicción\footnote{Por el \autoref{th:God_Incomp_I}, sabemos que cualquier sistema en el que supongamos su consistencia, éste no puede ser completo, lo que deriba en la existencia de sentencias indecidibles.}.
+que es una contradicción\footnote{Por el \eqref{th:God_Incomp_I}, sabemos que cualquier sistema en el que supongamos su consistencia, éste no puede ser completo, lo que deriba en la existencia de sentencias indecidibles.}.
 
 El vacío que uno siente la primera vez que se es consciente de la magnitud de los resultados que consiguió Gödel, permanece durante mucho tiempo en el cuerpo del que los descubre. Con estos dos grandes cañones se derrumbaba todo intento de formalización de los sustentos 
-de la matemática, y consigo todas las ciencias adyacentes. Gödel había puesto de manifiesto no sólo que las matemáticas escribían sobre una mesa de tres patas (debido a la incompletitud de cualquier sistema), sino que además esta mesa podía estar suspendida en el aire
-(por la falta de fiabilidad de que el propio sistema fuera incosistente). 
+de la matemática, y consigo todas las ciencias adyacentes. Gödel había puesto de manifiesto no sólo que las matemáticas se escribían sobre una mesa de tres patas (debido a la incompletitud de cualquier sistema), sino que además esta mesa podía estar suspendida en el aire
+(por la falta de fiabilidad de que el propio sistema fuera consistente). 
 
 Hoy día seguimos escribiendo sobre la misma mesa, evitando la mirada a múltiples paradojas que delatarían la incosistencia, y asumiendo que hay problemas abiertos que a lo mejor nunca llegan a buen puerto y naufragan en la incompletitud de nuestro sistema.
 Así que, por suerte o por desgracia, continuaremos toda la eternidad construyendo matemática sobre la ignorancia, y sobre agujeros que nunca sabremos tapar.
@@ -312,7 +313,7 @@ sepamos diferenciar, siendo dicho proceso finitario, que una sentencia dada es d
 Teniendo el nuevo objetivo claro, tanto Hilbert como todos sus seguidores se dispusieron manos a la obra a afrontar el nuevo problema de decibilidad de la aritmética. Pero lo que desconocían todos ellos era que había alguien en la sombra con un talento sin igual, 
 construyendo un nuevo concepto totalmente revolucionario, y que además se disponía a tirar por tierra las pocas esperanzas que quedaban dentro de Hilbert y de la sociedad impactada por los recientes resultados. Y esa persona no es otra que el joven Alan Turing.
 
-Este matemático londinense tenía en sus manos un nuevo concepto, que no sólo cambiaría las tornas de la esperanza en la decibilidad, sino que cambiaría por completo el curso de la historia, de la matemática, dando comienzo al nuevo mundo de la computación: la máquina 
+Este matemático londinense tenía en sus manos un nuevo concepto, que no sólo cambiaría las tornas de la esperanza en la decibilidad, sino que cambiaría por completo el curso de la historia y de la matemática, dando comienzo al nuevo mundo de la computación: la máquina 
 de Turing. 
 
 En el próximo capítulo ahondaremos en el concepto matemático de "máquina de Turing", viendo cómo con elementos muy sencillos y paradojas de autorreferencia, Turing pudo tirar por tierra el problema de la decibilidad, además de sentar las bases de lo que hoy conocemos 
