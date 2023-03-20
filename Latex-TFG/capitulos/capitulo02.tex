@@ -16,7 +16,7 @@ relativas a sus investigaciones relacionadas con las justificaciones formales de
 tenía que formar parte forzosamente de una lógica formal (o en su defecto, que ésta podría ser reducida a una lógica formal). Al fin y al cabo, el lenguaje es el 
 medio por el cual los seres humanos nos relacionamos con los números naturales, y es precisamente dicha relación la que estableció Frege entre el lenguaje y 
 la sintaxis formal\footnote{Resultados previos al avance de la lógica proposicional que estableció Frege constan del siglo III a.C., tratados por Aristóteles
-en relación con el cálculo proposicional (encarcado de, mediante operadores lógicos, distinguir la verdad de la falsedad), siendo ésta la fundamentación de la lógica
+en relación con el cálculo proposicional (encargado de, mediante operadores lógicos, distinguir la verdad de la falsedad), siendo ésta la fundamentación de la lógica
 durante todo el período intermedio.}. Este argumento sería fundamental para el desarrollo de los resultados que le precederían en los siguientes años.
 
 Años después de la conferencia emitida en la Universidad de Sorbona por Hilbert, otros matemáticos contribuyeron en el avance de los primeros pasos establecidos
@@ -27,16 +27,16 @@ compañero Skolem sobre la generalización del mismo a un conjunto cualquiera de
 Este teorema Gödel lo abordará desde otra perspectiva, y conseguirá que dicho resultado no resulte más que un corolario de sus teoremas de comletitud.
 
 Teniendo este recorrido claro, puede intuirse que el objetivo de Gödel queda fijado en demostrar que el cálculo cuantificacional de primer orden es semánticamente suficiente.
-De esta manera, no sólo se abarca y se da una respuesta positiva al problema abierto de \textit{Elementos de la lógica teórica}, sino que cualquier otro cálculo lógico de primer orden
+De esta manera, no sólo se abarca y se da una respuesta positiva al problema abierto de \textit{Principia Mathematica}, sino que cualquier otro cálculo lógico de primer orden
 (incluido el de Fredge) quedaría probado como semánticamente suficiente también. 
 
-En la siguiente sección veremos las demostraciones originales de Gödel, debido a que, a pesar de que existan veriones más modernas y elegantes, la que presentó Gödel en 1930
+En la siguiente sección veremos las demostraciones originales de Gödel, debido a que, a pesar de que existan versiones más modernas y elegantes, la que publicó Gödel en 1930
 presenta una construcción muy lineal y claramente definida, que puede resultar más amena y entendible para el lector.
 
 \section{El proceso de construcción}
 
-Para poder sumergirnos de forma más exaustiva er el proceso de deducción y demostración de los teoremas (tanto de completitud  como
-de incompletitud), será necesario definir un conjunto de definiciiones para una mayor facilidad de entendimiento en las prosiguientes deducciones. En este sentido
+Para poder sumergirnos de forma más exaustiva en el proceso de deducción y demostración de los teoremas (tanto de completitud  como
+de incompletitud), será necesario tener claro un conjunto de definiciones para una mayor facilidad de entendimiento en las deducciones que prosigan. En este sentido
 definimos las siguientes:
 \begin{itemize}
     \item Una \textit{fórmula} se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (es decir, sea la asignación verdadera o falsa) a cada
@@ -51,7 +51,7 @@ definimos las siguientes:
     \end{itemize}
 
 Denotar que se procederá al estudio de procesos y resultados relacionados con los resultados de Gödel desde un punto de vista no formal, con la simple intención de transmitir el proceso
-de deducciones que le lelvaron a sus resultados, y un esbozo de lo que fue su demostración original. Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del 
+de deducciones que le llevaron a sus resultados, y un esbozo de lo que fue su demostración original. Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del 
 problema propuesto por Hilbert y Ackermann, que en palabras más concisas se puede enunciar como sigue:
 \begin{equation}\label{th:God_Comp_I}
     \textit{Cada formula válida de la lógica de primer orden es deducible.} 
@@ -74,7 +74,7 @@ Gödel procede de un modo similar al anterior para el desarrollo de sus resultad
 incompletitud que veremos más adelante. 
 
 Teniendo ahora la equivalencia entre los dos teoremas anteriores, tratemos de encontrar un proceso lógico que nos conduzca a la demostración del segundo teorema. Para ello Gödel recurre
-al concepto de $K$-fórmulas como enunciados prenexos, donde cada uno de los prefijos queda delimitado entre los símbolos $\forall$ y $\exists$. Teniendo este concepto definido, procede a definir
+al concepto de $K$-fórmulas como enunciados prenexos, donde cada uno de los prefijos queda delimitado entre los símbolos $\forall$ y $\exists$. Teniendo este concepto definido, procede a enunciar 
 su tercer teorema, que será fundamental para la demostración de los anteriores:
 \begin{equation}\label{th:God_Comp_III}
     \textit{Si cada $K$-fórmula es refutable o satisfacible\footnote{Al igual que en resultados anteriores, la satisfacibilidad debe darse e un entorno infinito numerable.}, entonces también lo será cualquier fórmula.} 
@@ -111,16 +111,16 @@ Dichas sucesiones se definen como infinitas compuestas por fórmulas definidas c
 
 Dicho teorema se prueba por un esquema de inducción, aplicando para ello ciertas reglas y lemas de inferencia. Volviendo al teorema \eqref{th:God_Comp_V}, sabiendo la deducibilidad de las sucesiones
 antes mencionadas, consideraremos para cada una de las $K$-fórmulas que no se consideren como refutables, construiremos un sistema mediante elementos semánticos que si satisfaga a dicha $K$-fórmula.
-Esta consideración de relación entre consideraciones semánticas y las $K$-fórmulas no refutables, es el paso determinante de la demostración, y con la que se conlcuye el razonamiento de la prueba del
+Esta consideración de relación entre elementos semánticos y las $K$-fórmulas no refutables, es el paso determinante de la demostración, y con la que se conlcuye el razonamiento de la prueba del
 presente teorema.
 
-Con ello, como comentábamos anteriormente, concluimos que damos como válido el enunciado "Cada $K$-fórmula de primer grado es refutable o satisfacible". Con ello, el teorema \eqref{th:God_Comp_III} se 
+Con ello, como comentábamos anteriormente, concluimos que damos como válido el enunciado ``Cada $K$-fórmula de primer grado es refutable o satisfacible". Con ello, el teorema \eqref{th:God_Comp_III} se 
 da por demostrado, y así los teoremas \eqref{th:God_Comp_I} y \eqref{th:God_Comp_II} quedan probados, y por tanto tenemos que cada formula válida de la lógica de primer orden es deducible. O en otras 
 palabras, hemos demostrado que el cálculo lógico de primer orden es suficiente.
 
 \section{Consideraciones anexas}
 
-Hay que decir que el proceso planteado aquí no deja de ser la demostración original planteada  hace ya casi un siglo. Estudios posteriores han mostrado procesos simplificados o bifurcaciones en el
+Hay que decir que el proceso planteado aquí no deja de ser la demostración original publicada hace ya casi un siglo. Estudios posteriores han mostrado procesos simplificados o bifurcaciones en el
 razonamiento de los mismos, incluyendo cambios de perspectiva que podrían parecer completamente opuestos a los originales. Entre otros, destacan la demostración sintáctica de Hilbert junto con Bernays
 (publicada en el mismo año 1930 en que la tesis de Gödel fue publicada\footnote{Podría decirse que los resultados de Hilbert fueron motivados por la lectura de los procederes de Gödel, iluminando así otras
 formas de abordar el problema, aunque al fin y al cabo el problema ya estaba abordado.}), o la simplificación por parte de Henkin de las demostraciones de Gödel\footnote{Publicada en 1949, con un proceder 
@@ -135,14 +135,14 @@ que sea no refutable (y por tanto satisfacible) considerando el modelo numerable
 Otro de los resultados que presenta Gödel como corolario de sus teoremas de completitud es la generalización de dichos teoremas a la lógica de primer orden con identidad\footnote{La prueba se había realizado 
 sin recurrir al elemento identidad.}. Para ello Gödel plantea como anexo el siguiente teorema:
 \begin{equation}\label{th:God_Comp_VII}
-    \textit{Cada fórmula válidad de primer orden con identidad es deducible con el cálculo correspondiente.}
+    \textit{Cada fórmula válida de primer orden con identidad es deducible con el cálculo correspondiente.}
 \end{equation}
 Generalizando así a cualquier entorno de aplicación del cálculo de primer orden.
 
 Otro resultado de resonada relevancia es el conocido como teorema de compacidad. Éste fue también deducido como corolario de los teoremas de completitud antes demostrados, el cual enuncia que si disponemos de un 
 conjunto de cardinal infinito de fórmulas, y éste cumple que cada uno de sus subconfuntos finitos de fórmulas es satisfacible, entonces el propio conjunto de cardinalidad infinita también lo es (el recíproco también es cierto).
 Este resultado es deducible de los resultados sobre la suficiencia del cálculo lógico de primer orden, y se trata probablemente de la consecuencia de aplicación más directa que hemos podido ver en tiempos posteriores a la 
-publicación de este importante artículo hasta la actualidad.
+publicación de este importante artículo.
 
 
 \chapter{Los teoremas de incompletitud}
