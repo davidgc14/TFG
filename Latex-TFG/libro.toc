@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {4.3}Definiciones previas}{20}{section.4.3}%
 \contentsline {section}{\numberline {4.4}El proceso de demostración de la incompletitud}{21}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Consecuencias devastadoras}{23}{section.4.5}%
-\contentsline {part}{\numberline {III}La decibilidad de Turing}{25}{part.3}%
-\contentsline {chapter}{\numberline {5}La aparición de Turing}{27}{chapter.5}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{29}{chapter*.9}%
+\contentsline {part}{\numberline {III}La decibilidad de Turing}{27}{part.3}%
+\contentsline {chapter}{\numberline {5}La aparición de Turing}{29}{chapter.5}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{31}{chapter*.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
