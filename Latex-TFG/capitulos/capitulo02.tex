@@ -256,7 +256,7 @@ de su artículo \textit{Sobre sentencias formalmente indecidibles de los Princip
 Si analizamos en detalle dicha sentencia, podemos detectar cierto ingrediente autorreferenciable, al cual Gödel se agarra y sigue su demostración basándose en dicho punto. Y es precisamente mediante este razonar, que se acaba concluyendo que existe una fórmula en nuestro 
 sistema, $R_p(p)$ para un cierto número $p$, la cual no se puede deducir en el sistema. Siempre que supongamos su deducción o su no deducción, siempre llegaremos a contradicción en nuestro sistema $M$. 
 
-Debido a que nuestro sistema $M$ debe cumplir unas condiciones mínimas, para poder sustentar su resultado debe definir cuáles de estos deben ser exigidos a $M$ para poder tratar con él y efectivamente considerar cualquier sistema como incompleto. Y en este estudio Gödel 
+Debido a que $M$ debe cumplir unas condiciones mínimas, para poder sustentar su resultado debe definir cuáles de estas condiciones deben ser exigidas a $M$ para poder tratar con él y efectivamente considerar cualquier sistema como incompleto. Y en este estudio Gödel 
 vio que el único requisito indispensable era la consistencia, ya que no podía construir su sistema con contradicciones en el mismo. Es por ello por lo que Gödel presenta su primer teorema de incompletitud de la siguiente manera:
 \begin{equation}\label{th:God_Incomp_I}
     \textit{Cualquier sistema formal construido de manera recursiva que sea consistente es también incompleto.} 
@@ -270,7 +270,37 @@ Pero el plato fuerte todavía no había llegado a la mesa.
 
 \section{Consecuencias devastadoras}
 
-página 7 incompletitud para no iniciados, la incosistencia
+En el mismo artículo, escrito en 1930 y publicado un año después, al final del mismo Gödel añade un humilde corolario del teorema anterior, que hace que todo termine de derrumbarse por completo. 
+\begin{equation}\label{th:God_Incomp_II}
+    \textit{Sea $M$ un sistema consistente y mínimamente expresivo.}
+\end{equation}
+\begin{equation}
+    \textit{Entonces la cosistencia de $M$ no puede probarse en $M$.} 
+\end{equation}
+
+Analicemos en detalle el anterior resultado. Primeramente veamos que en las premisas, consideramos que el sistema sea "mínimamente expresivo". Esta condición la podemos validar siempre y cuando el sistema formal haya sido construido de forma recursiva como 
+hemos visto en puntos anteriores\footnote{Véase el apartado \textit{4.3. Definiciones previas}.}. Con esto hace referencia Gödel a la mínima expresividad exigida a un sistema. Observemos también que el propio resultado, "la cosistencia de $M$ no puede probarse en $M$",
+estamos afirmando que una demostración no puede llevarse a cabo, es decir, que el fin último de la demostración de este teorema es afirmar la no existencia de demostración para otro resultado, en concreto, la demostración de la consistencia del propio sistema.
+Y no sólo eso, sino que podemos probarlo con las propias herramientas que nos proporciona el sistema $M$.
+
+Podemos apreciar aquí mínimamente la magnitud del resultado, y aun más la astucia que hay que tener para tomar dicho camino y no errar en ningún paso de su prueba. Veamos a continuación, de forma esquemática, qué proceso lógico tuvo su demostración, 
+y cómo Gödel la llevó a buen puerto.
+
+Consideremos primeramente nuestro sistema $M$, el cual suponemos mínimamente expresivo, con lenguaje propio y el conjunto de símbolos que lo definen. Así también suponemos y conocemos la existencia de todas sus fórmulas asociadas a cada una de las sucesiones de símbolos
+existentes en el sistema y que sean expresivas. Tomemos por ello la sentencia "$M$ es consistente", la cual la podemos definir como una fórmula del propio sistema, y por tanto puede ser codificada y tiene asociado de manera biunívoca una numeración de Gödel. 
+Definamos la anterior fórmula mediante el acrónimo $Cons$. Por definición de consistencia, podemos afirmar que si se cumple $Cons$, entonces toda fórmula $R_p(p)$ debe ser deducible en el propio sistema $M$.
+
+Teniendo esto claro, sólo falta comprobar si $Cons$ es deducible. Supongamos que sí lo sea. Entonces, como hemos definido antes, el enunciado "toda fórmula $R_p(p)$ es deducible en $M$" debe ser verdadero, lo que implicaría que nuestro sistema $M$ sería completo, lo
+que es una contradicción\footnote{Por el \autoref{th:God_Incomp_I}, sabemos que cualquier sistema en el que supongamos su consistencia, éste no puede ser completo, lo que deriba en la existencia de sentencias indecidibles.}.
+
+El vacío que uno siente la primera vez que se es consciente de la magnitud de los resultados que consiguió Gödel, permanece durante mucho tiempo en el cuerpo del que los descubre. Con estos dos grandes cañones se derrumbaba todo intento de formalización de los sustentos 
+de la matemática, y consigo todas las ciencias adyacentes. Gödel había puesto de manifiesto no sólo que las matemáticas escribían sobre una mesa de tres patas (debido a la incompletitud de cualquier sistema), sino que además esta mesa podía estar suspendida en el aire
+(por la falta de fiabilidad de que el propio sistema fuera incosistente). 
+
+Hoy día seguimos escribiendo sobre la misma mesa, evitando la mirada a múltiples paradojas que delatarían la incosistencia, y asumiendo que hay problemas abiertos que a lo mejor nunca llegan a buen puerto y naufragan en la incompletitud de nuestro sistema.
+Así que, por suerte o por desgracia, continuaremos toda la eternidad construyendo matemática sobre la ignorancia, y sobre agujeros que nunca sabremos tapar.
+
+Pero a pesar de ello, no todo está perdido. 
 
 \endinput
 %------------------------------------------------------------------------------------
