@@ -26,5 +26,10 @@
 \contentsline {section}{\numberline {4.5}Consecuencias devastadoras}{23}{section.4.5}%
 \contentsline {part}{\numberline {III}La decibilidad de Turing}{27}{part.3}%
 \contentsline {chapter}{\numberline {5}La aparición de Turing}{29}{chapter.5}%
-\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{31}{chapter*.9}%
+\contentsline {section}{\numberline {5.1}El comienzo de la máquina}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}La relación con la decidibilidad}{29}{section.5.2}%
+\contentsline {chapter}{\numberline {6}El concepto de Máquina de Turing}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Demostración de la decibilidad}{31}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{33}{chapter.7}%
+\contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{35}{chapter*.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
