@@ -5,31 +5,65 @@
 
 
 Alan Turing aparecía en escena de una manera tímida, pero no por ello menos predispuesta. En 1931 entraba en su primera clase de la licenciatura de matemáticas en la Universidad de Cambridge, 
-y a partir de ese momento todo fue un proceso rodado. Durante sus estudios, pudo conocer al que sería su mentor durante los próximos años, Max Neumann, el cual le empaparía en estos años venideros 
-acerca de la lógica matemática y la teoría de la computación.
+y a partir de ese momento todo fue un proceso rodado. Durante sus estudios, pudo conocer al que sería su mentor durante los próximos años, Max Neumann, el cual le dirigiría en los años venideros 
+hacia el campo de la lógica matemática y la teoría de la computación.
 
-Fue durante sus primeros años de estudio durante los que se vivió la caída del programa de Hilbert por parte de Gödel, y fue también este evento lo que motivó a Turing a enfrentarse a este grandioso 
+Fue en sus primeros años de estudio durante los que se vivió la caída del programa de Hilbert por parte de Gödel, y fue también este evento lo que motivó a Turing a enfrentarse a este grandioso 
 reto que era la decidibilidad.
 
-Pero lo cierto es que la decidibilidad no fue más que una simple aplicación de algo mucho más grande que había diseñado muy detalladamente durante varios años.
+Pero lo cierto era que la decidibilidad no fue más que una simple aplicación de algo mucho más grande que había diseñado muy detalladamente durante varios años.
 
 \section{El comienzo de la máquina}
 
-Turing presentó durante toda su vida un gran interés en la mente humana y en la posibilidad de que la mente pudiera ser considerada como una máquina de computación. Turing creía firmemente que 
+Turing presentó durante toda su vida un gran interés en la mente humana y en la posibilidad de que la mente pudiera ser considerada como una máquina de computación. Este joven matemático creía firmemente que 
 la mente humana era capaz de realizar cálculos y procesos similares a los que se llevaban a cabo en las máquinas de computación, y que estas capacidades podrían ser estudiadas y entendidas a través 
 de la teoría de la computación que había aprendido con su mentor.
 
-Este gran visionario del siglo XX argumentó en más de una ocasión que cualquier problema que pudiera ser resuelto por un ser humano podría ser resuelto por una máquina de computación, siempre y cuando 
+Este gran visionario del siglo XX argumentó en más de una ocasión que creía firmemente que cualquier problema que pudiera ser resuelto por un ser humano podría ser resuelto por una máquina de computación, siempre y cuando 
 se pudiera describir un algoritmo que resolviera el problema. 
 
-\section{La relación con la decidibilidad}
+% \section{La relación con la decidibilidad}
 
+Y es justo en este punto donde entra en juego la decibilidad. Como hemos dicho anteriormente, La decidibilidad no deja de ser la capacidad de un problema de ser resuelto de manera algorítmica, es decir, 
+si existe un algoritmo que pueda determinar de manera definitiva si una instancia del problema es verdadera o falsa.
+
+Turing tomó el tema algorítmico por lo literal, y aunando sus intereses personales y los problemas abiertos en su campo de estudio, se propuso llevar este grandioso reto a buen puerto. Aprovechando la visión 
+tan avanzada para su época que disponía Turing, trató desde un principio de darle un enfoque distinto. Para grandes problemas, hay que pensar en grandes soluciones, y Turing lo consiguió definiendo un
+modelo matemático nunca visto hasta la fecha.
 
 \chapter{El concepto de Máquina de Turing}
 
+A nivel conceptual, la máquina de Turing es un modelo matemático que pretende resolver un problema que se le introduce como entrada, y que pretende proporcionar una salida pasado un cierto número de pasos.
+Es decir, un modelo capaz de simular cualquier algoritmo de computación que se le puedan pasar como instrucciones a la máquina.
+
+La máquina de Turing consta de una cinta infinita dividida en casillas, una cabezal de lectura/escritura que puede moverse a lo largo de la cinta, y un conjunto de reglas que determinan cómo la máquina puede 
+cambiar el contenido de las casillas y mover la cabezal.
+
+En su forma original, Turing define los siguientes elementos que serán los componentes de la máquina:
+
+\begin{enumerate}
+    \item Cinta: La cinta es una estructura lineal dividida en casillas, donde cada casilla puede contener un símbolo de un alfabeto finito. La cinta es infinita en ambas direcciones, pero en la 
+            práctica solo se usa una porción finita.
+    \item Cabezal de lectura/escritura: La cabezal de la máquina de Turing puede leer el símbolo actual en la casilla en la que se encuentra y puede escribir un nuevo símbolo en esa casilla. También 
+            puede moverse a la casilla adyacente izquierda o derecha en la cinta.
+    \item Conjunto de estados: La máquina de Turing tiene un conjunto finito de estados internos que determinan su comportamiento. En cada paso, la máquina de Turing se encuentra en un estado particular.
+    \item Reglas de transición: Las reglas de transición especifican cómo la máquina de Turing debe cambiar de estado y cómo debe modificar los símbolos en la cinta en función del estado actual y del símbolo 
+            leído por la cabeza de lectura/escritura.
+\end{enumerate}
+
+Este concepto revolucionario cambió por completo el curso de la historia, dando paso a lo que hoy conocemos como computadores, pudiendo ver claras similitudes con los procesos que realizan los ordenadores 
+de hoy en día. 
+\begin{enumerate}
+    \item El análogo actual de la cinta, podríamos pensarlo como la memoria de los computadores. Almacena la información de manera ordenada, para un fácil acceso con las órdenes oportunas.
+    \item El cabezal de la máquina es el actual procesador del ordenador, el cual realiza operaciones y manipula la información almacenada en la memoria.
+    \item El conjunto de estados se complementa junto con el cabezal para componer en conjunto el procesador del ordenador, almacenando los estados de las operaciones que se realizan por el cabezal.
+    \item Las reglas de transición no dejan de ser las instrucciones que contiene cada uno de los programas para que pueda ser ejecutado de forma correcta. 
+\end{enumerate}
+
+En conjunto conforman lo que hoy conocemos como ordenadores. 
+
 \section{Demostración de la decibilidad}
 
-c
 \chapter{Conclusiones}
 
 \endinput
