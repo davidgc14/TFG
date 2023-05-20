@@ -30,8 +30,9 @@
 \contentsline {section}{\numberline {5.2}El comienzo de la máquina}{29}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Las máquinas cobran vida}{30}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Sentando las bases del futuro}{30}{section.5.4}%
-\contentsline {chapter}{\numberline {6}El concepto de Máquina de Turing}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Demostración de la decibilidad}{34}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{35}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Máquina de Turing}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}El concepto de Máquina de Turing}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}La formalización}{34}{section.6.2}%
+\contentsline {chapter}{\numberline {7}La decibilidad}{35}{chapter.7}%
 \contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{37}{chapter*.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -65,7 +65,9 @@ encaminó el avance del campo que hoy en día conocemos como informática, sino 
 la guerra se redujera significativamente.
 
 
-\chapter{El concepto de Máquina de Turing}
+\chapter{Máquina de Turing}
+
+\section{El concepto de Máquina de Turing}
 
 A nivel conceptual, la máquina de Turing es un modelo matemático que pretende resolver un problema que se le introduce como entrada, y que pretende proporcionar una salida pasado un cierto número de pasos.
 Es decir, un modelo capaz de simular cualquier algoritmo de computación que se le puedan pasar como instrucciones a la máquina.
@@ -94,7 +96,32 @@ de hoy en día.
     \item Las reglas de transición no dejan de ser las instrucciones que contiene cada uno de los programas para que pueda ser ejecutado de forma correcta. 
 \end{enumerate}
 
-En conjunto conforman lo que hoy conocemos como ordenadores. 
+Sin embargo, esto no deja de ser un simple concepto de lo que conocemos como máquina de Turing. En realidad, y formalmente hablando, se trata de un sistema matemático un poco más complejo de describir.
+
+\section{La formalización}
+Una máquina de Turing, visto desde un punto de vista formal, es un modelo teórico capaz de realizar cálculos y procesos algorítmicos. Este modelo se define como una 7-tupla $M = (Q, \Sigma, \Gamma, \delta, q_0, q_A, q_R)$,
+donde:
+
+\begin{enumerate}
+        \item $Q$ es un conjunto finito de estados.
+        \item $\Gamma$ es el conjunto finito de símbolos de entrada, también conocido como alfabeto de la máquina\footnote{Denotar que el espacio en blanco no se considera un elemento del alfabeto, ya que es el
+                        es el resultado de borrar cualquier elemento del propio alfabeto en la cinta.}.
+        \item $\delta$ es una función de transición que especifica cómo debe comportarse la máquina. Para cada estado y símbolo en la cinta, esta función nos indica cuál será el siguiente estado, el símbolo que 
+                        se debe escribir en la cinta y hacia dónde se debe desplazar el cabezal, ya sea izquierda o derecha. A efectos generales, esta función es el corazón de la máquina, ya que nos indica cuál será 
+                        su siguiente movimiento. La función se define de la siguiente manera:
+                        $$\delta: Q \times \Gamma \longrightarrow Q \times \Gamma \times \{\text{L,R}\}\footnote{La función tomará el valor L o R dependiendo si el cabezal, tras realizar la acción que determine la función,
+                        debe moverse a izquierda (L) o a la derecha (R).}$$
+                        
+                        Es decir, para una entrada $(q,n)$, donde $q$ es el estado de la máquina y $n$ es el símbolo que se 
+                        encuentra en ese momento bajo el cabezal, la función devuelve una 3-tupla $(r, m, X)$, donde $r$ es el nuevo estado de la máquina, $m$ el nuevo símbolo que se ha devuelto en la casilla 
+                        determinada, y $X$ es un valor entre L y R, dependiendo si el cabezal debe moverse a izquierda o derecha.
+        \item $q_0$ se establece como el estado inicial del que parte la máquina antes de realizar ninguna acción.
+        \item $q_A$ es el conjunto de estados de aceptación. Se trata de un subconjunto del conjunto de estados $Q$. En caso de que el programa acabe con un estado de aceptación, se considerará como exitosa la
+                        ejecución del programa.
+        \item $q_R$ es el conjunto de estados de rechazo, que también pertenece al conjunto de estados $Q$. Al contrario de lo que ocurre con los de aceptación, en caso de que el programe pare su ejecución en 
+                        alguno de estos estados, se considerará infructuosa su ejecución.
+\end{enumerate}
+
 
 % \section{La relación con la decidibilidad}
 
@@ -105,9 +132,9 @@ En conjunto conforman lo que hoy conocemos como ordenadores.
 %tan avanzada para su época que disponía Turing, trató desde un principio de darle un enfoque distinto. Para grandes problemas, hay que pensar en grandes soluciones, y Turing lo consiguió definiendo un
 %modelo matemático nunca visto hasta la fecha.
 
-\section{Demostración de la decibilidad}
 
-\chapter{Conclusiones}
+
+\chapter{La decibilidad}
 
 \endinput
 %------------------------------------------------------------------------------------
