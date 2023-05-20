@@ -1172,7 +1172,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-OUTPUT libro.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Bold-tlf-t1.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-t1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Bold-tlf-t1.vf
@@ -1181,6 +1180,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Bold-tlf-sc-t
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-sc-t1--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/impallari/cabin/Cabin-Bold-tlf-t1.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-t1--base.tfm
+OUTPUT libro.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplri9d.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplri9d.vf
 INPUT ./preliminares/summary.tex

@@ -2,11 +2,13 @@
 % !TeX encoding = utf8
 
 \chapter{La aparición de Turing}
+\dictum[Bruce Schneier]{La criptografía convierte los datos en información, y la información en poder.}
 
-
+\section{El contexto}
 Alan Turing aparecía en escena de una manera tímida, pero no por ello menos predispuesta. En 1931 entraba en su primera clase de la licenciatura de matemáticas en la Universidad de Cambridge, 
 y a partir de ese momento todo fue un proceso rodado. Durante sus estudios, pudo conocer al que sería su mentor durante los próximos años, Max Neumann, el cual le dirigiría en los años venideros 
-hacia el campo de la lógica matemática y la teoría de la computación.
+hacia el campo de la lógica matemática y la teoría de la computación\footnote{Max Newman no sólo sería su mentor en los años venideros, sino que también sería su jefe durante la Segunda Gerra Mundial,
+en el centro de investigación criptográfica de Bletchley Park, donde juntos establecieron las bases teóricas del funcionamiento de ``The Bomb''. Véase \cite{copeland2006colossus}.}.
 
 Fue en sus primeros años de estudio durante los que se vivió la caída del programa de Hilbert por parte de Gödel, y fue también este evento lo que motivó a Turing a enfrentarse a este grandioso 
 reto que era la decidibilidad.
@@ -20,30 +22,40 @@ la mente humana era capaz de realizar cálculos y procesos similares a los que s
 de la teoría de la computación que había aprendido con su mentor.
 
 Este gran visionario del siglo XX argumentó en más de una ocasión que creía firmemente que cualquier problema que pudiera ser resuelto por un ser humano podría ser resuelto por una máquina de computación, siempre y cuando 
-se pudiera describir un algoritmo que resolviera el problema. En otros términos, consideraba que la mente humana y las máquinas podían ser conceptualmente similares en términos de su capacidad de realizar cálculos y procesos. 
+se pudiera describir un algoritmo que resolviera el problema. En otros términos, consideraba que la mente humana y las máquinas podían ser conceptualmente similares en términos de su capacidad de realizar cálculos y 
+procesos\footnote{Sin ser consciente de ello, este gran matemático tenía en mente el concepto de inteligencia artificial del que tanto hablamos hoy en día, pero 80 años atrás. 
+Tanta fue su ambición que diseñó un test para comprobar cómo de inteligente podía ser una máquina. Véase \cite{turing1950computing}.}.
 
-Turing estuvo varios años buscando una forma de describir físicamente estas máquinas de computación y establecer reglas precisas para su funcionamiento. Fue así como, tras varios intentos fallidos,
+Turing estuvo varios años buscando una forma de describir estas máquinas de computación y establecer reglas precisas para su funcionamiento. Fue así como, tras varios intentos fallidos,
 llegó a la creación de la máquina de Turing, que se ha convertido en un concepto fundamental en el campo de la informática y la teoría de la computación.
 
-Esta máquina teórica puede leer, escribir y borrar símbolos en la cinta, y cambiar de estado según las reglas predefinidas. La idea detrás de la máquina de Turing es que cualquier cálculo o proceso 
+Esta máquina teórica puede leer, escribir y borrar símbolos en la cinta, y cambiar de estado según las reglas predefinidas\footnote{Más adelante trataremos en profundidad acerca de las Máquinas de Turing y el concepto de
+el concepto de máquina universal.}. La idea detrás de la máquina de Turing es que cualquier cálculo o proceso 
 algorítmico se puede simular utilizando este modelo teórico. 
 
 Y a pesar de que fue un gran hito para Turing, no dejaba de ser eso, un modelo teórico. Él quería llevarlo mucho más allá: quería darle vida.
 
-En su afán por describir físicamente estas máquinas, Turing llegó a construir varios prototipos de computadores que nunca llegaron a buen puerto. Sin embargo, no pasó igual con dos proyectos desarrollados 
-durante la Segunda Guerra Mundial: ``The Bomb'' y ``Colossus''.
+\section{Las máquinas cobran vida}
 
-Ambas fueron dos máquinas de descifrado de mensajes encriptados del bando alemán por parte de los aliados. Cada una de ellas estaba especializada en una máquina de cifrado alemán: Enigma y Lorenz. Es cierto
-que en el desarrollo de ``The Bomb'', Turing tuvo un papel más en la sombra en el desarrollo de la máquina, aportando sus conocimientos no tanto en el diseño, sino más bien en la parte criptográfica, la cual
-se fundamentaba en sus conocimientos de lógica y criptografía estudiados durante tantos años.
+En su afán por describir físicamente estas máquinas, Turing llegó a construir varios prototipos de computadores que nunca llegaron a buen puerto. Sin embargo, no pasó igual con dos proyectos desarrollados 
+durante la Segunda Guerra Mundial, y que por supuesto cambiaron el rumbo de la historia: ``The Bomb'' y ``Colossus''.
+
+Ambas fueron dos máquinas de descifrado de mensajes encriptados del bando alemán por parte de los aliados\footnote{Véase \cite{davis2000universal}.}. Cada una de ellas estaba especializada en una máquina de cifrado alemán: Enigma y Lorenz. Es cierto
+que en el desarrollo de ``The Bomb'', Turing tuvo un papel más en la sombra en el desarrollo de la máquina, aportando sus conocimientos no tanto en el diseño, sino más bien en la parte 
+criptográfica\footnote{Cabe destacar que, como en todos los grandes proyectos, fueron muchas las personas involucradas en este (aun más si cabe debido al calibre del problema). Véase \cite{sale2015enigma}.}, la cual se fundamentaba en sus conocimientos de lógica y criptografía estudiados durante tantos años.
 
 Sin embargo, con ``Colossus'' fue diferente. La máquina de cifrado Lorenz era mucho más potente que Enigma, y se requería, para poder abatirla, de toda la élite británica de la época. Turing, aunando sus conocimientos
-en criptografía y sus conocimientos electromecánicos previos, se dispuso a la cabeza del equipo de diseño y construcción de la máquina. Pero este gran matemático no tenía como único objetivo descifrar mensajes: 
+en criptografía y sus conocimientos electromecánicos previos, se dispuso a la cabeza del equipo de diseño y construcción de la máquina. 
+
+Pero este gran matemático no tenía como único objetivo descifrar mensajes: 
 su gran motivación era la máquina en sí misma. Turing veía la oportunidad de aplicar los principios de su Máquina de Turing para construir una máquina especializada, el Colossus, que pudiera realizar tareas de 
 criptoanálisis más rápidamente y de manera más eficiente.
 
-En cierto sentido, Turing veía al Colossus como un paso hacia su visión más amplia de una máquina universal de computación. Aunque el Colossus era una máquina especializada para el descifrado de mensajes de Lorenz, 
+En cierto sentido, Turing veía al Colossus como un paso hacia su visión más amplia de una máquina universal de computación\footnote{Realmente, a pesar del patriotismo que presentaba Turing, su principal motivación era llevar a
+cabo una aproximación lo más real posible de su máquina universal. Véase \cite{hodges1983alan}}. Aunque el Colossus era una máquina especializada para el descifrado de mensajes de Lorenz, 
 compartía algunos principios clave con la Máquina de Turing, como la capacidad de procesar información mediante la manipulación de señales eléctricas y el uso de técnicas de programación para ajustar sus operaciones.
+
+\section{Sentando las bases del futuro}
 
 A pesar de que Colossus no fuera una máquina universal en el sentido más amplio, Turing pudo aplicar sus conocimientos y perspectiva teórica en su diseño y desarrollo. Su experiencia con la Máquina de Turing y su 
 deseo de construir máquinas que pudieran realizar cálculos complejos influyeron en su enfoque y en la búsqueda de soluciones innovadoras durante la construcción del Colossus.
@@ -52,14 +64,6 @@ Aunque no llegó a ser un computador como tal, a nivel arquitectónico llegó a 
 encaminó el avance del campo que hoy en día conocemos como informática, sino que con ella pudo salvar miles de vidas durante la Segunda Guerra Mundial por parte del bando aliado, contribuyendo a que la duración de
 la guerra se redujera significativamente.
 
-% \section{La relación con la decidibilidad}
-
-Y es justo en este punto donde entra en juego la decibilidad. Como hemos dicho anteriormente, La decidibilidad no deja de ser la capacidad de un problema de ser resuelto de manera algorítmica, es decir, 
-si existe un algoritmo que pueda determinar de manera definitiva si una instancia del problema es verdadera o falsa.
-
-Turing tomó el tema algorítmico por lo literal, y aunando sus intereses personales y los problemas abiertos en su campo de estudio, se propuso llevar este grandioso reto a buen puerto. Aprovechando la visión 
-tan avanzada para su época que disponía Turing, trató desde un principio de darle un enfoque distinto. Para grandes problemas, hay que pensar en grandes soluciones, y Turing lo consiguió definiendo un
-modelo matemático nunca visto hasta la fecha.
 
 \chapter{El concepto de Máquina de Turing}
 
@@ -91,6 +95,15 @@ de hoy en día.
 \end{enumerate}
 
 En conjunto conforman lo que hoy conocemos como ordenadores. 
+
+% \section{La relación con la decidibilidad}
+
+% Y es justo en este punto donde entra en juego la decibilidad. Como hemos dicho anteriormente, La decidibilidad no deja de ser la capacidad de un problema de ser resuelto de manera algorítmica, es decir, 
+%si existe un algoritmo que pueda determinar de manera definitiva si una instancia del problema es verdadera o falsa.
+
+%Turing tomó el tema algorítmico por lo literal, y aunando sus intereses personales y los problemas abiertos en su campo de estudio, se propuso llevar este grandioso reto a buen puerto. Aprovechando la visión 
+%tan avanzada para su época que disponía Turing, trató desde un principio de darle un enfoque distinto. Para grandes problemas, hay que pensar en grandes soluciones, y Turing lo consiguió definiendo un
+%modelo matemático nunca visto hasta la fecha.
 
 \section{Demostración de la decibilidad}
 

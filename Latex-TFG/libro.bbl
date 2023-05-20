@@ -21,10 +21,21 @@ Felix~E Browder.
 \newblock {\em Mathematical developments arising from Hilbert problems}.
 \newblock American Mathematical Society, 1976.
 
+\bibitem[Cop06]{copeland2006colossus}
+B.~Jack Copeland.
+\newblock {\em Colossus: The Secrets of Bletchley Park's Codebreaking
+  Computers}.
+\newblock Oxford University Press, 2006.
+
 \bibitem[Cor98]{Leo1998}
 Leo Corry.
 \newblock Los 23 problemas de hilbert y su transfondo histórico.
 \newblock {\em Boletín de la Asociación Matemática Venezolana}, V(2), 1998.
+
+\bibitem[Dav00]{davis2000universal}
+Martin Davis.
+\newblock {\em The Universal Computer: The Road from Leibniz to Turing}.
+\newblock W. W. Norton \& Company, 2000.
 
 \bibitem[Dys70]{dyson1970life}
 Freeman Dyson.
@@ -75,6 +86,11 @@ David Hilbert.
 \newblock {\em Fundamentos de la geometr{\'\i}a}.
 \newblock 5. Editorial CSIC-CSIC Press, 1991.
 
+\bibitem[Hod83]{hodges1983alan}
+Andrew Hodges.
+\newblock Alan turing and the turing machine.
+\newblock {\em Scientific American}, 248(6):72--82, 1983.
+
 \bibitem[KM00]{kline2000matematicas}
 M.~Kline and A.R. Merino.
 \newblock {\em Matem{\'a}ticas: La p{\'e}rdida de la Certidumbre}.
@@ -95,6 +111,12 @@ Paolo Mancosu.
 Constance Reid.
 \newblock {\em Hilbert-Courant}.
 \newblock Springer Science \& Business Media, 1986.
+
+\bibitem[Sal15]{sale2015enigma}
+Tony Sale.
+\newblock {\em The Secret Life of Bletchley Park: The WWII Codebreaking Centre
+  and the Men and Women Who Worked There}.
+\newblock Thomas Dunne Books, 2015.
 
 \bibitem[Sie13]{alma991014322964704990}
 Wilfried Sieg.
@@ -118,6 +140,11 @@ Fausto~I. Toranzos.
   influencia en {\'e}l de d. hilbert.
 \newblock In {\em Actas del Primer Congreso Nacional de Filosof{\'\i}a,
   Mendoza, Argentina}, 1949.
+
+\bibitem[Tur50]{turing1950computing}
+Alan~M. Turing.
+\newblock Computing machinery and intelligence.
+\newblock {\em Mind}, 59(236):433--460, 1950.
 
 \bibitem[VB93]{van1993strong}
 Jean~Paul Van~Bendegem.
