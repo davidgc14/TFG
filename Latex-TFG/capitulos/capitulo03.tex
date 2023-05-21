@@ -104,14 +104,15 @@ donde:
 
 \begin{enumerate}
         \item $Q$ es un conjunto finito de estados.
-        \item $\Gamma$ es el conjunto finito de símbolos de entrada, también conocido como alfabeto de la máquina\footnote{Denotar que el espacio en blanco no se considera un elemento del alfabeto, ya que es el
+        \item $\Sigma$ es el conjunto finito de símbolos de entrada, también conocido como alfabeto de la máquina\footnote{Denotar que el espacio en blanco ($\sqcup$) no se considera un elemento del alfabeto, ya que es el
                         es el resultado de borrar cualquier elemento del propio alfabeto en la cinta.}.
+        \item $\Gamma$ es el conjunto de símbolos presentes en la cinta. Notemos que $\Sigma \in \Gamma$\footnote{Notemos que esto ocurre debido al espacio en blanco ($\sqcup$), ya que $\sqcup \notin \Sigma$, pero 
+                        $\sqcup \in \Gamma$, ya que en la cinta, al ser infinita, los esapcios no rellenos por caracteres del alfabeto quedan rellenos por espacios en blanco.}.
         \item $\delta$ es una función de transición que especifica cómo debe comportarse la máquina. Para cada estado y símbolo en la cinta, esta función nos indica cuál será el siguiente estado, el símbolo que 
                         se debe escribir en la cinta y hacia dónde se debe desplazar el cabezal, ya sea izquierda o derecha. A efectos generales, esta función es el corazón de la máquina, ya que nos indica cuál será 
                         su siguiente movimiento. La función se define de la siguiente manera:
                         $$\delta: Q \times \Gamma \longrightarrow Q \times \Gamma \times \{\text{L,R}\}\footnote{La función tomará el valor L o R dependiendo si el cabezal, tras realizar la acción que determine la función,
                         debe moverse a izquierda (L) o a la derecha (R).}$$
-                        
                         Es decir, para una entrada $(q,n)$, donde $q$ es el estado de la máquina y $n$ es el símbolo que se 
                         encuentra en ese momento bajo el cabezal, la función devuelve una 3-tupla $(r, m, X)$, donde $r$ es el nuevo estado de la máquina, $m$ el nuevo símbolo que se ha devuelto en la casilla 
                         determinada, y $X$ es un valor entre L y R, dependiendo si el cabezal debe moverse a izquierda o derecha.
@@ -122,6 +123,29 @@ donde:
                         alguno de estos estados, se considerará infructuosa su ejecución.
 \end{enumerate}
 
+\section{El funcionamiento}
+
+Una vez entendida la función de transición y todos los componentes de la 7-tupla, planteemos un supuesto de funcionamiento de una máquina de Turing $M$. Como hemos dicho, en una primera instancia
+disponemos de una cinta infinita hacia la izquierda\footnote{Es decir, finita por la izquierda, con una casilla de inicio. Este supuesto se puede generalizar para una cinta infinita en ambos sentidos, pero en este
+ejemplo trataremos con la mencionada.}, donde la máquina recibe como entrada una sucesión de caracteres $\sigma = \sigma_1 \sigma_2 \dots \sigma_n \in \Sigma$ que estarán situados en las $n$ primeras casillas de 
+la cinta. Notemos que, como $\Sigma$ no contiene al espacio en blanco, podremos encontrar fácilmente el final de la entrada, al encontrar el primer espacio en la casilla $n+1$.
+
+Teniendo definidas la entrada y todos los componentes de la máquina, podemos proceder con su ejecución. En su proceso, seguirá fielmente todos los pasos y todas las casuísticas definidas en la función de transición:
+si encuentras tal símbolo, realiza una determinada acción, desplázate (si es necesario), y en el siguiente paso ejecuta la función de transición para el estado $x$. Y así seguirá hasta que el estado que devuelva
+la función sea un estado de parada, ya sea de aceptación o de rechazo.
+
+Habiendo visto un ejemplo de ejecución, en este punto podemos plantearnos ciertas casuísticas peculiares que pueden suceder al aplicar la función de transición definida de una determinada manera. Por ejemplo, en el 
+supuesto en el que el cabezal deba moverse hacia la izquierda estando en la primera casilla, podríamos salirnos de la memoria establecida. Este caso se solucionaría de manera sencilla, definiendo que, en caso de que se 
+produzca dicha casuística, mantener el cabezal en la misma posición (a pesar de que la función de transición indique lo contrario).
+
+Otro supuesto que se puede dar es que, a priori, nosotros esperamos que en un número finito de pasos la máquina $M$ llegue a algún estado de parada, ya sea de aceptación o de rechazo. Pero, ¿qué pasaría si no alcanzara
+ninguno de estos estados en ningún momento de su ejecución? Daría resultado a una máquina que quedaría ejecutándose de manera indefinida.
+
+¿Podemos a priori saber si nuestra máquina llegará en algún momento a un estado de parada?
+Una función de transición puede ser tan compleja como uno quiera definirla. Si tu máquina lleva ejecutándose durante miles de iteraciones, es posible que en siguiente paso se detenga, o puede ser también que no se detenga
+nunca. ¿Hay alguna forma de saberlo, sin tener que ejecutar tu máquina, de si en la máquina está bien definido el criterio de parada?
+
+Entra aquí en juego el problema de la parada.
 
 % \section{La relación con la decidibilidad}
 
