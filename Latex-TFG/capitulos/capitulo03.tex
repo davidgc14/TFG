@@ -99,6 +99,7 @@ de hoy en día.
 Sin embargo, esto no deja de ser un simple concepto de lo que conocemos como máquina de Turing. En realidad, y formalmente hablando, se trata de un sistema matemático un poco más complejo de describir.
 
 \section{La formalización}
+
 Una máquina de Turing, visto desde un punto de vista formal, es un modelo teórico capaz de realizar cálculos y procesos algorítmicos. Este modelo se define como una 7-tupla $M = (Q, \Sigma, \Gamma, \delta, q_0, q_A, q_R)$,
 donde:
 
@@ -139,14 +140,38 @@ supuesto en el que el cabezal deba moverse hacia la izquierda estando en la prim
 produzca dicha casuística, mantener el cabezal en la misma posición (a pesar de que la función de transición indique lo contrario).
 
 Otro supuesto que se puede dar es que, a priori, nosotros esperamos que en un número finito de pasos la máquina $M$ llegue a algún estado de parada, ya sea de aceptación o de rechazo. Pero, ¿qué pasaría si no alcanzara
-ninguno de estos estados en ningún momento de su ejecución? Daría resultado a una máquina que quedaría ejecutándose de manera indefinida.
+ninguno de estos estados en ningún momento de su ejecución? Daría resultado a una máquina que quedaría ejecutándose de manera indefinida\footnote{Véase \cite{sipser2006introduction} para varios ejemplos de máquinas en 
+iteraciones finitas e infinitas.}.
 
 ¿Podemos a priori saber si nuestra máquina llegará en algún momento a un estado de parada?
 Una función de transición puede ser tan compleja como uno quiera definirla. Si tu máquina lleva ejecutándose durante miles de iteraciones, es posible que en siguiente paso se detenga, o puede ser también que no se detenga
 nunca. ¿Hay alguna forma de saberlo, sin tener que ejecutar tu máquina, de si en la máquina está bien definido el criterio de parada?
 
-Entra aquí en juego el problema de la parada.
+\section{El problema de la parada}
 
+\subsection{Definiciones previas}
+
+Consideremos nuestra máquina $M$. En cada iteración de su función de transición, se modifica su estado, la información que hay en la cinta y la posición del cabezal. Aunando el cambio de estas tres características, podemos 
+definir lo que se conoce como configuración. Una máquina que se ejecuta hasta llegar a un estado de parada en $r$ iteraciones ha recorrido las configuraciones $C_1, \dots, C_r$\footnote{Aquí definimos $C_1$ como configuración 
+inicial, con su estado inicial $q_0$, el estado inicial de la cinta y el cabezal en la primera posición de la misma.} hasta detenerse. 
+
+En este sentido, cuando el estado de la configuración $C_r$ sea un estado de aceptación, diremos que $C_r$ es una configuración de aceptación. En caso contrario, cuando el estado de dicha configuración sea de rechazo, 
+nos encontraremos ante una configuración de rechazo. Por tanto, diremos que nuestra máquina $M$ \textit{acepta} el estado inicial de la cinta $\sigma$ si existe una sucesión finita de configuraciones de longitud $s$ tales 
+que la máquina recorre cada una de ellas de forma secuencial, donde $C_1$ es la configuración inicial con información en la cinta $\sigma$, y $C_s$ es una configuración con un estado de aceptación.\footnote{Podemos
+descartar la casuística en la que, para un cierto $i \in \N$ cumpliendo $1 < i < s$, tengamos una configuración $C_1, \dots, C_i, \dots, C_s$ tal que dicha configuración sea de aceptación o de rechazo. En tal caso 
+bastará con tomar la subsucesión $C_1, \dots, C_i$ como la sucesión a estudiar si es aceptada o no por la máquina $M$. Por tanto, consideramos que $C_s$ es la primera configuración con un estado de parada de nuestra sucesión.}
+
+Con ello, podríamos considerar para una cierta máquina $M$ el conjunto de todas las entradas $\sigma$ tales que nuestra máquina acepte dicha entrada. A esto lo consideraremos como el lenguaje de $M$, denotado 
+por $L(M)$. Teniendo este punto claro, diremos que nuestro lenguaje es \textit{reconocible} por una máquina de Turing $N$ si cualquier elemento del lenguaje es aceptado por $N$\footnote{Podemos notar que, dado un 
+lenguaje cualquiera $L_M$, éste será reconocido por la máquina $N$ si y sólo si $L_M \subseteq L(N)$.}.
+
+Como comentábamos anteriormente, muchas veces no es fácil distinguir entre una máquina que, para una cierta entrada, está tardando demasiado en responder, o que simplemente ha entrado en un bucle y correrá de manera indefinida. 
+Es cierto que hay máquinas que pueden ser muy útiles a pesar de incurrir en bucles infinitos para ciertas casuísticas, pero a pesar de ello, las máquinas más interesantes a estudiar son las decisoras.
+
+Estas máquinas de Turing tienen la peculiaridad de que, para cualquier entrada perteneciente a cualquier lenguaje, obtienen siempre en un número finito de pasos un estado de parada, ya sea de aceptación o de rechazo.
+De la misma manera, existen reducciones de esta definición (reduciendo el conjunto de estudio), que se ajustan a un lenguaje en concreto, dando parada para todos sus elementos. En ese caso, diremos que dicho lenguaje es 
+Turing-decidible\footnote{En algunos textos también se los conoce como simplemente decidibles, pero he querido remarcar la existencia de una máquina de Turing que cumpla el criterio.}, siempre y cuando exista al menos 
+una máquina que cumpla el criterio mencionado.
 % \section{La relación con la decidibilidad}
 
 % Y es justo en este punto donde entra en juego la decibilidad. Como hemos dicho anteriormente, La decidibilidad no deja de ser la capacidad de un problema de ser resuelto de manera algorítmica, es decir, 

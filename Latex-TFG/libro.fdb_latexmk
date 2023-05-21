@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex libro"] 1684673643 "libro.aux" "libro.bbl" "libro" 1684673646
+["bibtex libro"] 1684694380 "libro.aux" "libro.bbl" "libro" 1684694382
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "library.bib" 1684588243 10681 a6fe36aeefaff96fac29cad5d3323834 ""
-  "libro.aux" 1684673646 24491 8ecc7a2db1778b5d43f7a907586318a8 "pdflatex"
+  "library.bib" 1684694340 10883 68593e6a6904ca960c85e33ebd662045 ""
+  "libro.aux" 1684694382 25538 30b8fc6b86927cd80ce2bd89ea922108 "pdflatex"
   (generated)
   "libro.bbl"
   "libro.blg"
-["pdflatex"] 1684673643 "/home/david/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1684673646
+["pdflatex"] 1684694380 "/home/david/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1684694382
   "/etc/texmf/web2c/texmf.cnf" 1681495978 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/david/Documents/TFG/Latex-TFG/libro.tex" 1684584037 14936 b4d046b217da613826bd020c420617ce ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -50,6 +50,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb" 1594851208 128058 f1b1547125b9d915547e8ee6c835af10 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb" 1594851208 112557 a655ffa75c92bc21161e9d2881b36322 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb" 1594851208 122677 b84a362c269d1738a78893515378b9eb ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb" 1546638885 62231 6fa2851364e6117779162ea79cb96ef4 ""
@@ -192,15 +193,15 @@
   "apendices/apendice01.tex" 1681497500 387 d2624e3c6afbcfd6689f1ccbd115c1ac ""
   "capitulos/capitulo01.tex" 1681497500 19827 83b4973e910b6a146d7713c47171e074 ""
   "capitulos/capitulo02.tex" 1681497500 37067 1c8fb01084b271ed888306d6383c5bc8 ""
-  "capitulos/capitulo03.tex" 1684673641 17019 a8a4381907731ad5fd3bb8ef35a9fe6e ""
+  "capitulos/capitulo03.tex" 1684694374 20573 cfd332c17e6ba3c27de6daad44740336 ""
   "glosario.tex" 1681497500 462 d02172799c55768ea9414445b566287d ""
   "img//portada-ugr-sencilla-color.pdf" 1681497500 57947 fbabc804d392777d03caeaeedf0965c3 ""
-  "libro.aux" 1684673646 24491 8ecc7a2db1778b5d43f7a907586318a8 "pdflatex"
-  "libro.bbl" 1684673643 5323 ad3d49369f01f2a82296cae4eaa61155 "bibtex libro"
-  "libro.brf" 1684673646 1652 e8f47b77655abcc49fae77b4082485e4 "pdflatex"
-  "libro.out" 1684673645 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "libro.aux" 1684694382 25538 30b8fc6b86927cd80ce2bd89ea922108 "pdflatex"
+  "libro.bbl" 1684694380 5486 60833c29e5636c415ceb33ae59bfa91f "bibtex libro"
+  "libro.brf" 1684694382 1710 df7285b1f780195da40f1f80e12ad481 "pdflatex"
+  "libro.out" 1684694381 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "libro.tex" 1684584037 14936 b4d046b217da613826bd020c420617ce ""
-  "libro.toc" 1684673646 3055 5f7411fff43f9ec3d339096eea8027e8 "pdflatex"
+  "libro.toc" 1684694382 3231 205fc84a6de339d3e178c532431a441f "pdflatex"
   "paquetes/comandos-entornos.tex" 1681497500 768 0cb52b72ff26e41d0c84dfc312fcbf4e ""
   "paquetes/hyperref.tex" 1681497500 1641 5cb44f90bd6db5b7b6db45f6cfcc78f7 ""
   "preliminares/declaracion-originalidad.tex" 1681497500 699 41a5dbc8f5101ef1ccd823a81b420124 ""
