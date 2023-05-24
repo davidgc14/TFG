@@ -172,18 +172,35 @@ Estas máquinas de Turing tienen la peculiaridad de que, para cualquier entrada 
 De la misma manera, existen reducciones de esta definición (reduciendo el conjunto de estudio), que se ajustan a un lenguaje en concreto, dando parada para todos sus elementos. En ese caso, diremos que dicho lenguaje es 
 Turing-decidible\footnote{En algunos textos también se los conoce como simplemente decidibles, pero he querido remarcar la existencia de una máquina de Turing que cumpla el criterio.}, siempre y cuando exista al menos 
 una máquina que cumpla el criterio mencionado.
-% \section{La relación con la decidibilidad}
 
-% Y es justo en este punto donde entra en juego la decibilidad. Como hemos dicho anteriormente, La decidibilidad no deja de ser la capacidad de un problema de ser resuelto de manera algorítmica, es decir, 
-%si existe un algoritmo que pueda determinar de manera definitiva si una instancia del problema es verdadera o falsa.
+\subsection{Algoritmos imposibles}
 
-%Turing tomó el tema algorítmico por lo literal, y aunando sus intereses personales y los problemas abiertos en su campo de estudio, se propuso llevar este grandioso reto a buen puerto. Aprovechando la visión 
-%tan avanzada para su época que disponía Turing, trató desde un principio de darle un enfoque distinto. Para grandes problemas, hay que pensar en grandes soluciones, y Turing lo consiguió definiendo un
-%modelo matemático nunca visto hasta la fecha.
+Llegados a este punto, nos pueden aturdir algunas preguntas naturales. ¿Cómo podemos saber si una máquina es efectivamente decisora? Es decir, ¿existe algún algoritmo capaz de decidir si una máquina (previa a su ejecución)
+para una entrada dada se detendrá en un número finito de pasos? Podemos observar cierta recursividad en la propia pregunta. Estamos planteando la existencia de una máquina\footnote{Denotar que, en este caso, recurrimos a la tesis
+de Church-Turing para asociar la existencia de algoritmo con la existencia de su respectiva máquina de Turing. Véase \cite{copeland1997church}.} $M_1$ que sea capaz de decidir si otra máquina $M_2$ se detendrá. Es decir, 
+una máquina que recibe de entrada el algoritmo de otra máquina. Pero, ¿no tendríamos el mismo problema con la máquina $M_1$? ¿Cómo podemos saber si esta máquina se detendrá?
+
+Este famoso problema es el conocido como problema de la parada (o \textit{halting problem} en inglés). Fue publicado por Turing en su resonado artículo \textit{On Computable Numbers, with an Application to the 
+Entscheidungsproblem}\footnote{Véase \cite{turing1936computable}.}\footnote{Recordar al lector Entscheidungsproblem se trata del problema de decibilidad planteado de forma no cerrada por Gödel en sus teoremas de incompletitud, 
+donde dejaba pendiente la solución del problema planteado por Hilbert.}, donde consiguió demostrar que el problema de la parada es indecidible, es decir, no existe ninguna máquina $M_1$ cumpliendo las condiciones antes 
+exigidas.
+
+Gracias a estos grandes resultados, podemos ver que, para máquinas de Turing relativamente complejas, la etiquetación de una máquina como "decisora" no es tarea fácil, y en algunos casos imposible. Veremos a continuación 
+más en profundidad cómo Turing, de una manera sencilla e intuitiva, caminó sobre el problema de manera elegante, dejando huella hasta la actualidad con éste y otros muchos resultados, y plantando la semilla de las bases de 
+la computación moderna.
 
 
 
-\chapter{La decibilidad}
+\section{La decibilidad}
+
+\subsection{Demostración del problema de la parada}
+
+\subsection{Otros problemas indecidibles}
+
+
+\chapter{El estado del programa de Hilbert}
+
+\
 
 \endinput
 %------------------------------------------------------------------------------------

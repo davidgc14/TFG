@@ -21,6 +21,11 @@ Felix~E Browder.
 \newblock {\em Mathematical developments arising from Hilbert problems}.
 \newblock American Mathematical Society, 1976.
 
+\bibitem[Cop97]{copeland1997church}
+B~Jack Copeland.
+\newblock The church-turing thesis.
+\newblock 1997.
+
 \bibitem[Cop06]{copeland2006colossus}
 B.~Jack Copeland.
 \newblock {\em Colossus: The Secrets of Bletchley Park's Codebreaking
@@ -138,6 +143,12 @@ Peter Smith.
 Ian Stewart.
 \newblock {\em The problems of mathematics}.
 \newblock Oxford University Press Oxford, 1987.
+
+\bibitem[T{\etalchar{+}}36]{turing1936computable}
+Alan~Mathison Turing et~al.
+\newblock On computable numbers, with an application to the
+  entscheidungsproblem.
+\newblock {\em J. of Math}, 58(345-363):5, 1936.
 
 \bibitem[Tor49]{toranzos1949panorama}
 Fausto~I. Toranzos.
