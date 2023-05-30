@@ -193,7 +193,59 @@ la computación moderna.
 
 \section{La decibilidad}
 
+En su artículo de 1936, Turing no sólo presentó el problema de la parada, sino que también propuso una aplicabilidad al problema de la decibilidad planteado abiertamente por Hilbert y maquetado por Gödel. Gracias a la 
+definición de máquina de Turing y del problema de la parada, se pudo definir la existencia de problemas que no disponen de un proceso válido que lleve a la demostración o refutación del mismo\footnote{En este sentido, 
+hacemos referencia de la misma manera al término "algoritmo", apoyándonos en la tesis de Church-Turing.}.
+
 \subsection{Demostración del problema de la parada}
+
+La idea intuitiva detrás de la demostración radica en realizar una demostración por reducción al absurdo. Es decir, suponemos a priori la existencia de una máquina decisora capaz de dar solución al problema de la parada para
+cualquier máquina dada. Una vez supuesto esto, bastará con definir una segunda máquina que responda en función de al anterior, y hacer que la máquina decisora interactúe con esta segunda. Llegaremos así a un absurdo y quedará
+demostado lo propuesto\footnote{Denotar que las máquinas de Turing, debidamente construidas, son capaces de concatenarse. Es decir, la composición de dos o más máquinas de Turing pueden dar lugar a una nueva máquina, como resultado
+de la composición de las anteriores.}.
+
+Comencemos como hemos mencionado. Consideremos una máquina de Turing $P$ cualquiera y una entrada fija $\sigma$, la cual se aplica a la propia máquina $P$ esperando una salida (o una ejecución infinita). Supongamos de la
+existencia de una máquina $M$ que, al recibir como entrada a la máquina $P$ con entrada $\sigma$, sea capaz de decidir si dicha máquina $P$ se detendrá en una cantidad finita de iteraciones. Llamemos a esta máquina $M$ como
+$DECISORA$ para una mayor sencillez.
+
+Definamos a continuación una nueva máquina $L$ mediante el argumento diagonal de Cantor\footnote{Véase \cite{binder2008theories}.}. Es decir, nuestra máquina $L$ (que llamaremos $DIAGONAL$) es capaz de recibir como entrada 
+una máquina cualquiera\footnote{Tengamos en cuenta que siempre que hablemos de máquinas que reciben como entrada otra máquina, hacemos referencia a recibir el algoritmo de una máquina debidamente codificado.}, y realizar una
+serie de pasos, que representaremos como una composición de máquinas:
+
+\begin{enumerate}
+        \item Dada una entrada $\sigma$, que suponemos como una máquina debidamente codificada, realiza una evaluación de sí misma, dando lugar a un par $\sigma, \sigma$, donde la máquina $\sigma$ recibe como entrada a $\sigma$.
+                Este par lo proporciona como salida en la cinta.
+        \item Una vez generado el par máquina-entrada, proporcionamos dicho par como entrada en nuestra máquina $DECISORA$, la cual proporcionará como salida un estado de aceptación o de rechazo, dependiendo de si la máquina $\sigma$
+                se ha detenido o no. Notar que nuestra máquina $DECISORA$ nunca incurre en bucle.
+        \item Por último, consideraremos la salida proporcionada por $DECISORA$, y en caso de que la salida sea un estado de aceptación, nuestra máquina $DIAGONAL$ dará como salida un bucle infinito. En caso contrario, cuando reciba 
+                como entrada un estado de rechazo, la máquina proporcionará un estado de aceptación, deteniéndose en un número finito de pasos.
+\end{enumerate}
+
+En conjunto, hemos definido la máquina de Turing $DIAGONAL$, la cual recibe como entrada una máquina cualquiera $\sigma$, y proporciona como salida o bien un bucle, o bien un estado de aceptación, siguiendo los pasos anteriormente
+descritos.
+
+Notemos que nuestra aplicación $DIAGONAL$, en palabras más sencillas, incurre en el resultado opuesto al que determina $DECISORA$, en una correspondencia biunívoca:
+
+\begin{equation*}
+        (DIAGONAL, \sigma) \textit{ entra en estado de aceptación } \Leftrightarrow (DECISORA, \sigma) \textit{ entra en estado de aceptación.}\footnote{Se entiende por el par
+        $(M, \sigma)$ a la evaluación de la máquina $M$ para una entrada $\sigma$.}
+\end{equation*}
+
+O dicho en otras palabras, y continuando con la equivalencia, 
+
+\begin{equation*}
+        (DIAGONAL, \sigma) \textit{ se detiene } \Leftrightarrow (\sigma, \sigma) \textit{ no se detiene.}
+\end{equation*}
+
+Y esto ocurre para cualquier máquina $\sigma$ que nosotros consideremos. Tomemos por tanto $\sigma = DIAGONAL$ (esto lo podemos hacer ya que $DIAGONAL$ es una máquina de Turing, por ser composición de éstas). Por tanto, sustituyendo en el 
+resultado anterior tenemos lo siguiente:
+
+\begin{equation*}
+        (DIAGONAL, DIAGONAL) \textit{ se detiene } \Leftrightarrow (DIAGONAL, DIAGONAL) \textit{ no se detiene.}
+\end{equation*}
+
+Hemos llegado a una contradicción, y ello se debe a la única suposición que hemos hecho en todo nuestro proceso lógico: la existencia de la máquina $DECISORA$. Por tanto, por reducción al absurdo, hemos demostrado la no existencia 
+máquinas con estas características.
 
 \subsection{Otros problemas indecidibles}
 

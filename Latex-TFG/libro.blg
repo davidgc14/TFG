@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: libro.aux
 The style file: alpha.bst
 Database file #1: library.bib
-Warning--empty journal in copeland1997church
-You've used 32 entries,
+You've used 33 entries,
             2543 wiz_defined-function locations,
-            747 strings with 8404 characters,
-and the built_in function-call counts, 10221 in all, are:
-= -- 988
-> -- 356
-< -- 26
-+ -- 109
-- -- 102
-* -- 607
-:= -- 1710
-add.period$ -- 101
-call.type$ -- 32
-change.case$ -- 151
-chr.to.int$ -- 32
+            755 strings with 8494 characters,
+and the built_in function-call counts, 10563 in all, are:
+= -- 1024
+> -- 364
+< -- 27
++ -- 111
+- -- 104
+* -- 630
+:= -- 1766
+add.period$ -- 104
+call.type$ -- 33
+change.case$ -- 156
+chr.to.int$ -- 33
 cite$ -- 33
-duplicate$ -- 511
-empty$ -- 845
-format.name$ -- 154
-if$ -- 2099
+duplicate$ -- 526
+empty$ -- 874
+format.name$ -- 158
+if$ -- 2171
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 49
-newline$ -- 164
-num.names$ -- 96
-pop$ -- 203
+missing$ -- 50
+newline$ -- 169
+num.names$ -- 99
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 199
+purify$ -- 205
 quote$ -- 0
-skip$ -- 374
+skip$ -- 385
 stack$ -- 0
-substring$ -- 454
-swap$ -- 50
-text.length$ -- 26
-text.prefix$ -- 23
+substring$ -- 482
+swap$ -- 52
+text.length$ -- 27
+text.prefix$ -- 24
 top$ -- 0
-type$ -- 188
-warning$ -- 1
-while$ -- 93
-width$ -- 37
-write$ -- 406
-(There was 1 warning)
+type$ -- 196
+warning$ -- 0
+while$ -- 96
+width$ -- 38
+write$ -- 420
