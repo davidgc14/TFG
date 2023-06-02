@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  2 JUN 2023 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  2 JUN 2023 18:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -839,7 +839,6 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 40.
 Package tocbasic Info: Using my definition of `\numberline' on input line 41.
 Package tocbasic Info: Using my definition of `\numberline' on input line 42.
 Package tocbasic Info: Using my definition of `\numberline' on input line 43.
-Package tocbasic Info: Using my definition of `\numberline' on input line 44.
 )
 \tf@toc=\write4
 \openout4 = `libro.toc'.
@@ -1074,10 +1073,10 @@ Package rerunfilecheck Info: File `libro.brf' has not changed.
 (rerunfilecheck)             Checksum: 9BCEF7674CE4A9651F06F325AD19D88B;2293.
  ) 
 Here is how much of TeX's memory you used:
- 20759 strings out of 478287
- 363784 string characters out of 5849289
+ 20757 strings out of 478287
+ 363762 string characters out of 5849289
  820925 words of memory out of 5000000
- 37661 multiletter control sequences out of 15000+600000
+ 37660 multiletter control sequences out of 15000+600000
  740192 words of font info for 596 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10636b,833s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1088,10 +1087,10 @@ pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cabin/cbn_meva6t.enc}</usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on libro.pdf (56 pages, 394421 bytes).
+Output written on libro.pdf (56 pages, 396558 bytes).
 PDF statistics:
- 959 PDF objects out of 1000 (max. 8388607)
- 846 compressed objects within 9 object streams
- 246 named destinations out of 1000 (max. 500000)
- 193910 words of extra memory for PDF output out of 221844 (max. 10000000)
+ 954 PDF objects out of 1000 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 245 named destinations out of 1000 (max. 500000)
+ 193902 words of extra memory for PDF output out of 221844 (max. 10000000)
 

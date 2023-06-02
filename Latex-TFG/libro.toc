@@ -39,7 +39,6 @@
 \contentsline {subsection}{\numberline {6.4.2}Algoritmos imposibles}{36}{subsection.6.4.2}%
 \contentsline {section}{\numberline {6.5}La decibilidad}{37}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Demostración del problema de la parada}{37}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Otros problemas indecidibles}{38}{subsection.6.5.2}%
 \contentsline {chapter}{\numberline {7}El estado del programa de Hilbert}{39}{chapter.7}%
 \contentsline {chapter}{\nonumberline Bibliograf\'{\i }a}{41}{chapter*.9}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
