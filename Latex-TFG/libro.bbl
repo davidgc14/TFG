@@ -26,6 +26,12 @@ Felix~E Browder.
 \newblock {\em Mathematical developments arising from Hilbert problems}.
 \newblock American Mathematical Society, 1976.
 
+\bibitem[Cha98]{chaitin1998limits}
+Gregory~J Chaitin.
+\newblock {\em The limits of mathematics: A course on information theory and
+  the limits of formal reasoning}.
+\newblock Springer, 1998.
+
 \bibitem[Cop97]{copeland1997church}
 B~Jack Copeland.
 \newblock The church-turing thesis.
@@ -117,6 +123,25 @@ Paolo Mancosu.
   mathematics in the 1920s}.
 \newblock Oxford University Press, 1997.
 
+\bibitem[Mos00]{mosterin2000logicos}
+Jes{\'u}s Moster{\'\i}n.
+\newblock {\em Los l{\'o}gicos}.
+\newblock Espasa-Calpe Madrid, 2000.
+
+\bibitem[Ore19]{orellana2019enfoque}
+Rodrigo~Lopez Orellana.
+\newblock El enfoque epistemol{\'o}gico de david hilbert: el a priori del
+  conocimiento y el papel de la l{\'o}gica en la fundamentaci{\'o}n de la
+  ciencia.
+\newblock {\em Principia: an international journal of epistemology},
+  23(2):279--308, 2019.
+
+\bibitem[P{\etalchar{+}}79]{paradis1979crisis}
+Jaime Parad{\'\i}s et~al.
+\newblock La crisis de fundamentaci{\'o}n de la matem{\'a}tica y la opci{\'o}n
+  del programa formalista de hilbert.
+\newblock {\em Revista de bachillerato}, 1979.
+
 \bibitem[Rei86]{reid1986hilbert}
 Constance Reid.
 \newblock {\em Hilbert-Courant}.
@@ -171,6 +196,11 @@ Alan~M. Turing.
 Jean~Paul Van~Bendegem.
 \newblock The strong hilbert program.
 \newblock {\em Revue internationale de philosophie}, pages 343--353, 1993.
+
+\bibitem[vN27]{v1927hilbertschen}
+J.~v.~Neumann.
+\newblock Zur hilbertschen beweistheorie.
+\newblock {\em Mathematische Zeitschrift}, 26(1):1--46, 1927.
 
 \bibitem[Zac07]{Zach_2007}
 Richard Zach.
