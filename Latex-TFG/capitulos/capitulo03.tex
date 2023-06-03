@@ -44,7 +44,7 @@ Ambas fueron dos máquinas de descifrado de mensajes encriptados del bando alem�
 que en el desarrollo de ``The Bomb'', Turing tuvo un papel más en la sombra en el desarrollo de la máquina, aportando sus conocimientos no tanto en el diseño, sino más bien en la parte 
 criptográfica\footnote{Cabe destacar que, como en todos los grandes proyectos, fueron muchas las personas involucradas en este (aun más si cabe debido al calibre del problema). Véase \cite{sale2015enigma}.}, la cual se fundamentaba en sus conocimientos de lógica y criptografía estudiados durante tantos años.
 
-Sin embargo, con ``Colossus'' fue diferente. La máquina de cifrado Lorenz era mucho más potente que Enigma\footnote{Para profundizar en el desarrollo de la resolución del problema para el descifrado de la máquina Enigma, véase \cite{hodges1983alan}}, y se requería, para poder abatirla, de toda la élite británica de la época. Turing, aunando sus conocimientos
+Sin embargo, con ``Colossus'' fue diferente. La máquina de cifrado Lorenz era mucho más potente que Enigma\footnote{Para profundizar en el desarrollo de la resolución del problema para el descifrado de la máquina Enigma, véase \cite{hodges1983alan}}, y se requería para poder abatirla de toda la élite británica de la época. Turing, aunando sus conocimientos
 en criptografía y sus conocimientos electromecánicos previos, se dispuso a la cabeza del equipo de diseño y construcción de la máquina. 
 
 Pero este gran matemático no tenía como único objetivo descifrar mensajes: 
@@ -69,18 +69,18 @@ la guerra se redujera significativamente.
 
 \section{El concepto de Máquina de Turing}
 
-A nivel conceptual, la máquina de Turing es un modelo matemático que pretende resolver un problema que se le introduce como entrada, y que pretende proporcionar una salida pasado un cierto número de pasos.
+A nivel conceptual, la máquina de Turing es un modelo matemático que pretende resolver un problema que se le introduce como entrada, con la intención de proporcionar una salida pasado un cierto número de pasos.
 Es decir, un modelo capaz de simular cualquier algoritmo de computación que se le puedan pasar como instrucciones a la máquina.
 
 La máquina de Turing consta de una cinta infinita dividida en casillas, una cabezal de lectura/escritura que puede moverse a lo largo de la cinta, y un conjunto de reglas que determinan cómo la máquina puede 
-cambiar el contenido de las casillas y mover la cabezal.
+cambiar el contenido de las casillas y mover el cabezal.
 
 En su forma original, Turing define los siguientes elementos que serán los componentes de la máquina:
 
 \begin{enumerate}
     \item Cinta: La cinta es una estructura lineal dividida en casillas, donde cada casilla puede contener un símbolo de un alfabeto finito. La cinta es infinita en ambas direcciones, pero en la 
-            práctica solo se usa una porción finita.
-    \item Cabezal de lectura/escritura: La cabezal de la máquina de Turing puede leer el símbolo actual en la casilla en la que se encuentra y puede escribir un nuevo símbolo en esa casilla. También 
+            práctica sólo se usa en un segmento infinito a la derecha.
+    \item Cabezal de lectura/escritura: El cabezal de la máquina de Turing puede leer el símbolo actual en la casilla en la que se encuentra y puede escribir un nuevo símbolo en esa casilla. También 
             puede moverse a la casilla adyacente izquierda o derecha en la cinta.
     \item Conjunto de estados: La máquina de Turing tiene un conjunto finito de estados internos que determinan su comportamiento. En cada paso, la máquina de Turing se encuentra en un estado particular.
     \item Reglas de transición: Las reglas de transición especifican cómo la máquina de Turing debe cambiar de estado y cómo debe modificar los símbolos en la cinta en función del estado actual y del símbolo 
@@ -93,7 +93,7 @@ de hoy en día.
     \item El análogo actual de la cinta, podríamos pensarlo como la memoria de los computadores. Almacena la información de manera ordenada, para un fácil acceso con las órdenes oportunas.
     \item El cabezal de la máquina es el actual procesador del ordenador, el cual realiza operaciones y manipula la información almacenada en la memoria.
     \item El conjunto de estados se complementa junto con el cabezal para componer en conjunto el procesador del ordenador, almacenando los estados de las operaciones que se realizan por el cabezal.
-    \item Las reglas de transición no dejan de ser las instrucciones que contiene cada uno de los programas para que pueda ser ejecutado de forma correcta. 
+    \item Las reglas de transición se pueden ver como las instrucciones que contiene cada uno de los programas para que pueda ser ejecutado de forma correcta. 
 \end{enumerate}
 
 Sin embargo, esto no deja de ser un simple concepto de lo que conocemos como máquina de Turing. En realidad, y formalmente hablando, se trata de un sistema matemático un poco más complejo de describir.
@@ -127,7 +127,7 @@ donde:
 \section{El funcionamiento}
 
 Una vez entendida la función de transición y todos los componentes de la 7-tupla, planteemos un supuesto de funcionamiento de una máquina de Turing $M$. Como hemos dicho, en una primera instancia
-disponemos de una cinta infinita hacia la izquierda\footnote{Es decir, finita por la izquierda, con una casilla de inicio. Este supuesto se puede generalizar para una cinta infinita en ambos sentidos, pero en este
+disponemos de una cinta infinita hacia la derecha\footnote{Es decir, finita por la izquierda, con una casilla de inicio. Este supuesto se puede generalizar para una cinta infinita en ambos sentidos, pero en este
 ejemplo trataremos con la mencionada.}, donde la máquina recibe como entrada una sucesión de caracteres $\sigma = \sigma_1 \sigma_2 \dots \sigma_n \in \Sigma$ que estarán situados en las $n$ primeras casillas de 
 la cinta. Notemos que, como $\Sigma$ no contiene al espacio en blanco, podremos encontrar fácilmente el final de la entrada, al encontrar el primer espacio en la casilla $n+1$.
 
@@ -144,8 +144,8 @@ ninguno de estos estados en ningún momento de su ejecución? Daría resultado a
 iteraciones finitas e infinitas.}.
 
 ¿Podemos a priori saber si nuestra máquina llegará en algún momento a un estado de parada?
-Una función de transición puede ser tan compleja como uno quiera definirla. Si tu máquina lleva ejecutándose durante miles de iteraciones, es posible que en siguiente paso se detenga, o puede ser también que no se detenga
-nunca. ¿Hay alguna forma de saberlo, sin tener que ejecutar tu máquina, de si en la máquina está bien definido el criterio de parada?
+Una función de transición puede ser tan compleja como uno quiera definirla. Si tu máquina lleva ejecutándose durante miles de iteraciones, es posible que en el siguiente paso se detenga, o puede ser también que no se detenga
+nunca. ¿Hay alguna forma de saberlo (sin tener que ejecutar tu máquina) de si en la máquina está bien definido el criterio de parada?
 
 \section{El problema de la parada}
 
@@ -227,7 +227,7 @@ descritos.
 Notemos que nuestra aplicación $DIAGONAL$, en palabras más sencillas, incurre en el resultado opuesto al que determina $DECISORA$, en una correspondencia biunívoca:
 
 \begin{equation*}
-        (DIAGONAL, \sigma) \textit{ entra en estado de aceptación } \Leftrightarrow (DECISORA, \sigma) \textit{ entra en estado de aceptación.}\footnote{Se entiende por el par
+        (DIAGONAL, \sigma) \textit{ entra en estado de aceptación } \Leftrightarrow (DECISORA, \sigma) \textit{ entra en estado de rechazo.}\footnote{Se entiende por el par
         $(M, \sigma)$ a la evaluación de la máquina $M$ para una entrada $\sigma$.}
 \end{equation*}
 
@@ -268,9 +268,7 @@ logros para la matemática y la computación moderna. Gracias a este resultado, 
 
 A fin de cuentas, el problema de Hilbert ha sido resuelto, aunque no haya sido en la vía que Hilbert esperaba. El lado bueno de este 
 tipo de resultados, es que la no existencia de solución esperada no siempre significa un fracaso. Tenemos aquí, en la misma línea temporal
-de un mismo problema, dos ejemplos claros de problemas ``sin solución'' que han supuesto un cambio generacional en las matemáticas.
-
-Si hubiésemos demostrado lo contrario, nos encontraríamos en un estado del arte distinto, en un mundo con problemas diferentes que resolver,
+de un mismo problema, dos ejemplos claros de problemas ``sin solución'' que han supuesto un cambio generacional en las matemáticas. Si hubiésemos demostrado lo contrario, nos encontraríamos en un estado del arte distinto, en un mundo con problemas diferentes que resolver,
 y aportando soluciones desde perspetivas para nosotros desconocidas. Pero no ha sucedido así. La búsqueda de soluciones alternativas a los 
 problemas nos han hecho descubrir contraejemplos que nos han hecho llegar hasta donde hemos llegado, tanto como sociedad humana como matemática.
 
