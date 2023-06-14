@@ -20,7 +20,7 @@ en relación con el cálculo proposicional (encargado de, mediante operadores l�
 durante todo el período intermedio.}. Este argumento sería fundamental para el desarrollo de los resultados que le precederían en los siguientes años.
 
 Años después de la conferencia emitida en la Universidad de Sorbona por Hilbert, otros matemáticos contribuyeron en el avance de los primeros pasos establecidos
-por Fredge años atrás. Uno de los resultados más resonantes en el establecimiento de las bases de la lógica teórica se le atribuye a 
+por Frege años atrás. Uno de los resultados más resonantes en el establecimiento de las bases de la lógica teórica se le atribuye a 
 Löwenheim, el cual en 1915 publicó su demostración de que, dado un modelo cualquiera y una fórmula satisfacible en él, entonces existirá algún
 otro modelo (definido en el ámbito numerable) en el que la fórmula también es satisfacible. Este resultado, junto con el publicado 5 años después por su 
 compañero Skolem sobre la generalización del mismo a un conjunto cualquiera de fórmulas de primer orden, se establece conocido como teorema de Löwenheim-Skolem.
@@ -28,10 +28,7 @@ Este teorema Gödel lo abordará desde otra perspectiva, y conseguirá que dicho
 
 Teniendo este recorrido claro, puede intuirse que el objetivo de Gödel queda fijado en demostrar que el cálculo cuantificacional de primer orden es semánticamente suficiente.
 De esta manera, no sólo se abarca y se da una respuesta positiva al problema abierto de \textit{Principia Mathematica}, sino que cualquier otro cálculo lógico de primer orden
-(incluido el de Fredge) quedaría probado como semánticamente suficiente también. 
-
-En la siguiente sección veremos las demostraciones originales de Gödel, debido a que, a pesar de que existan versiones más modernas y elegantes, la que publicó Gödel en 1930
-presenta una construcción muy lineal y claramente definida, que puede resultar más amena y entendible para el lector.
+(incluido el de Frege) quedaría probado como semánticamente suficiente también. 
 
 \section{El proceso de construcción}
 
@@ -39,28 +36,38 @@ Para poder sumergirnos de forma más exaustiva en el proceso de deducción y dem
 de incompletitud), será necesario tener claro un conjunto de definiciones para una mayor facilidad de entendimiento en las deducciones que prosigan. En este sentido
 definimos las siguientes:
 \begin{itemize}
-    \item Una \textit{fórmula} se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (es decir, sea la asignación verdadera o falsa) a cada
+    \item Un \textit{cálculo lógico} o sistema formal es un conjunto de elementos (un conjunto de axiomas, reglas de inferencia y un lenguaje formal) mediante el cual podemos 
+            realizar deducciones de nuevas proposiciones a partir de otras previas\footnote{Se puede considerar como una generalización formal de un sistema axiomático.}.
+    \item Una \textit{fórmula} en este contexto no deja de ser una proposición dentro de nuestro sistema formal, siguiendo por tanto las reglas del lenguaje formal de nuestro sistema.
+    \item Una fórmula se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (es decir, sea la asignación verdadera o falsa) a cada
             una de las componentes de la fórmula.
-    \item Un cálculo lógico se definirá como \textit{correcto} siempre y cuando sólo permita deducir fórmulas o resultados válidos sin incluir ningún tipo de premisa.
-    \item Un cálculo lógico se definirá como \textit{suficiente} siempre y cuando permita la deducción de todas las fórmulas que sean válidas.
-    \item Un cálculo lógico se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
+    \item Una \textit{K-fórmula} es una fórmula compuesta por $K$ proposiciones que se relacionan entre ellas de manera sintácticamente correcta.
+    \item El \textit{grado de una K-fórmula} se define como el número de secuencias continuas de cuantificadores universales ($\forall$) en el prefijo de la $K$-fórmula. 
+            Cuando hablamos de prefijo, hacemos referencia a los elementos previos a las preposiciones que contiene la $K$-fórmula. Por ejemplo, en la $K$-fórmula "$\forall x \exists y (P(x, y))$", el prefijo es la secuencia
+            es $\forall x \exists y$. La cuantificación de los elementos $\forall$  en el prefijo (separados entre sí por elementos $\exists$) definirá el grado de la $K$-fórmula.
+    \item Una variable la catalogaremos como \textit{libre} cuando no aparezca en el prefijo de la fórmula. Es decir, será una variable que pueda tomar cualquier valor dentro del dominio
+            del sistema formal.
+    \item Un sistema formal se definirá como \textit{correcto} siempre y cuando sólo permita deducir fórmulas o resultados válidos sin incluir ningún tipo de premisa.
+    \item Un sistema formal se definirá como \textit{suficiente} siempre y cuando permita la deducción de todas las fórmulas que sean válidas.
+    \item Un sistema formal se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
             él, se permita el cálculo de todas las fórmulas lógicas, y que no proceda el cálculo de ninguna otra entre las anteriores recogidas.
-    \item Un cálculo lógico se considerará como \textit{deducible para un cierto conjunto de enunciados $(E_1, E_2, ..., E_n)$} (o simplemente \textit{deducible}, siempre y cuando se
+    \item Un sistema formal se considerará como \textit{deducible para un cierto conjunto de enunciados $(E_1, E_2, ..., E_n)$} (o simplemente \textit{deducible}, cuando se
             sobreentienda el conjunto de enunciados a los que se hace referencia como premisas) siempre y cuando dicho cálculo sea demostrable mediante el uso único y exclusivo
             de sus premisas.
+    \item Un sistema formal se dirá \textit{completo} cuando todas sus fórmulas válidas sean deducibles.
     \end{itemize}
 
-Denotar que se procederá al estudio de procesos y resultados relacionados con los resultados de Gödel desde un punto de vista no formal, con la simple intención de transmitir el proceso
-de deducciones que le llevaron a sus resultados, y poder pintar un esbozo de lo que fue su demostración original. Teniendo estos puntos claros, podemos comenzar a abordar el objetivo principal del 
-problema propuesto por Hilbert y Ackermann, que en palabras más concisas se puede enunciar como sigue:
+    Podemos ver que esta última definición es precisamente la que se planteaba abiertamente en \textit{Principia Mathematica}: demostrar que la lógica de primer orden es completa.
+Teniendo estos puntos claros, podemos comenzar a abordar dicho problema, que en otras se puede enunciar como sigue:
 \begin{equation}\label{th:God_Comp_I}
-    \textit{Cada formula válida de la lógica de primer orden es deducible.} 
+    \textit{Toda fórmula válida de la lógica de primer orden es deducible.} 
 \end{equation}
 
-En el anterior teorema \eqref{th:God_Comp_I}, su demostración quedaría trivialmente conlcuida si dispusiéramos de este segundo teorema, que no deja de ser una reformulación del anterior:
+Es decir, que si partimos de una fórmula válida\footnote{De aquí en adelante se presupondrán todas las fórmulas válidas como pertenecientes a la lógica de primer orden, que será
+nuestro sistema formal.}, podremos encontrar un proceso lógico dentro de nuestro sistema formal que nos lleve a deducir a nuestra fórmula. Notemos que en el anterior teorema \eqref{th:God_Comp_I}, su demostración quedaría trivialmente conlcuida si dispusiéramos de este segundo teorema, que no deja de ser una reformulación del anterior:
 \begin{equation}\label{th:God_Comp_II}
-    \textit{Cada formula de la lógica de primer orden es o bien refutable o bien satisfacible.}\footnote{Ésto queda definido en un entorno numerable lo suficientemente grande, 
-    o como menciona Gödel textualmente, en un "universo numerable"} 
+    \textit{Toda fórmula válida es o bien refutable o bien satisfacible.}\footnote{Ésto queda definido en un entorno numerable lo suficientemente grande, 
+    o como menciona Gödel textualmente, en un ``universo numerable"} 
 \end{equation}
 
 Veamos por tanto que mediante el teorema \eqref{th:God_Comp_II} (suponiendo éste como verdadero) podemos deducir de manera sencilla el primer teorema.
@@ -68,22 +75,23 @@ Veamos por tanto que mediante el teorema \eqref{th:God_Comp_II} (suponiendo ést
 Como podemos ver, \eqref{th:God_Comp_I} afirma que cada fórmula válida que nosotros consideremos será siempre deducible. Por ello, consideremos para comenzar con el proceso de deducción
 una fórmula válida $\phi$ cualquiera. Como dicha fórmula $\phi$ es válida, por contradicción sabemos que $\neg \phi$ no será satisfacible. Ahora, como el teorema \eqref{th:God_Comp_II}
 lo suponemos como verdadero, aplicándolo obtenemos que $\neg \neg \phi$ será deducible, y por composición de negaciones, concluimos que $\phi$ es deducible.\footnote{Cabe destacar que el proceso 
-inverso para la implicaci'on contraria nos lleva a una demostración válida, y con ello al resultado de que ambos teoremas realmente son equivalentes.}
+inverso para la implicación contraria nos lleva a una demostración válida, y con ello al resultado de que ambos teoremas realmente son equivalentes.}
 
-Gödel procede de un modo similar al anterior para el desarrollo de sus resultados, fundamentándose en la lógica semántica, y aún más en profundidad en las demostraciones de los teoremas de 
-incompletitud que veremos más adelante. 
+Gödel procede de un modo similar al anterior para el desarrollo de sus resultados, fundamentándose en la lógica semántica, que será su herramienta esencial para el resto de sus procesos. 
+Notemos que el resultado anterior nos da una equivalencia entre ser deducible y tener demostración, lo cual a nivel intuitivo facilita en gran medida el proceso deductivo.
 
-Teniendo ahora la equivalencia entre los dos teoremas anteriores, tratemos de encontrar un proceso lógico que nos conduzca a la demostración del segundo teorema. Para ello Gödel recurre
-al concepto de $K$-fórmulas como enunciados prenexos, donde cada uno de los prefijos queda delimitado entre los símbolos $\forall$ y $\exists$. Teniendo este concepto definido, procede a enunciar 
-su tercer teorema, que será fundamental para la demostración de los anteriores:
+Con dicha equivalencia clara, tratemos de encontrar un proceso lógico que nos conduzca a la demostración del segundo teorema. Para ello Gödel recurre
+al concepto de $K$-fórmulas, procediendo a enunciar su tercer teorema, que será fundamental para la demostración de los anteriores:
 \begin{equation}\label{th:God_Comp_III}
-    \textit{Si cada $K$-fórmula es refutable o satisfacible\footnote{Al igual que en resultados anteriores, la satisfacibilidad debe darse e un entorno infinito numerable.}, entonces también lo será cualquier fórmula.} 
+    \textit{Si cada $K$-fórmula es refutable o satisfacible, entonces también lo será cualquier fórmula válida.} \footnote{Al igual que en resultados anteriores, la satisfacibilidad debe darse e un entorno infinito numerable. En palabras actuales, que 
+    su demostración sea computable.}\footnote{Tenemos aquí un ejemplo de $K$-fórmula: $(A \rightarrow B)$ para $K = 2$ (suponiendo que $A$ y $B$ son fórmulas válidas).}
 \end{equation}
 
-Queda claro por tanto que si demostramos la primera premisa del presente teorema \eqref{th:God_Comp_III} "Cada $K$-fórmula es refutable o satisfacible", el teorema \eqref{th:God_Comp_II} 
-queda demostrado como consecuencia de éste. Por tanto, tratemos de demostrarlo de la siguiente manera: consideremos y apliquemos un proceso inductivo al grado de las antes definidas $K$-fórmulas, definido 
-dicho proceso como el conteo de secuencias continuas de símbolos "$\forall$", con separación entre si mediante símbolos "$\exists$", en cada uno de los prefijos de las antes mencionadas $K$-fórmulas. 
-Para proseguir, sirvámonos de ayuda del siguiente teorema:
+Lo que nos indica el teorema anterior es que, si probamos que todas 
+las $K$-fórmulas son demostrables, entonces cada una de las proposiciones que las componen también lo serán, y tendremos así demostrado nuestro teorema \eqref{th:God_Comp_II}. 
+
+Debemos por tanto, para afrontar el teorema anterior, probar primero la veracidad de la premisa. Y para abordar su demostración, debido a que queremos probarlo para cada $K \in \N$, 
+procederemos por inducción sobre el grado de las $K$-fórmulas. Y realizar dicho proceso inductivo, o es otra cosa que dar demostración al siguiente enunciado:
 \begin{equation}
     \textit{Si cada $K$-fórmula de grado $n$ es satisfacible o refutable,}
 \end{equation}
@@ -92,8 +100,10 @@ Para proseguir, sirvámonos de ayuda del siguiente teorema:
 \end{equation}
 
 Dicha demostración se ataca mediante la definición de algunas sentencias auxiliares de grado $n$, con una estructura definida precisa, tal que al estudiar las implicaciones 
-y relaciones que existen entre ellas, se acabe concluyendo que las resultantes sentencias de grado $n+1$ también son satisfacibles o refutables. Con esto probado, para poder demostrar que 
-"Cada $K$-fórmula es refutable o satisfacible", sólo nos faltaría por probar el siguiente teorema:
+y relaciones que existen entre ellas, se acabe concluyendo que las resultantes sentencias de grado $n+1$ también son satisfacibles o refutables. 
+
+Tendríamos por tanto la afirmación de que si cualquier $K$-fórmula de grado $n$ es demostrable, entonces la de $n+1$ también. Para finalizar la demostración del enunciado
+"Cada $K$-fórmula es refutable o satisfacible", como queremos probarlo para $n \in \N$, sólo nos faltaría por probar el caso de $n=1$. Es decir,
 \begin{equation}\label{th:God_Comp_V}
     \textit{Cada $K$-fórmula de primer grado es refutable o satisfacible}
 \end{equation}
@@ -102,14 +112,37 @@ Es bien claro que si se cumple para las $K$-fórmulas de grado 1 y para cualquie
 el teorema \eqref{th:God_Comp_III} quedará también probado (y en consecuencia el teorema \eqref{th:God_Comp_II} quedará plenamente demostrado). Por ello tratemos de abordar el problema de la 
 demostración del teorema \eqref{th:God_Comp_V} recién enunciado.
 
-Esta demostración es la más compleja de abordar de las acometidas en la publicación de Gödel de 1930, y la afronta definiendo una sucesión $\pi \alpha$ asociada a cada una de las $K$-fórmulas. 
-Dichas sucesiones se definen como infinitas compuestas por fórmulas definidas como $\pi_n \alpha_n$, para las cuales nos ayudamos del siguiente teorema:
+Esta demostración es la más compleja de abordar de las acometidas en la publicación de Gödel de 1930, y la afronta de la siguiente manera. Considera una $K$-fórmula de la forma $\pi \alpha$
+de primer grado, donde $\pi$ es el prefijo y $\alpha$ las preposiciones. Consideremos una $s$-tupla de variables libres extraída de una sucesión infinita de variables libres $w_0, w_1, \dots $. 
+Estas $s$-tuplas tienen la forma siguiente:
+$$\omega_1 = (w_0, w_0, \dots, w_0), \quad \omega_2 = (w_1, w_0, \dots, w_0), \quad \omega_3 = (w_0, w_1, \dots, w_0), \quad \dots$$
+Y así sucesivamente\footnote{El orden de las $s$-tuplas viene dado por la suma creciente de los índices de las variables que la componen.}. Podemos por tanto definir la sucesión $(\omega_n)_{n \in \N}$, 
+la cual nos ayudará a definir nuestra sucesión de fórmulas $(\alpha_n)_{n \in \N}$ como sigue:
+
+\begin{equation*}
+    \begin{aligned}
+        &\alpha_1 = \alpha(\omega_1; w_1, w_2, \dots, w_s) \\
+        &\alpha_2 = \alpha(\omega_{2}; w_{s+1}, w_{s+2}, \dots, w_{2s}) \land \alpha_1 \\
+        &\qquad \qquad \dots\\ 
+        &\alpha_n = \alpha(\omega_{n}; w_{(n-1)s+1}, w_{(n-1)s+2}, \dots, w_{ns}) \land \alpha_{n-1}
+    \end{aligned}
+\end{equation*}
+
+Renombrando, tenemos 
+
+$$\alpha_n = \alpha(\omega_{n}; \gamma_n) \land \alpha_{n-1}$$
+
+donde $\gamma_n = w_{(n-1)s+1}, w_{(n-1)s+2}, \dots, w_{ns}$. Podemos definir por tanto la $K$-fórmula $\pi_n \alpha_n = \exists w_0 \exists w_1 \dots \exists w_{ns} \alpha_n$, donde tiene sentido
+definirlo así, ya que todas las variables libres anteriores aparecen en $\alpha_n$, que además simplificando podemos definir como $\pi_n = \exists \omega_{n+1}$.
+
+Llegados a este punto, se puede ver el siguiente teorema como una reformulación de \eqref{th:God_Comp_V}, pero con el entorno correcto:
+
 
 \begin{equation}\label{th:God_Comp_VI}
     \textit{$\pi \alpha \rightarrow \pi_n \alpha_n$ es deducible para cada $n \in \N$.}
 \end{equation}
 
-Dicho teorema se prueba por un esquema de inducción, aplicando para ello ciertas reglas y lemas de inferencia. Volviendo al teorema \eqref{th:God_Comp_V}, sabiendo la deducibilidad de las sucesiones
+Dicho teorema se prueba por un esquema de inducción similar al acometido anteriormente, aplicando para ello ciertas reglas y lemas de inferencia. Volviendo al teorema \eqref{th:God_Comp_V}, sabiendo la deducibilidad de las sucesiones
 antes mencionadas, consideraremos para cada una de las $K$-fórmulas que no se consideren como refutables, construiremos un sistema mediante elementos semánticos que si satisfaga a dicha $K$-fórmula.
 Esta consideración de relación entre elementos semánticos y las $K$-fórmulas no refutables, es el paso determinante de la demostración, y con la que se conlcuye el razonamiento de la prueba del
 presente teorema.
@@ -203,12 +236,13 @@ fundamentales en los que se puede encontrar un sistema formal correctamente defi
 Llamemos a nuestro sistema formal $M$. Entonces:
 \begin{itemize}
     \item Un sistema formal $M$ se considerará \textit{incompleto} si y sólo si existe al menos una sentencia $\phi$ tal que ni $\phi$ es deducible, ni tampoco su negación $\neg \phi$. En otras palabras, diremos que es incompleto cuando 
-            existan problemas para los que no tengamos ni una demostración ni un contraejemplo.
-    \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{completo} si y sólo si todas las sentencias de su lenguaje son deducibles, es decir, cuando no quede ningún problema sin resolver.
-    \item un sistema formal $M$ se considerará \textit{consistente} si y sólo si toda sentencia de $M$ es deducible en el propio $M$. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
+            existan problemas para los que no sea ni refutable ni satisfacible.
+    \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{completo} si y sólo si todas las sentencias de su lenguaje\footnote{Hacemos referencia aquí a sentencias formadas por fórmulas válidas en el marco del sistema formal.}
+            son deducibles, es decir, cuando no quede ningún problema sin resolver.
+    \item Un sistema formal $M$ se considerará \textit{consistente} si y sólo si toda sentencia de $M$ es deducible en el propio sistema. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
             mediante razonamiento lógico válido, lleguemos a probar simultáneamente su verdad y su falsedad\footnote{No necesariamente mediante el mismo proceso deductivo.}.
     \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{inconsistente}\footnote{Se le suele llamar también por el nombre de \textit{contradictorio}, debido a que se incurre en una doble verdad de la demostración 
-            de las sentencias.} si y sólo si existe alguna sentencia que no puede ser deducible en el propio sistema $M$, es decir, que para algún problema de nuestro sistema 
+            de las sentencias.} si y sólo si existe alguna sentencia que es refutable y satisfacible al mismo tiempo, es decir, que para algún problema de nuestro sistema 
             formal se puede afirmar su veracidad y su falsedad simultáneamente\footnote{Realmente no es necesario 
             requerir que todas las sentencias lo cumplan. Con encontrar una sentencia que incurra en esta "doble veracidad", debido a que el proceso lógico que se ha tomado para llegar a la conclusión es constructivo, el resto de sentencias 
             forzosamente se vuelven también de la misma naturaleza.}.
@@ -221,12 +255,12 @@ Teniendo estas definiciones claras, podemos ver que el objetivo del problema de 
 del problema, realmente la búsqueda quedaba restringida al campo de la aritmética, que hacía el problema más factible.}. La teoría está clara y el objetivo también, aunque a lo mejor Hilbert en su segundo problema estuviera pidiendo dos componentes completamente incompatibles.
 
 En lo sucesivo veremos un esbozo de cómo Gödel afrontó el problema, basándose en un sistema formal fundamentado en la aritmética y en los números naturales. Veremos como, a pesar de que \textit{Principia Mathematica} y la teoría de conjuntos 
-de Zermelo-Fraenkel estuvieran considerados como los sistemas más amplios construidos hasta la fecha, mediante un proceso sencillo e intuitivo, Gödel demuestra que ambos tienen fallos básicos de la teoría de números, y además de imposible solución.
+de Zermelo-Fraenkel estuvieran considerados como los sistemas más amplios construidos hasta la fecha, mediante un proceso sencillo e intuitivo, Gödel demuestra que ambos tenían irregularidades de la teoría de números, y además de imposible solución.
 
 \section{El proceso de demostración de la incompletitud}
 
 Consideremos desde un principio a nuestro sistema formal $M$ ya mencionado anteriormente, el cual estará fundamentado en las reglas fundamentales de la aritmética de los números naturales\footnote{Por supuesto considerando las reglas de inferencia
-habitualies de la aritmética. Véase \cite{godel1986collected} para una mayor comprensión dwe las mismas.}. Por ello, partiremos desde una serie de axiomas previamente definidos y unas reglas de inferencia definidas en el propio sistema. Mediante dichas 
+habitualies de la aritmética. Véase \cite{godel1986collected} para una mayor comprensión de las mismas.}. Por ello, partiremos desde una serie de axiomas previamente definidos y unas reglas de inferencia definidas en el propio sistema. Mediante dichas 
 reglas, podremos proceder al cálculo de veracidades acerca de los enunciados que nos planteemos resolver. Puesto que el objetivo desde un principio es demostrar que cualquier sistema será incompleto, tratemos de buscar una sentencia $R$ tales que ni dicha 
 sentencia ni su negación puedan ser deducibles en el propio sistema.
 
