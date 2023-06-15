@@ -37,10 +37,14 @@ de incompletitud), será necesario tener claro un conjunto de definiciones para 
 definimos las siguientes:
 \begin{itemize}
     \item Un \textit{cálculo lógico} o sistema formal es un conjunto de elementos (un conjunto de axiomas, reglas de inferencia y un lenguaje formal) mediante el cual podemos 
-            realizar deducciones de nuevas proposiciones a partir de otras previas\footnote{Se puede considerar como una generalización formal de un sistema axiomático.}.
+            realizar deducciones de nuevas proposiciones a partir de otras previas\footnote{Se puede considerar como una generalización formal de un sistema axiomático.}. Estas proposiciones
+            son formadas a partir del uso de sus tres componentes: partiendo de los axiomas, se relacionan entre ellos mediante el lenguaje, y con ayuda de las reglas de inferencia
+            damos lugar a nuevas proposiciones\footnote{Este proceso puede dar lugar a proposiciones con infinidad de estructuras: pueden disponer de prefijos o no, de variables libres, 
+            de una cantidad finita de proposiciones, etc.}.
     \item Una \textit{fórmula} en este contexto no deja de ser una proposición dentro de nuestro sistema formal, siguiendo por tanto las reglas del lenguaje formal de nuestro sistema.
-    \item Una fórmula se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (es decir, sea la asignación verdadera o falsa) a cada
-            una de las componentes de la fórmula.
+    \item Una fórmula se dice que es \textit{válida} si es verdadera para cualquier asignación de verdad (sea la asignación verdadera o falsa) a cada
+            una de las componentes de la fórmula. Es decir, una fórmula será válida cuando, a cada variable que se pueda suponer verdadera o falsa dentro de la fórmula, no importe el valor que se 
+            le asigne para que la fórmula sea verdadera.
     \item Una \textit{K-fórmula} es una fórmula compuesta por $K$ proposiciones que se relacionan entre ellas de manera sintácticamente correcta.
     \item El \textit{grado de una K-fórmula} se define como el número de secuencias continuas de cuantificadores universales ($\forall$) en el prefijo de la $K$-fórmula. 
             Cuando hablamos de prefijo, hacemos referencia a los elementos previos a las preposiciones que contiene la $K$-fórmula. Por ejemplo, en la $K$-fórmula "$\forall x \exists y (P(x, y))$", el prefijo es la secuencia
@@ -52,8 +56,8 @@ definimos las siguientes:
     \item Un sistema formal se considerará como \textit{adecuado} siempre y cuando dicho cálculo se defina conjuntamente como suficiente y correcto. Es decir, que mediante 
             él, se permita el cálculo de todas las fórmulas lógicas, y que no proceda el cálculo de ninguna otra entre las anteriores recogidas.
     \item Un sistema formal se considerará como \textit{deducible para un cierto conjunto de enunciados $(E_1, E_2, ..., E_n)$} (o simplemente \textit{deducible}, cuando se
-            sobreentienda el conjunto de enunciados a los que se hace referencia como premisas) siempre y cuando dicho cálculo sea demostrable mediante el uso único y exclusivo
-            de sus premisas.
+            sobreentienda el conjunto de enunciados a los que se hace referencia como premisas) siempre y cuando dicho cálculo se pueda probar como verdadero o falso mediante el uso único y exclusivo
+            de sus premisas. Una fórmula de dirá satisfacible cuando sea deducible como verdadera, y refutable cuando sea deducible como falsa.
     \item Un sistema formal se dirá \textit{completo} cuando todas sus fórmulas válidas sean deducibles.
     \end{itemize}
 
@@ -64,7 +68,7 @@ Teniendo estos puntos claros, podemos comenzar a abordar dicho problema, que en 
 \end{equation}
 
 Es decir, que si partimos de una fórmula válida\footnote{De aquí en adelante se presupondrán todas las fórmulas válidas como pertenecientes a la lógica de primer orden, que será
-nuestro sistema formal.}, podremos encontrar un proceso lógico dentro de nuestro sistema formal que nos lleve a deducir a nuestra fórmula. Notemos que en el anterior teorema \eqref{th:God_Comp_I}, su demostración quedaría trivialmente conlcuida si dispusiéramos de este segundo teorema, que no deja de ser una reformulación del anterior:
+nuestro sistema formal.}, podremos encontrar un proceso lógico dentro de nuestro sistema formal que nos lleve a deducir nuestra fórmula. Notemos que en el anterior teorema \eqref{th:God_Comp_I}, su demostración quedaría trivialmente conlcuida si dispusiéramos de este segundo teorema, que no deja de ser una reformulación del anterior:
 \begin{equation}\label{th:God_Comp_II}
     \textit{Toda fórmula válida es o bien refutable o bien satisfacible.}\footnote{Ésto queda definido en un entorno numerable lo suficientemente grande, 
     o como menciona Gödel textualmente, en un ``universo numerable"} 
@@ -103,7 +107,7 @@ Dicha demostración se ataca mediante la definición de algunas sentencias auxil
 y relaciones que existen entre ellas, se acabe concluyendo que las resultantes sentencias de grado $n+1$ también son satisfacibles o refutables. 
 
 Tendríamos por tanto la afirmación de que si cualquier $K$-fórmula de grado $n$ es demostrable, entonces la de $n+1$ también. Para finalizar la demostración del enunciado
-"Cada $K$-fórmula es refutable o satisfacible", como queremos probarlo para $n \in \N$, sólo nos faltaría por probar el caso de $n=1$. Es decir,
+``Cada $K$-fórmula es refutable o satisfacible", como queremos probarlo para $n \in \N$, sólo nos faltaría por probar el caso de $n=1$. Es decir,
 \begin{equation}\label{th:God_Comp_V}
     \textit{Cada $K$-fórmula de primer grado es refutable o satisfacible}
 \end{equation}
@@ -113,8 +117,8 @@ el teorema \eqref{th:God_Comp_III} quedará también probado (y en consecuencia 
 demostración del teorema \eqref{th:God_Comp_V} recién enunciado.
 
 Esta demostración es la más compleja de abordar de las acometidas en la publicación de Gödel de 1930, y la afronta de la siguiente manera. Considera una $K$-fórmula de la forma $\pi \alpha$
-de primer grado, donde $\pi$ es el prefijo y $\alpha$ las preposiciones. Consideremos una $s$-tupla de variables libres extraída de una sucesión infinita de variables libres $w_0, w_1, \dots $. 
-Estas $s$-tuplas tienen la forma siguiente:
+de primer grado, donde $\pi$ es el prefijo y $\alpha$ el conjunto de las proposiciones. Consideremos una sucesión infinita de variables libres $w_0, w_1, \dots $ que pudieran pertenecer a una $K$-fórmula.
+Definamos a continuación una serie de $s$-tuplas constituidas mediante las variables libres anteriores, que quedarían de la forma siguiente:
 $$\omega_1 = (w_0, w_0, \dots, w_0), \quad \omega_2 = (w_1, w_0, \dots, w_0), \quad \omega_3 = (w_0, w_1, \dots, w_0), \quad \dots$$
 Y así sucesivamente\footnote{El orden de las $s$-tuplas viene dado por la suma creciente de los índices de las variables que la componen.}. Podemos por tanto definir la sucesión $(\omega_n)_{n \in \N}$, 
 la cual nos ayudará a definir nuestra sucesión de fórmulas $(\alpha_n)_{n \in \N}$ como sigue:
