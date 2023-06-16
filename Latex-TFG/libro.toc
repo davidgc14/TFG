@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {4.2}Un giro en los acontecimientos}{19}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Definiciones previas}{20}{section.4.3}%
 \contentsline {section}{\numberline {4.4}El proceso de demostración de la incompletitud}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Consecuencias devastadoras}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Consecuencias devastadoras}{24}{section.4.5}%
 \contentsline {part}{\numberline {III}La decibilidad de Turing}{27}{part.3}%
 \contentsline {chapter}{\numberline {5}La aparición de Turing}{29}{chapter.5}%
 \contentsline {section}{\numberline {5.1}El contexto}{29}{section.5.1}%

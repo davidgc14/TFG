@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex libro"] 1686818647 "libro.aux" "libro.bbl" "libro" 1686819102
+["bibtex libro"] 1686897706 "libro.aux" "libro.bbl" "libro" 1686898132
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
   "library.bib" 1685719931 11107 0dbb6609177df9d871c80815f9233f18 ""
-  "libro.aux" 1686819101 28605 f1a24821e0bfca16fcc9cd04815efd09 "pdflatex"
+  "libro.aux" 1686898132 29039 6b3dd1b39763225eeb6a3a8dbb74d7b6 "pdflatex"
   (generated)
   "libro.bbl"
   "libro.blg"
-["pdflatex"] 1686819099 "/home/david/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1686819102
+["pdflatex"] 1686898129 "/home/david/Documents/TFG/Latex-TFG/libro.tex" "libro.pdf" "libro" 1686898132
   "/etc/texmf/web2c/texmf.cnf" 1681495978 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/david/Documents/TFG/Latex-TFG/libro.tex" 1685721811 15389 9ba17ae76018e2a7aff4450eac271aed ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -192,16 +192,16 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1685470998 2800370 7c983d5e9d1846b3e9ada4288a0766b0 ""
   "apendices/apendice01.tex" 1681497500 387 d2624e3c6afbcfd6689f1ccbd115c1ac ""
   "capitulos/capitulo01.tex" 1686683788 20118 2396bb2f5068c23e3fda38ae50d0bc04 ""
-  "capitulos/capitulo02.tex" 1686819098 41255 2243febaef17cfda17b4f4b172b30abc ""
+  "capitulos/capitulo02.tex" 1686898128 44471 5c8ee39e9b4580f3c7cf37b5de349502 ""
   "capitulos/capitulo03.tex" 1685784114 29913 59f380200a55d102d2bb978e18b248ae ""
   "glosario.tex" 1681497500 462 d02172799c55768ea9414445b566287d ""
   "img//portada-ugr-sencilla-color.pdf" 1681497500 57947 fbabc804d392777d03caeaeedf0965c3 ""
-  "libro.aux" 1686819101 28605 f1a24821e0bfca16fcc9cd04815efd09 "pdflatex"
-  "libro.bbl" 1686818647 6990 6bba26116af9118a5b3f988c7f6115ec "bibtex libro"
-  "libro.brf" 1686819101 2294 90edb73249cdfc4e83910e26aef6bd8d "pdflatex"
-  "libro.out" 1686819100 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "libro.aux" 1686898132 29039 6b3dd1b39763225eeb6a3a8dbb74d7b6 "pdflatex"
+  "libro.bbl" 1686897706 6990 6bba26116af9118a5b3f988c7f6115ec "bibtex libro"
+  "libro.brf" 1686898132 2294 5bc2fcc7edaaf3d9b24989851384cb1a "pdflatex"
+  "libro.out" 1686898131 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "libro.tex" 1685721811 15389 9ba17ae76018e2a7aff4450eac271aed ""
-  "libro.toc" 1686819101 3527 00c1cf331a5922e2884881e5a1562202 "pdflatex"
+  "libro.toc" 1686898132 3527 d736629f873b7fd20c68acfb40ea41d3 "pdflatex"
   "paquetes/comandos-entornos.tex" 1681497500 768 0cb52b72ff26e41d0c84dfc312fcbf4e ""
   "paquetes/hyperref.tex" 1681497500 1641 5cb44f90bd6db5b7b6db45f6cfcc78f7 ""
   "preliminares/declaracion-originalidad.tex" 1681497500 699 41a5dbc8f5101ef1ccd823a81b420124 ""

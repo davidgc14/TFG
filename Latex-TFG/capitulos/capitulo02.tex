@@ -222,14 +222,15 @@ A continuación, veremos algunas definiciones previas para poder entender el pro
 Como hemos comentado anteriormente, necesitamos construir un sistema formal para poder empezar a trabajar con él. Éste se compone esencialmente de tres partes:
 \begin{enumerate}
     \item Un conjunto de signos fundamentales\footnote{También conocidos como "primitivos".} que sea enumerable, con el que podamos empezar a generar sucesiones de dichos signos, y que posteriormente sean referenciados como razonamientos.
-    \item Un conjunto de reglas que nos definan las operaciones posibles entre sucesiones, y que nos permitan llegar a definir cuál de las sucesiones definidas las podemos catalogar como fórmulas.\footnote{EL conjunto de fórmulas
+    \item Un conjunto de reglas que nos definan las operaciones posibles entre sucesiones, y que nos permitan llegar a definir cuál de las sucesiones definidas las podemos catalogar como fórmulas.\footnote{El conjunto de fórmulas
             que definamos en el sistema generará el propio lenguaje formal con el que trabajaremos en el sistema.}.
     \item Otro conjunto distinto de reglas, que nos permitan definir, entre las combinaciones de las anteriores fórmulas, cuáles podemos catalogar como deducciones.
 \end{enumerate}
 
 Definamos ahora los componentes fundamentales de una teoría formalizada o sistema formal. 
 \begin{itemize}
-    \item Cuando consideremos una fórmula sin variables libres, la catalogaremos como \textit{sentencia}.
+    \item Cuando consideremos una fórmula sin variables libres, la catalogaremos como \textit{sentencia}.\footnote{En este sentido, las sentencias serán aquellas sin conectores existenciales. Es decir, fórmulas en las que no hay variables que puedan tomar
+            cualquier valor del dominio.}
     \item Consideraremos una sentencia como \textit{deducible} cuando forme parte de una deducción, y en la sucesión de fórmulas que la componen se encuentre en el último lugar.
     \item Definiremos como una \textit{teoría formalizada} al conjunto de sentencias que sean deducibles (entre las definidas anteriormente).
 \end{itemize}
@@ -242,11 +243,11 @@ Llamemos a nuestro sistema formal $M$. Entonces:
     \item Un sistema formal $M$ se considerará \textit{incompleto} si y sólo si existe al menos una sentencia $\phi$ tal que ni $\phi$ es deducible, ni tampoco su negación $\neg \phi$. En otras palabras, diremos que es incompleto cuando 
             existan problemas para los que no sea ni refutable ni satisfacible.
     \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{completo} si y sólo si todas las sentencias de su lenguaje\footnote{Hacemos referencia aquí a sentencias formadas por fórmulas válidas en el marco del sistema formal.}
-            son deducibles, es decir, cuando no quede ningún problema sin resolver.
-    \item Un sistema formal $M$ se considerará \textit{consistente} si y sólo si toda sentencia de $M$ es deducible en el propio sistema. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
+            son o bien deducibles, o bien su negación lo es. Es decir, cuando una vez definidos todos los problemas del sistema, no quede ninguno sin resolver.
+    \item Un sistema formal $M$ se considerará \textit{consistente} si y sólo si no existe ninguna sentencia de $M$ que ocurra que sea deducible tanto la sentencia como su negación. Es decir, $M$ será consistente siempre y cuando no exista ningún problema para el que,
             mediante razonamiento lógico válido, lleguemos a probar simultáneamente su verdad y su falsedad\footnote{No necesariamente mediante el mismo proceso deductivo.}.
     \item Partiendo de la definición anterior, un sistema formal $M$ se considerará \textit{inconsistente}\footnote{Se le suele llamar también por el nombre de \textit{contradictorio}, debido a que se incurre en una doble verdad de la demostración 
-            de las sentencias.} si y sólo si existe alguna sentencia que es refutable y satisfacible al mismo tiempo, es decir, que para algún problema de nuestro sistema 
+            de las sentencias.} cuando existan sentencias que sean refutables y satisfacibles al mismo tiempo, es decir, que para algún problema de nuestro sistema 
             formal se puede afirmar su veracidad y su falsedad simultáneamente\footnote{Realmente no es necesario 
             requerir que todas las sentencias lo cumplan. Con encontrar una sentencia que incurra en esta "doble veracidad", debido a que el proceso lógico que se ha tomado para llegar a la conclusión es constructivo, el resto de sentencias 
             forzosamente se vuelven también de la misma naturaleza.}.
@@ -286,19 +287,51 @@ Situando en la base a la sucesión de números primos, y en los exponentes a la 
 
 Existen en nuestro sistema fórmulas con variables libres. Estas no son otras que fórmulas que disponen de una variable que podremos sustituir por cualquier valor factible perteneciente a nuestro sistema\footnote{Por ejemplo, la fórmula definida en la nota a pie de página 
 anterior se trata de una fórmula con una variable libre, donde $F(x) = x+1$. De esta manera, podremos afirmar que $F(1)$ es una sentencia verdadera, mientras que $F(5)$ no lo es.}. Denotaremos a dichas fórmulas indicando las variables libres entre 
-paréntesis $R(x)$ y generaremos una sucesión con todas las fórmulas existentes en nuestro sistema: $R_1(x), R_2(x)...$. De esta manera, cuando hablemos de la fórmula $R(x)$ estaremos englobando a todos los números $n$ tales que $R(n)$ sea deducible.
+paréntesis $R(x)$ y generaremos una sucesión con todas las fórmulas existentes en nuestro sistema: $R_1(x), R_2(x)...$, donde el subínidice indique la numeración de Gödel de la fórmula. De esta manera, tenemos definidas todas las fórmulas de nuestro sistema, y 
+cuando hablemos de la fórmula $R(x)$ estaremos englobando a todos los números $n$ tales que $R(n)$ sea deducible.
 
 Pero prestemos atención a lo que acabamos de construir. Hemos definido una fórmula tratando a otra fórmula como objeto, es decir, la oración "Todos los números $n$ tales que $R(n)$ sea deducible", ésta es en sí misma una fórmula definida en nuestro sistema. 
 Estamos procediendo de esta manera al estudio del sistema formal desde el propio sistema formal. Y por tanto, al igual que el resto de fórmulas, estas sentencias "metamatemáticas" también pueden ser codificadas en nuestro sistema $M$\footnote{Gödel emplea gran parte 
 de su artículo \textit{Sobre sentencias formalmente indecidibles de los Principia Mathematica y sistemas afines} en la demostración de este punto, siendo la base de su argumentación en resultados posteriores dentro del propio artículo.}.
 
-Si analizamos en detalle dicha sentencia, podemos detectar cierto ingrediente autorreferenciable, al cual Gödel se agarra y sigue su demostración basándose en dicho punto. Y es precisamente mediante este razonar, que se acaba concluyendo que existe una fórmula en nuestro 
-sistema, $R_p(p)$ para un cierto número $p$, la cual no se puede deducir en el sistema. Siempre que supongamos su deducción o su no deducción, siempre llegaremos a contradicción en nuestro sistema $M$. 
+Si analizamos en detalle dicha sentencia, podemos detectar cierto ingrediente autorreferenciable, al cual Gödel se agarra y sigue su demostración basándose en dicho punto. Para ello define una función que será fundamental en el desarrollo del argumento: la función diagonal.
+
+La función diagonal de Gödel, que denotaremos por $Dem(x)$, es una función definida dentro del sistema formal $M$ que recibe como entrada una numeración de Gödel (asociada a cierta sentencia, por ejemplo a $R$), y devuelve una sentencia autorreferencial acerca de la demostrabilidad
+de $R$. Más específicamente, para una sentencia $S$, $Dem([S])$ devuelve la nueva sentencia ``La fórmula con número de Gödel $[S]$ es deducible''\footnote{Denotar que aquí sirven muchos otros ejemplos, siempre que sean de caracter autorreferencial.}. Por tanto es 
+fácil ver que, dada cualquier sentencia $S$ del lenguaje, el siguiente resultado es cierto:
+
+\begin{equation}\label{th:Dev_Incom_I}
+    Dem([S]) \textit{ es deducible } \Leftrightarrow S \textit{ es deducible.}
+\end{equation}
+
+Notemos que, al igual que hicimos anteriormente con las fórmulas $R(x)$ (donde considerábamos todos los números $n$ tales que $R(n)$ fuera deducible), podemos realizar el mismo proceso con la función $Dem([x])$. Consideremos por tanto un conjunto de números $C$, el cual viene
+definido como sigue:
+
+\begin{equation}\label{th:Dev_Incom_II}
+    n \in C \Leftrightarrow \lnot Dem([S_n(n)])
+\end{equation}
+
+Para cualquier sentencia $S$ del lenguaje. O dicho en otras palabras, $n$ pertenecerá a $C$ siempre y cuando $S_n(n)$ no sea deducible en $M$. Debido a que la fórmula $Dem([S])$ es formalizable en el sistema, la definición anterior también lo será. De esta manera, tendrá asociada
+una numeración de Gödel, y también una fórmula de una variable libre entre las nombradas anteriormente. Supongamos por tanto que su fórmula asociada es la $p$-ésima en la lista de funciones, $R_p(x)$. Por lo tanto, tenemos formalizado lo siguiente:
+
+\begin{equation}\label{th:Dev_Incom_III}
+    n \in C \Leftrightarrow R_p(n) \textit{ es deducible.}
+\end{equation}
+
+Tomemos a continuación la fórmula $R_p(p)$, la cual tiene una peculiar propiedad. 
+\begin{itemize}
+    \item Supongamos que $R_p(p)$ es deducible en nuestro sistema formal. Pero entonces por \eqref{th:Dev_Incom_II} tenemos que $p \notin C$. Pero entonces, por \eqref{th:Dev_Incom_III} tenemos que $R_p(p)$ no es deducible, lo cual lleva a contradicción.
+    \item Supongamos ahora el contrario. Si $R_p(p)$ no es deducible, entonces por \eqref{th:Dev_Incom_II} tenemos que $p \in C$. Pero entonces, por \eqref{th:Dev_Incom_III} tenemos que $R_p(p)$ es deducible en $M$, lo cual también es contradicción.
+\end{itemize}
+
+Y es precisamente mediante este razonar, que se acaba concluyendo que existe una fórmula en nuestro 
+sistema, $R_p(p)$ para un cierto número $p$, la cual no se puede deducir en el sistema. Siempre que supongamos su deducción o su no deducción, siempre llegaremos a contradicción en nuestro sistema $M$. Hemos encontrado por tanto sentencias en $M$ en las que no se puede demostrar,
+mediante un proceso lógico válido, ni su decibilidad ni su no decibilidad. Por tanto, se concluye que nuestro sistema $M$ es incompleto.\\
 
 Debido a que $M$ debe cumplir unas condiciones mínimas, para poder sustentar su resultado debe definir cuáles de estas condiciones deben ser exigidas a $M$ para poder tratar con él y efectivamente considerar cualquier sistema como incompleto. Y en este estudio Gödel 
 vio que el único requisito indispensable era la consistencia, ya que no podía construir su sistema con contradicciones en el mismo. Es por ello por lo que Gödel presenta su primer teorema de incompletitud de la siguiente manera:
 \begin{equation}\label{th:God_Incomp_I}
-    \textit{Cualquier sistema formal construido de manera recursiva que sea consistente es también incompleto.} 
+    \textit{Cualquier sistema formal que sea consistente es también incompleto.} 
 \end{equation}
 
 Con este grandioso resultado, tiraba por tierra todo lo especulado en la universidad de Sorbona en el año 1900 por el matemático más influente de la época. Gödel, rompiendo con los esquemas, había demostrado que daba igual cuán complejo fuera tu conjunto de axiomas 
@@ -317,8 +350,8 @@ En el mismo artículo, escrito en 1930 y publicado un año después, al final de
     \textit{Entonces la cosistencia de $M$ no puede probarse en $M$.} 
 \end{equation}
 
-Analicemos en detalle el anterior resultado. Primeramente veamos que en las premisas, consideramos que el sistema sea "mínimamente expresivo". Esta condición la podemos validar siempre y cuando el sistema formal haya sido construido de forma recursiva como 
-hemos visto en puntos anteriores\footnote{Véase el apartado \textit{4.3. Definiciones previas}.}. Con esto hace referencia Gödel a la mínima expresividad exigida a un sistema. Observemos también que el propio resultado, "la cosistencia de $M$ no puede probarse en $M$",
+Analicemos en detalle el anterior resultado. Primeramente veamos que en las premisas, consideramos que el sistema sea "mínimamente expresivo". Esta condición la podemos validar siempre y cuando el sistema formal disponga de medios expresivos para poder definir los conceptos
+de la demostración anterior (fórmula deducible, veracidad de una fórmula...). Con esto hace referencia Gödel a la mínima expresividad exigida a un sistema. Observemos también que el propio resultado, "la cosistencia de $M$ no puede probarse en $M$",
 estamos afirmando que una demostración no puede llevarse a cabo, es decir, que el fin último de la demostración de este teorema es afirmar la no existencia de demostración para otro resultado, en concreto, la demostración de la consistencia del propio sistema.
 Y no sólo eso, sino que podemos probarlo con las propias herramientas que nos proporciona el sistema $M$.
 
@@ -336,7 +369,7 @@ El vacío que uno siente la primera vez que se es consciente de la magnitud de l
 de la matemática, y consigo todas las ciencias adyacentes. Gödel había puesto de manifiesto no sólo que las matemáticas se escribían sobre una mesa de tres patas (debido a la incompletitud de cualquier sistema), sino que además esta mesa podía estar suspendida en el aire
 (por la falta de fiabilidad de que el propio sistema fuera consistente). 
 
-Hoy día seguimos escribiendo sobre la misma mesa, evitando la mirada a múltiples paradojas que delatarían la incosistencia, y asumiendo que hay problemas abiertos que a lo mejor nunca llegan a buen puerto y naufragan en la incompletitud de nuestro sistema.
+Hoy día seguimos escribiendo sobre la misma mesa, evitando la mirada a múltiples paradojas que delatarían la incosistencia, y asumiendo que hay problemas abiertos que a lo mejor nunca llegarán a buen puerto y naufragarán en la incompletitud de nuestro sistema.
 Así que, por suerte o por desgracia, continuaremos toda la eternidad construyendo matemática sobre la ignorancia, y sobre agujeros que nunca sabremos tapar.
 
 Pero a pesar de ello, no todo estaba perdido. Después de la caída de estos dos grandes propósitos, Hilbert, gracias a su peso mediático, fomentó la búsqueda de un nuevo horizonte. Orientó todo el fragor resultante de los resultados de Gödel, todo el descontento
