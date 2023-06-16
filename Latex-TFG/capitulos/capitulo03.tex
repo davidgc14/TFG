@@ -107,7 +107,7 @@ donde:
         \item $Q$ es un conjunto finito de estados.
         \item $\Sigma$ es el conjunto finito de símbolos de entrada, también conocido como alfabeto de la máquina\footnote{Denotar que el espacio en blanco ($\sqcup$) no se considera un elemento del alfabeto, ya que es el
                         es el resultado de borrar cualquier elemento del propio alfabeto en la cinta.}.
-        \item $\Gamma$ es el conjunto de símbolos presentes en la cinta. Notemos que $\Sigma \in \Gamma$\footnote{Notemos que esto ocurre debido al espacio en blanco ($\sqcup$), ya que $\sqcup \notin \Sigma$, pero 
+        \item $\Gamma$ es el conjunto finito de símbolos presentes en la cinta. Notemos que $\Sigma \in \Gamma$\footnote{Notemos que esto ocurre debido al espacio en blanco ($\sqcup$), ya que $\sqcup \notin \Sigma$, pero 
                         $\sqcup \in \Gamma$, ya que en la cinta, al ser infinita, los esapcios no rellenos por caracteres del alfabeto quedan rellenos por espacios en blanco.}.
         \item $\delta$ es una función de transición que especifica cómo debe comportarse la máquina. Para cada estado y símbolo en la cinta, esta función nos indica cuál será el siguiente estado, el símbolo que 
                         se debe escribir en la cinta y hacia dónde se debe desplazar el cabezal, ya sea izquierda o derecha. A efectos generales, esta función es el corazón de la máquina, ya que nos indica cuál será 
@@ -200,7 +200,7 @@ hacemos referencia de la misma manera al término "algoritmo", apoyándonos en l
 \subsection{Demostración del problema de la parada}
 
 La idea intuitiva detrás de la demostración radica en realizar una demostración por reducción al absurdo. Es decir, suponemos a priori la existencia de una máquina decisora capaz de dar solución al problema de la parada para
-cualquier máquina dada. Una vez supuesto esto, bastará con definir una segunda máquina que responda en función de al anterior, y hacer que la máquina decisora interactúe con esta segunda. Llegaremos así a un absurdo y quedará
+cualquier máquina dada. Una vez supuesto esto, bastará con definir una segunda máquina que responda en función de la anterior, y hacer que la máquina decisora interactúe con esta segunda. Llegaremos así a un absurdo y quedará
 demostado lo propuesto\footnote{Denotar que las máquinas de Turing, debidamente construidas, son capaces de concatenarse. Es decir, la composición de dos o más máquinas de Turing pueden dar lugar a una nueva máquina, como resultado
 de la composición de las anteriores.}.
 
